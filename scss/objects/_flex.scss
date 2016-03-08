@@ -1,0 +1,29 @@
+// Objects :: Flex
+
+.o-flex {
+  @include align-items(center);
+  @include display(flex);
+  @include justify-content(space-between);
+}
+
+.o-flex__block {
+  @include flex(1);
+}
+
+// Modifiers
+.o-flex--reset {
+  max-width: 100%;
+  min-width: 0;
+}
+
+[class*="o-flex"] {
+  &.u-v-align-top {
+    @include align-items(flex-start);
+  }
+  &.u-v-align-middle {
+    @include align-items(center);
+  }
+  &.u-v-align-bottom {
+    @include align-items(flex-end);
+  }
+}

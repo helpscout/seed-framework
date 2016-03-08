@@ -1,0 +1,5 @@
+// Utilities :: Spacing
+
+@include generate-spacing(margin, mrg);
+@include generate-spacing-auto(margin, mrg);
+@include generate-spacing(padding, pad);

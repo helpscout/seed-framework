@@ -1,2 +1,29 @@
 // Variables :: Typography
 
+// Font Family
+$HS-font-family-sans-serif:   "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$HS-font-family-alt:          "Lucida Grande", "Lucida Sans", Arial, sans-serif !default;
+$HS-font-family-serif:        Georgia, "Times New Roman", Times, serif !default;
+$HS-font-family-mono:         Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$HS-font-family-base:         $HS-font-family-sans-serif !default;
+
+
+
+// Sizes
+$HS-font-size-md:            13px !default;
+$HS-font-size-sm:            12px !default;
+$HS-font-size-xs:            11px !default;
+
+$HS-font-size-base:          14px !default;
+$HS-font-size-app:           75% !default;
+
+// Line Heights
+$HS-line-height-app:         1.22 !default;
+
+
+// Weights
+$HS-font-weight-bold:        bold !default;
+$HS-font-weight-normal:      normal !default;
+$HS-font-weight-light:       lighter !default;
+
+$HS-font-weight-base:        $HS-font-weight-normal !default;

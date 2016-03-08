@@ -1,0 +1,19 @@
+// Objects :: Inline
+
+.o-inline {
+  margin-bottom: -(space(xs));
+  margin-left: 0;
+
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 0 space(xs);
+    padding: 0 0;
+    vertical-align: middle;
+  }
+}

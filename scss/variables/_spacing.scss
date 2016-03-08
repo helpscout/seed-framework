@@ -1,0 +1,20 @@
+// Variables :: Spacing
+
+$HS-space: (
+  none: 0,
+  xs: 5px,
+  sm: 10px,
+  md: 15px,
+  lg: 30px,
+  xl: 45px
+) !default;
+
+$HS-space-directions: (
+  none:   false,
+  top:    "t",
+  right:  "r",
+  bottom: "b",
+  left:   "l",
+  hor:    "h",
+  vert:   "v"
+) !default;

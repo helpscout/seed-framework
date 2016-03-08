@@ -1,0 +1,13 @@
+// Functions :: Space
+
+@function space($size: none) {
+  @if map-has-key($HS-space, $size) {
+    $space: map-get($HS-space, $size);
+    @return $space;
+  }
+
+  @else {
+    @warn "No space size of \"#{$size}\" found. "
+    + "Are you sure it's in `variables/spacing?`";
+  }
+};
