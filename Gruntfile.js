@@ -47,16 +47,14 @@ module.exports = function(grunt) { 'use strict';
     },
 
     cssmin: {
-      build: {
-        target: {
-          files: [{
-            expand: true,
-            cwd: '<%= config.dest %>/',
-            src: ['*.css', '!*.min.css'],
-            dest: '<%= config.dest %>/',
-            ext: '.min.css'
-          }]
-        }
+      target: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.dest %>',
+          src: ['*.css', '!*.min.css'],
+          dest: '<%= config.dest %>',
+          ext: '.min.css'
+        }]
       }
     }
   });
