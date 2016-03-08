@@ -7,6 +7,13 @@
 
 // Componentize. Compose. Celebrate!
 
+// Vendors
+// This isn't the base solution, but works for me.
+// We can't rely on Bower to take care of this is Seed is imported
+// into another project.
+@import "vendors/bourbon/app/assets/stylesheets/bourbon";
+@import "vendors/normalize/normalize";
+
 // Variables
 @import "variables/all";
 
@@ -16,5 +23,17 @@
 // Mixins
 @import "mixins/all";
 
+// Generators
+@import "generators/all";
+
 // Base
 @import "base/all";
+
+// Components
+@import "components/all";
+
+// Objects
+@import "objects/all";
+
+// Utilities
+@import "utilities/all";

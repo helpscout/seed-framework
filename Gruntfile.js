@@ -4,6 +4,7 @@ module.exports = function(grunt) { 'use strict';
   require('load-grunt-tasks')(grunt);
 
   var config = {
+    dev: '.grunt-tmp',
     dest: 'css',
     src: 'scss'
   };
@@ -16,7 +17,7 @@ module.exports = function(grunt) { 'use strict';
         files: [
           '<%= config.src %>/{,*/}*.{scss,sass}'
         ],
-        tasks: ['build']
+        tasks: ['sass:development']
       }
     },
 
@@ -25,7 +26,16 @@ module.exports = function(grunt) { 'use strict';
         sourcemap: true,
         includePath: '<%= config.src %>'
       },
-      src: {
+      development: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.src %>',
+          src: ['*.{scss,sass}'],
+          dest: '<%= config.dev %>',
+          ext: '.css'
+        }]
+      },
+      build: {
         files: [{
           expand: true,
           cwd: '<%= config.src %>',
@@ -37,25 +47,27 @@ module.exports = function(grunt) { 'use strict';
     },
 
     cssmin: {
-      target: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.dest %>/',
-          src: ['*.css', '!*.min.css'],
-          dest: '<%= config.dest %>/',
-          ext: '.min.css'
-        }]
+      build: {
+        target: {
+          files: [{
+            expand: true,
+            cwd: '<%= config.dest %>/',
+            src: ['*.css', '!*.min.css'],
+            dest: '<%= config.dest %>/',
+            ext: '.min.css'
+          }]
+        }
       }
     }
   });
 
   grunt.registerTask('build', [
-    'sass',
+    'sass:build',
     'cssmin'
   ]);
 
   grunt.registerTask('develop', [
-    'sass',
+    'sass:development',
     'watch'
   ]);
 

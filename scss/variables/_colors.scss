@@ -1,5 +1,6 @@
 // Variables :: Colors
 
+// Palette
 $HS-colors: (
 
   // Base
@@ -98,5 +99,10 @@ $HS-colors: (
     700: #C76400,
     800: #A45300,
     900: #813C00
-  )
+  ),
+
+  // App colors
+  // These are temp colors, that will be added to the palette when possible
+  text: #2b2b2b
+
 ) !default;

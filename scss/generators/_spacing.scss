@@ -1,0 +1,76 @@
+// Generators :: Spacing
+
+// Generates the spacing utility classes
+// Example:
+// .u-mrg-b-lg
+@mixin generate-spacing($property: margin, $class: mrg, $auto: false) {
+  @each $dir-prop, $dir-class in $HS-space-directions {
+    @each $size-class, $size in $HS-space {
+
+      $_util-classname: u-#{$class}-#{$dir-class}-#{$size-class};
+      $_size: #{$size};
+      $_property: #{$property}-#{$dir-prop};
+
+      @if ($dir-class == false) {
+        $_util-classname: u-#{$class}-#{$size-class};
+        $_property: #{$property};
+      }
+
+      @if ($auto != false) {
+        $_util-classname: #{$_util-classname}--auto;
+      }
+
+      .#{$_util-classname} {
+
+        @if($dir-class == 'h') {
+          #{$property}-left: #{$_size} !important;
+          #{$property}-right: #{$_size} !important;
+        }
+
+        @elseif($dir-class == 'v') {
+          #{$property}-bottom: #{$_size} !important;
+          #{$property}-top: #{$_size} !important;
+        }
+
+        @else {
+          #{$_property}: #{$_size} !important;
+        }
+      }
+    }
+  }
+}
+
+// Generates the spacing auto utility classes
+// Example:
+// .u-mrg-lg-auto
+@mixin generate-spacing-auto($property: margin, $class: mrg) {
+  @each $dir-prop, $dir-class in $HS-space-directions {
+
+    $_util-classname: u-#{$class}-#{$dir-class}-auto;
+    $_size: auto;
+    $_property: #{$property}-#{$dir-prop};
+
+    @if ($dir-class == false) {
+      $_util-classname: u-#{$class}--auto;
+      $_property: #{$property};
+    }
+
+    .#{$_util-classname} {
+
+      @if($dir-class == 'h') {
+        #{$property}-left: #{$_size} !important;
+        #{$property}-right: #{$_size} !important;
+      }
+
+      @elseif($dir-class == 'v') {
+        #{$property}-bottom: #{$_size} !important;
+        #{$property}-top: #{$_size} !important;
+      }
+
+      @else {
+        #{$_property}: #{$_size} !important;
+      }
+    }
+  }
+}
+
