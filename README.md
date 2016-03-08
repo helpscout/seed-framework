@@ -15,17 +15,17 @@ aka. Sass stuff that doesn't actually get generated into the CSS
 
 (Order matters!)
 
-**Variables**
+##### Variables
 The "config" files if you will. The variable files store all the properties that will be used throughout the framework.
 
-**Functions**
+##### Functions
 Custom sass functions that take advantage of the sass maps used in variables.
 An example of a default sass function is `lighten()` or `percentage()`.
 
-**Mixins**
+##### Mixins
 Helpful predefined methods that help generate CSS properties.
 
-**Generators**
+##### Generators
 This are mixins that help (auto) create CSS classes. These serve a different purpose compared to `mixins`.
 
 Mixins create attributes
@@ -51,24 +51,26 @@ aka. Code that actually compiles into the .css
 
 (Again, order matters!)
 
-**Base**
+##### Base
 These are the bare-bones base styles, such as `html`, `img`, headings, etc...
 
-**Components**
+##### Components
 Styling for components such as badges and buttons live here.
 
-**Objects**
+##### Objects
 These are utility classes, but are used mainly for layout / composition. A great example is a grid system. Grid classes aren't components. They help arrange things on the page.
 
-**Utilities**
+##### Utilities
 These are helper classes with added omph to them. Most of them have `!important` on them, and are used to tweak + override styles.
 
 ### Vendors
 
 The vendor code currently lives in the project. Ideally, we'd want them brought in via `bower install` or `npm install`. However, this doesn't really work when the Seed framework itself is going to be bower installed.
 
-**Bourbon**
+##### Bourbon
+[http://bourbon.io/](http://bourbon.io/)
 Used to handle all vendor prefixing.
 
-**Normalize**
+##### Normalize
+[https://necolas.github.io/normalize.css/](https://necolas.github.io/normalize.css/)
 HTML Reset code :)
