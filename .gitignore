@@ -1,0 +1,8 @@
+.DS_Store
+*.orig
+
+.grunt
+.grunt-tmp
+
+node_modules/
+bower_components/
