@@ -16,7 +16,7 @@
       $color: map-get($color, $shade);
 
       // Warn if default is not available
-      @if type-of(#{$color}) != "string" {
+      @if type-of($color) != "color" {
         @warn "No color called \"#{$name}\" with the shade \"#{$shade}\" found. "
         + "Are you sure it's in `variables/colors`?";
       }
