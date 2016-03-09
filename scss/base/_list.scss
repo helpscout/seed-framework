@@ -8,15 +8,16 @@ ul, ol {
   padding: 0;
   margin: 0 0 space(lg) space(lg);
 
+  li {
+    line-height: $HS-line-height-base-px;
+    margin: ceil($HS-line-height-base-px / 3) 0;
+  }
+
   ul, ol {
     margin-bottom: 0;
   }
 }
 
-li {
-  line-height: $HS-line-height-base-px;
-  margin: ceil($HS-line-height-base-px / 3) 0;
-}
 
 // Nav
 nav ul {
