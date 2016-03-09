@@ -1,0 +1,129 @@
+// Utilities :: Typography
+
+
+// Table of contents
+// - Alignment
+// - Coloring
+// - Cases
+// - Decoration
+// - Readability
+// - Sizing
+// - Wrapping
+
+
+// Alignment
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+
+
+// Coloring
+.u-text-default {
+  color: color(text) !important;
+}
+
+
+
+// Cases
+.u-text-capitalize {
+  text-transform: capitalize !important;
+}
+.u-text-lowercase {
+  text-transform: lowercase !important;
+}
+.u-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+
+
+// Decoration
+.u-text-strikethrough {
+  text-decoration: line-through !important;
+}
+
+.u-text-underline {
+  text-decoration: underline !important;
+}
+
+.u-text-no-underline {
+  text-decoration: none !important;
+}
+
+
+
+// Readability
+.u-text-smooth {
+  @include font-smooth;
+}
+
+
+
+// Sizing
+.u-text-md {
+  font-size: $HS-font-size-md !important;
+}
+
+.u-text-sm {
+  font-size: $HS-font-size-sm !important;
+}
+
+.u-text-xs {
+  font-size: $HS-font-size-xs !important;
+}
+
+.u-text-xxs {
+  font-size: $HS-font-size-xxs !important;
+}
+
+
+
+// Weight
+.u-text-light {
+  font-weight: $HS-font-weight-light !important;
+}
+
+.u-text-normal {
+  font-weight: $HS-font-weight-normal !important;
+}
+
+.u-text-bold {
+  font-weight: $HS-font-weight-bold !important;
+}
+
+
+
+// Wrapping
+.u-text-break-all {
+  word-break: break-all !important;
+}
+
+.u-text-break-word {
+  word-break: break-word !important;
+}
+
+.u-text-justify {
+  text-align: justify !important;
+}
+
+.u-text-nowrap {
+  white-space: nowrap !important;
+}
+
+.u-text-truncate {
+  @include text-truncate();
+}
+
+.u-text-truncate--block {
+  display: block;
+  @include text-truncate();
+}

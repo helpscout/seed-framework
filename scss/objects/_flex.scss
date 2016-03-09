@@ -10,12 +10,17 @@
   @include flex(1);
 }
 
+
+
 // Modifiers
+
+// Resets
 .o-flex--reset {
   max-width: 100%;
   min-width: 0;
 }
 
+// Vertical alignment
 [class*="o-flex"] {
   &.u-v-align-top {
     @include align-items(flex-start);

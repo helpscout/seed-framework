@@ -1,13 +1,12 @@
 // Objects :: Inline
 
 .o-inline {
+  list-style: none;
   margin-bottom: -(space(xs));
   margin-left: 0;
 
   &:after {
-    clear: both;
-    content: "";
-    display: table;
+    @include clearfix;
   }
 
   &__item {

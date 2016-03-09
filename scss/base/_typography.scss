@@ -1,5 +1,15 @@
 // Base :: Typography
 
+
+// Table of contents
+// - Headings
+// - Body
+// - Links
+// - Blockquotes
+// - Code
+// - Horizontal rule
+
+
 // Headings
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -35,7 +45,7 @@ h6, .h6 {
 }
 
 
-// Body text
+// Body
 p {
   line-height: $HS-line-height-p;
   margin: 0 0 ($HS-line-height-base-px / 2);
@@ -58,15 +68,6 @@ a {
   }
 }
 
-
-// Horizontal rule
-hr {
-  border: 0;
-  border-top: $HS-border;
-  margin-bottom: space(lg);
-  margin-top: space(lg);
-  width: 100%;
-}
 
 
 // Blockquotes
@@ -101,6 +102,7 @@ blockquote:after {
 }
 
 
+
 // Code
 code,
 pre {
@@ -109,4 +111,15 @@ pre {
   font-family: $HS-font-family-mono;
   font-size: $HS-font-size-base - 2;
   padding: 0 3px 2px;
+}
+
+
+
+// Horizontal rule
+hr {
+  border: 0;
+  border-top: $HS-border;
+  margin-bottom: space(lg);
+  margin-top: space(lg);
+  width: 100%;
 }
