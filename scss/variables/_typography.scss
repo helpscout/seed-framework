@@ -1,5 +1,9 @@
 // Variables :: Typography
 
+// Dependencies
+@import "functions/all";
+
+
 // Font Family
 $HS-font-family-sans-serif:   "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $HS-font-family-alt:          "Lucida Grande", "Lucida Sans", Arial, sans-serif !default;
@@ -13,12 +17,30 @@ $HS-font-family-base:         $HS-font-family-sans-serif !default;
 $HS-font-size-md:            13px !default;
 $HS-font-size-sm:            12px !default;
 $HS-font-size-xs:            11px !default;
+$HS-font-size-xxs:           10px !default;
 
 $HS-font-size-base:          14px !default;
-$HS-font-size-app:           75% !default;
+$HS-font-size-app-px:        12px !default;
+// This is calculated by taking $HS-font-size-app-px and dividing by
+// the default font size of the browser
+$HS-font-size-app:           percentage(strip-unit($HS-font-size-app-px) / 16) !default;
+
+// Headings
+$HS-font-size-h1:            24px !default;
+$HS-font-size-h2:            20px !default;
+$HS-font-size-h3:            16px !default;
+$HS-font-size-h4:            $HS-font-size-base !default;
+$HS-font-size-h5:            $HS-font-size-md !default;
+$HS-font-size-h6:            $HS-font-size-sm !default;
+
+
 
 // Line Heights
 $HS-line-height-app:         1.22 !default;
+$HS-line-height-heading:     $HS-line-height-app !default;
+$HS-line-height-p:           1.4 !default;
+$HS-line-height-base-px:     ceil($HS-font-size-app-px * 1.5) !default;
+
 
 
 // Weights

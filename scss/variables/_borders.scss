@@ -1,4 +1,12 @@
 // Variables :: Borders
 
-$HS-border-radius:                4px;
-$HS-border-radius-sm:             2px;
+// Dependencies
+@import "functions/all";
+
+
+// Border styles
+$HS-border:                       1px solid color(grey) !default;
+
+// Border radius
+$HS-border-radius:                4px !default;
+$HS-border-radius-sm:             2px !default;

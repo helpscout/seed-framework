@@ -24,7 +24,9 @@ module.exports = function(grunt) { 'use strict';
     sass: {
       options: {
         sourcemap: true,
-        includePath: '<%= config.src %>'
+        includePaths: [
+          '<%= config.src %>'
+        ]
       },
       development: {
         files: [{

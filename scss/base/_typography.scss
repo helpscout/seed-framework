@@ -1,0 +1,64 @@
+// Base :: Typography
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: color(charcoal, 800);
+  font-weight: $HS-font-weight-bold;
+  line-height: $HS-line-height-heading;
+  margin: 0;
+  text-rendering: optimizelegibility;
+}
+
+h1, .h1 {
+  font-size: $HS-font-size-h1;
+}
+h2, .h2 {
+  font-size: $HS-font-size-h2;
+}
+h3, .h3 {
+  font-size: $HS-font-size-h3;
+}
+h4, .h4 {
+  font-size: $HS-font-size-h4;
+}
+h5, .h5 {
+  font-size: $HS-font-size-h5;
+}
+h6, .h6 {
+  font-size: $HS-font-size-h6;
+}
+
+
+// Body text
+p {
+  line-height: $HS-line-height-p;
+  margin: 0 0 ($HS-line-height-base-px / 2);
+}
+
+small {
+  font-size: $HS-font-size-xs;
+}
+
+
+// Links
+a {
+  color: color(blue, 500);
+  outline:none;
+  text-decoration:none;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration:underline;
+  }
+}
+
+
+// Horizontal rule
+hr {
+  border: 0;
+  border-top: $HS-border;
+  margin-bottom: space(lg);
+  margin-top: space(lg);
+  width: 100%;
+}
