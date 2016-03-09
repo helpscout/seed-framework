@@ -103,6 +103,10 @@ $HS-colors: (
 
   // App colors
   // These are temp colors, that will be added to the palette when possible
-  text: #2b2b2b
+  text:         #2b2b2b,
+
+  grey-light:   #999,
+  grey-lighter: #eee,
+  grey-dark:    #333
 
 ) !default;

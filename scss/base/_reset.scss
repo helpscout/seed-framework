@@ -1,0 +1,9 @@
+// Base :: Reset
+
+a,
+button,
+div {
+  &:focus {
+    outline:none;
+  }
+}

@@ -3,7 +3,7 @@
 // Dependencies
 @import "functions/all";
 
-
+// Ordered/unordered list
 ul, ol {
   padding: 0;
   margin: 0 0 space(lg) space(lg);
@@ -16,4 +16,27 @@ ul, ol {
 li {
   line-height: $HS-line-height-base-px;
   margin: ceil($HS-line-height-base-px / 3) 0;
+}
+
+// Nav
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+// Description list
+dl {
+  margin-bottom: $HS-line-height-base-px;
+}
+
+dt, dd {
+  line-height: $HS-line-height-base-px;
+}
+
+dt {
+  font-weight: $HS-font-weight-bold;
+}
+
+dd {
+  margin-left: ceil($HS-line-height-base-px / 2);
 }

@@ -13,18 +13,23 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1 {
   font-size: $HS-font-size-h1;
 }
+
 h2, .h2 {
   font-size: $HS-font-size-h2;
 }
+
 h3, .h3 {
   font-size: $HS-font-size-h3;
 }
+
 h4, .h4 {
   font-size: $HS-font-size-h4;
 }
+
 h5, .h5 {
   font-size: $HS-font-size-h5;
 }
+
 h6, .h6 {
   font-size: $HS-font-size-h6;
 }
@@ -61,4 +66,47 @@ hr {
   margin-bottom: space(lg);
   margin-top: space(lg);
   width: 100%;
+}
+
+
+// Blockquotes
+blockquote {
+  border-left: 5px solid color(grey-lighter);
+  margin: 0 0 $HS-line-height-base-px;
+  padding: 0 0 0 space(md);
+
+  p {
+    margin-bottom: 0;
+    font-size: ceil($HS-font-size-base * 1.25);
+    font-weight: $HS-font-weight-light;
+    line-height: $HS-line-height-quote;
+  }
+
+  small {
+    display: block;
+    line-height: $HS-line-height-base-px;
+    color: color(grey-light);
+
+    &:before {
+      content: '\2014 \00A0';
+    }
+  }
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+
+// Code
+code,
+pre {
+  border-radius: $HS-border-radius-md;
+  color: color(grey-dark);
+  font-family: $HS-font-family-mono;
+  font-size: $HS-font-size-base - 2;
+  padding: 0 3px 2px;
 }

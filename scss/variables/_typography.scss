@@ -38,14 +38,16 @@ $HS-font-size-h6:            $HS-font-size-sm !default;
 // Line Heights
 $HS-line-height-app:         1.22 !default;
 $HS-line-height-heading:     $HS-line-height-app !default;
+$HS-line-height-quote:       1.25 !default;
 $HS-line-height-p:           1.4 !default;
-$HS-line-height-base-px:     ceil($HS-font-size-app-px * 1.5) !default;
+$HS-line-height-base:        1.5 !default;
+$HS-line-height-base-px:     ceil($HS-font-size-app-px * $HS-line-height-base) !default;
 
 
 
 // Weights
 $HS-font-weight-bold:        bold !default;
 $HS-font-weight-normal:      normal !default;
-$HS-font-weight-light:       lighter !default;
+$HS-font-weight-light:       300 !default;
 
 $HS-font-weight-base:        $HS-font-weight-normal !default;
