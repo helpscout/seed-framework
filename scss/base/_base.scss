@@ -1,7 +1,7 @@
 // Base :: Base
 
 html, body {
-  height:100%;
+  height: 100%;
 }
 
 body {
@@ -10,6 +10,5 @@ body {
   font-family: $HS-font-family-base;
   font-size: $HS-font-size-app;
   line-height: $HS-line-height-app;
-  min-width: $HS-grid-container;
   width: 100%;
 }
