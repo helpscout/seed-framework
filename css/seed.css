@@ -227,13 +227,6 @@ a {
     cursor: pointer;
     text-decoration: underline; }
 
-hr {
-  border: 0;
-  border-top: 1px solid #D6DDE3;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 100%; }
-
 blockquote {
   border-left: 5px solid #eee;
   margin: 0 0 18px;
@@ -263,6 +256,13 @@ pre {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 12px;
   padding: 0 3px 2px; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #D6DDE3;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%; }
 
 ul, ol {
   padding: 0;
@@ -393,9 +393,10 @@ dd {
   -ms-flex-align: end; }
 
 .o-inline {
+  list-style: none;
   margin-bottom: -5px;
   margin-left: 0; }
-  .o-inline:after {
+  .o-inline:after::after {
     clear: both;
     content: "";
     display: table; }
@@ -753,3 +754,81 @@ dd {
 .u-pad-v-xxl {
   padding-bottom: 45px !important;
   padding-top: 45px !important; }
+
+.u-text-center {
+  text-align: center !important; }
+
+.u-text-left {
+  text-align: left !important; }
+
+.u-text-right {
+  text-align: right !important; }
+
+.u-text-default {
+  color: #2b2b2b !important; }
+
+.u-text-capitalize {
+  text-transform: capitalize !important; }
+
+.u-text-lowercase {
+  text-transform: lowercase !important; }
+
+.u-text-uppercase {
+  text-transform: uppercase !important; }
+
+.u-text-strikethrough {
+  text-decoration: line-through !important; }
+
+.u-text-underline {
+  text-decoration: underline !important; }
+
+.u-text-no-underline {
+  text-decoration: none !important; }
+
+.u-text-smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.u-text-md {
+  font-size: 13px !important; }
+
+.u-text-sm {
+  font-size: 12px !important; }
+
+.u-text-xs {
+  font-size: 11px !important; }
+
+.u-text-xxs {
+  font-size: 10px !important; }
+
+.u-text-light {
+  font-weight: 300 !important; }
+
+.u-text-normal {
+  font-weight: normal !important; }
+
+.u-text-bold {
+  font-weight: bold !important; }
+
+.u-text-break-all {
+  word-break: break-all !important; }
+
+.u-text-break-word {
+  word-break: break-word !important; }
+
+.u-text-justify {
+  text-align: justify !important; }
+
+.u-text-nowrap {
+  white-space: nowrap !important; }
+
+.u-text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.u-text-truncate--block {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
