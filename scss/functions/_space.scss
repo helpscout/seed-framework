@@ -1,5 +1,9 @@
 // Functions :: Space
 
+// Dependencies
+@import "../variables/spacing";
+
+
 @function space($size: none) {
   @if map-has-key($HS-space, $size) {
     $space: map-get($HS-space, $size);

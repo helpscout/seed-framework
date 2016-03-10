@@ -1,5 +1,9 @@
 // Functions :: Colors
 
+// Dependencies
+@import "../variables/colors";
+
+
 @function color($name, $shade: false) {
   $default-shade: 500;
 
