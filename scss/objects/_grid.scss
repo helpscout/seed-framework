@@ -25,6 +25,7 @@
   padding-left: ($HS-grid-gutter / 2);
   padding-right: ($HS-grid-gutter / 2);
   position: relative;
+  width: 100%;
 }
 
 @include generate-grid-columns;

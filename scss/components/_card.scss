@@ -7,14 +7,12 @@
   margin-bottom: space(lg);
 
   & > * {
-    border-radius: $HS-border-radius;
-
     &:first-child {
-      @include border-bottom-radius(0);
+      @include border-top-radius($HS-border-radius);
     }
 
     &:last-child {
-      @include border-top-radius(0);
+      @include border-bottom-radius($HS-border-radius);
     }
   }
 }
