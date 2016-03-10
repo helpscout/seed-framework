@@ -215,6 +215,9 @@ p {
   line-height: 1.4;
   margin: 0 0 9px; }
 
+b, strong {
+  font-weight: 600; }
+
 small {
   font-size: 11px; }
 
