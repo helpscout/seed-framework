@@ -2,6 +2,7 @@
 
 .c-form-control {
   @include transition(border 0.2s linear);
+  background-color: color(white);
   border: 1px solid;
   border-color: color(button-border);
   border-radius: $HS-border-radius-md;
