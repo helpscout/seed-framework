@@ -1,0 +1,14 @@
+// Mixins :: Buttons
+
+@mixin button-disabled-styles() {
+  &.is-disabled,
+  &[disabled] {
+    @content;
+
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
