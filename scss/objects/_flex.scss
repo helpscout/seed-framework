@@ -4,10 +4,16 @@
   @include align-items(center);
   @include display(flex);
   @include justify-content(space-between);
+  box-sizing: border-box;
+}
+
+.o-flex__item {
+  box-sizing: border-box;
 }
 
 .o-flex__block {
   @include flex(1);
+  box-sizing: border-box;
 }
 
 

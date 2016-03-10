@@ -31,15 +31,33 @@
   color: color(text) !important;
 }
 
+.u-text-subtle {
+  color: color(charcoal, 500) !important;
+}
+
+.u-text-muted {
+  color: color(grey, 800) !important;
+}
+
+.u-text-faint {
+  color: color(grey, 700) !important;
+}
+
+.u-text-fainter {
+  color: color(grey, 600) !important;
+}
+
 
 
 // Cases
 .u-text-capitalize {
   text-transform: capitalize !important;
 }
+
 .u-text-lowercase {
   text-transform: lowercase !important;
 }
+
 .u-text-uppercase {
   text-transform: uppercase !important;
 }
