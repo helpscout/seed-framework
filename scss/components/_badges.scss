@@ -1,7 +1,7 @@
 // Components :: Badges
 
 // Badge variables
-$HS-badge-padding:        4px space(xs);
+$HS-badge-height:         18px;
 
 
 // Badge component
@@ -14,8 +14,9 @@ $HS-badge-padding:        4px space(xs);
   font-size: $HS-font-size-xs;
   font-style: normal;
   font-weight: $HS-font-weight-bold;
-  line-height: 1;
-  padding: $HS-badge-padding;
+  height: $HS-badge-height;
+  line-height: $HS-badge-height;
+  padding: 0 space(xs);
   text-transform: uppercase;
   vertical-align: middle;
 }

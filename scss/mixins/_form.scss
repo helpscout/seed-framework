@@ -1,6 +1,6 @@
-// Mixins :: Buttons
+// Mixins :: Form
 
-@mixin button-disabled-styles() {
+@mixin form-disabled-styles() {
   &.is-disabled,
   &[disabled] {
     @content;

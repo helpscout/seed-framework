@@ -1,0 +1,65 @@
+// Components :: Form control
+
+.c-form-control {
+  @include transition(border 0.2s linear);
+  border: 1px solid;
+  border-color: color(button-border);
+  border-radius: $HS-border-radius-md;
+  color: color(charcoal, 400);
+  display: inline-block;
+  font-size: $HS-font-size-sm;
+  height: $HS-form-height-sm;
+  padding: $HS-form-padding-xs;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+
+  &:not(select) {
+    @include appearance(none);
+  }
+
+  &:focus {
+    border-color: color(blue);
+    outline: none;
+  }
+
+  &[readonly] {
+    background-color: color(button-hover);
+    border-color: color(button-border);
+    cursor: not-allowed;
+  }
+
+  @include form-disabled-styles() {
+    background-color: color(button-hover);
+    border-color: color(button-border);
+    cursor: not-allowed;
+  }
+}
+
+
+
+// Modifiers
+.c-form-control-static {
+  display: inline-block;
+  line-height: $HS-form-line-height-sm;
+  margin: 0;
+  min-height: $HS-form-height-sm;
+  vertical-align: middle;
+}
+
+
+
+// States
+.c-form-control {
+  &.is-danger {
+    border-color: color(red, 700);
+  }
+
+  &.is-success {
+    border-color: color(green, 700);
+  }
+
+  &.is-warning {
+    border-color: color(yellow, 800);
+  }
+}

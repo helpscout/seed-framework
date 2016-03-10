@@ -11,6 +11,7 @@
 
 // Base
 .c-btn {
+  @include appearance(none);
   @include transition(background-color 0.1s linear);
   @include user-select(none);
   background-color: color(white);
@@ -24,7 +25,7 @@
   height: $HS-form-height;
   line-height: $HS-form-line-height;
   outline: none;
-  padding: $HS-button-padding;
+  padding: $HS-form-padding;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -46,7 +47,7 @@
     outline: thin dotted \9; // IE9
   }
 
-  @include button-disabled-styles() {
+  @include form-disabled-styles() {
     background-color: color(button-hover);
     border-color: color(button-border);
     box-shadow: none;
@@ -62,21 +63,21 @@
   font-size: $HS-font-size-lg;
   height: $HS-form-height-lg;
   line-height: $HS-form-line-height-lg;
-  padding: $HS-button-padding-lg;
+  padding: $HS-form-padding-lg;
 }
 
 .c-btn--sm {
   height: $HS-form-height-sm;
   line-height: $HS-form-line-height-sm;
   font-size: $HS-font-size-xs;
-  padding: $HS-button-padding-sm;
+  padding: $HS-form-padding-sm;
 }
 
 .c-btn--xs {
   height: $HS-form-height-xs;
   line-height: $HS-form-line-height-xs;
   font-size: $HS-font-size-xs;
-  padding: $HS-button-padding-xs;
+  padding: $HS-form-padding-xs;
 }
 
 
@@ -94,7 +95,7 @@
     border-color: color(blue, 700);
   }
 
-  @include button-disabled-styles() {
+  @include form-disabled-styles() {
     background-color: color(blue, 700);
     border-color: color(blue, 700);
   }
@@ -114,7 +115,7 @@
     text-decoration: underline;
   }
 
-  @include button-disabled-styles() {
+  @include form-disabled-styles() {
     background-color: transparent;
     border-color: transparent;
     text-decoration: underline;
@@ -137,7 +138,7 @@
       border-color: color(red, 600);
     }
 
-    @include button-disabled-styles() {
+    @include form-disabled-styles() {
       background-color: color(red, 600);
       border-color: color(red, 600);
     }
