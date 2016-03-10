@@ -1,9 +1,7 @@
 // Generators :: Grid
 
-
 // Source: Bootstrap V4
 // https://github.com/twbs/bootstrap/tree/v4-dev
-
 
 @mixin generate-container-max() {
   @each $breakpoint, $width in $HS-container-max-widths {
@@ -14,11 +12,6 @@
 }
 
 @mixin generate-col($size, $columns: $HS-grid-columns, $gutter: $HS-grid-gutter) {
-  float: left;
-  min-height: 1px;
-  padding-left: ($gutter / 2);
-  padding-right: ($gutter / 2);
-  position: relative;
   width: percentage($size / $columns);
 }
 
@@ -50,9 +43,15 @@
   $breakpoint-counter: 0;
   @each $breakpoint in map-keys($breakpoints) {
     $breakpoint-counter: ($breakpoint-counter + 1);
-    @include breakpoint-up($breakpoint, $breakpoints) {
-      $_class: o-col;
+    $_class: o-col;
 
+    @for $i from 1 through $columns {
+      .#{$_class}-#{$breakpoint}-#{$i} {
+        @extend %HS-col;
+      }
+    }
+
+    @include breakpoint-up($breakpoint, $breakpoints) {
       @for $i from 1 through $columns {
         .#{$_class}-#{$breakpoint}-#{$i} {
           @include generate-col($i, $columns, $gutter);

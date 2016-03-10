@@ -18,4 +18,14 @@
   margin-right: -(ceil($HS-grid-gutter / 2));
 }
 
+// Placeholder column class
+// This exists to better render the grid classes
+%HS-col {
+  float: left;
+  min-height: 1px;
+  padding-left: ($HS-grid-gutter / 2);
+  padding-right: ($HS-grid-gutter / 2);
+  position: relative;
+}
+
 @include generate-grid-columns;
