@@ -1,0 +1,62 @@
+// Object :: Control groups
+
+.o-control-group {
+  @include clearfix;
+  @include display(flex);
+  position: relative;
+  vertical-align: middle;
+}
+
+.o-control-group__item {
+  margin-top: 0;
+  position: relative;
+  width: auto;
+
+  &:hover {
+    z-index: z-index(control-group-hover);
+  }
+
+  & + & {
+    margin-left: -1px;
+  }
+
+  // Automagical stuff happens below!
+
+  &:first-child > * {
+    & {
+      @include border-left-radius($HS-border-radius-md);
+      @include border-right-radius(0);
+    }
+  }
+
+  &:last-child > * {
+    & {
+      @include border-left-radius(0);
+      @include border-right-radius($HS-border-radius-md);
+    }
+  }
+
+  &:not(:first-child):not(:last-child) > * {
+    & {
+      border-radius: 0;
+    }
+  }
+
+  &:only-child > * {
+    & {
+      border-radius: $HS-border-radius-md;
+    }
+  }
+
+  & > * {
+    &:focus {
+      z-index: z-index(control-group-hover);
+    }
+  }
+}
+
+
+// Modifiers
+.o-control-group__item--block {
+  @include flex(1);
+}
