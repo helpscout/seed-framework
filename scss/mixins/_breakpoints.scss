@@ -1,0 +1,65 @@
+// Mixins :: Breakpoints
+
+
+// Breakpoint
+// Available breakpoint sizes
+// xs, sm, md, lg, xl
+@mixin breakpoint($name, $breakpoints: $HS-breakpoints) {
+  @if map-has-key($breakpoints, $name) {
+    @media (min-width: #{map-get($breakpoints, $name)}) {
+      @content;
+    }
+  }
+}
+
+
+// Each breakpoint
+// Loops through all the breakpoints and outputs attributes
+@mixin breakpoint-each() {
+  @each $name, $breakpoint in $HS-breakpoints {
+
+    @if($breakpoint == 0) {
+      @content;
+    }
+
+    @else {
+      @include breakpoint($name) {
+        &--at-#{$name} {
+          @content;
+        }
+      }
+    }
+  }
+}
+
+
+// Next breakpoints
+@mixin breakpoint-up($name, $breakpoints: $HS-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+
+// Previous breakpoints
+@mixin breakpoint-down() {
+  @each $name, $breakpoint in $HS-breakpoints {
+
+    @if($breakpoint == 0) {
+      @content;
+    }
+
+    @else {
+      @include breakpoint-max($name) {
+        &--at-#{$name} {
+          @content;
+        }
+      }
+    }
+  }
+}

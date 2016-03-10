@@ -1,0 +1,21 @@
+// Functions :: Breakpoints
+
+// Dependencies
+@import "../variables/grid";
+
+
+// Source: Bootstrap V4
+// https://github.com/twbs/bootstrap/blob/v4-dev/scss/mixins/_breakpoints.scss
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+@function breakpoint-min($name, $breakpoints: $HS-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+
+// Maximum breakpoint width. Null for the largest (last) breakpoint.
+@function breakpoint-max($name, $breakpoints: $HS-breakpoints) {
+  $next: breakpoint-up($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
