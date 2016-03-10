@@ -41,7 +41,10 @@ module.exports = function(grunt) { 'use strict';
         files: [{
           expand: true,
           cwd: '<%= config.src %>',
-          src: ['*.{scss,sass}'],
+          src: [
+            '*.{scss,sass}',
+            '!seed-core.{scss,sass}'
+          ],
           dest: '<%= config.dest %>',
           ext: '.css'
         }]
@@ -53,7 +56,11 @@ module.exports = function(grunt) { 'use strict';
         files: [{
           expand: true,
           cwd: '<%= config.dest %>',
-          src: ['*.css', '!*.min.css'],
+          src: [
+            '*.css',
+            '!*.min.css',
+            '!seed-core.{scss,sass}'
+          ],
           dest: '<%= config.dest %>',
           ext: '.min.css'
         }]

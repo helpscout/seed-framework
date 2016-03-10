@@ -188,7 +188,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #1D2B36;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.22;
   margin: 0;
   text-rendering: optimizelegibility; }
@@ -283,7 +283,7 @@ dt, dd {
   line-height: 18px; }
 
 dt {
-  font-weight: bold; }
+  font-weight: 600; }
 
 dd {
   margin-left: 9px; }
@@ -297,7 +297,7 @@ dd {
   display: inline-block;
   font-size: 11px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1;
   padding: 4px 5px;
   text-transform: uppercase;
@@ -317,6 +317,47 @@ dd {
 
 .c-badge.is-warning {
   background-color: #F5B126; }
+
+.c-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; }
+  .c-card > * {
+    border-radius: 4px; }
+    .c-card > *:first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
+    .c-card > *:last-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+
+.c-card__header {
+  border-bottom: 1px solid #D6DDE3;
+  padding: 10px 20px; }
+  .c-card__header:last-child {
+    border-bottom: none; }
+  .c-card__header + .c-card__footer {
+    border-top: none; }
+
+.c-card__block {
+  padding: 15px 20px; }
+  .c-card__block + .c-card__block {
+    border-top: 1px solid #D6DDE3; }
+
+.c-card__footer {
+  background-color: #F9FAFA;
+  border-top: 1px solid #D6DDE3;
+  padding: 10px 20px; }
+  .c-card__footer:first-child {
+    border-top: none; }
+
+.c-card--flat {
+  border: 1px solid #D6DDE3;
+  box-shadow: none; }
+
+.is-borderless {
+  border: none !important; }
 
 .o-flex {
   -webkit-box-align: center;
@@ -343,7 +384,11 @@ dd {
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
-  -ms-flex-pack: justify; }
+  -ms-flex-pack: justify;
+  box-sizing: border-box; }
+
+.o-flex__item {
+  box-sizing: border-box; }
 
 .o-flex__block {
   -webkit-box-flex: 1;
@@ -352,7 +397,8 @@ dd {
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  box-sizing: border-box; }
 
 .o-flex--reset {
   max-width: 100%;
@@ -392,24 +438,15 @@ dd {
   -ms-flex-align: end; }
 
 .o-container {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1140px;
   padding-left: 15px;
   padding-right: 15px; }
-  @media (min-width: 544px) {
-    .o-container {
-      max-width: 576px; } }
-  @media (min-width: 768px) {
-    .o-container {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .o-container {
-      max-width: 940px; } }
-  @media (min-width: 1200px) {
-    .o-container {
-      max-width: 1140px; } }
 
 .o-row {
+  box-sizing: border-box;
   margin-left: -15px;
   margin-right: -15px; }
   .o-row::after {
@@ -417,100 +454,48 @@ dd {
     content: "";
     display: table; }
 
-.o-col-xs-1 {
+.o-col-xs-1, .o-col-xs-2, .o-col-xs-3, .o-col-xs-4, .o-col-xs-5, .o-col-xs-6, .o-col-xs-7, .o-col-xs-8, .o-col-xs-9, .o-col-xs-10, .o-col-xs-11, .o-col-xs-12, .o-col-sm-1, .o-col-sm-2, .o-col-sm-3, .o-col-sm-4, .o-col-sm-5, .o-col-sm-6, .o-col-sm-7, .o-col-sm-8, .o-col-sm-9, .o-col-sm-10, .o-col-sm-11, .o-col-sm-12, .o-col-md-1, .o-col-md-2, .o-col-md-3, .o-col-md-4, .o-col-md-5, .o-col-md-6, .o-col-md-7, .o-col-md-8, .o-col-md-9, .o-col-md-10, .o-col-md-11, .o-col-md-12, .o-col-lg-1, .o-col-lg-2, .o-col-lg-3, .o-col-lg-4, .o-col-lg-5, .o-col-lg-6, .o-col-lg-7, .o-col-lg-8, .o-col-lg-9, .o-col-lg-10, .o-col-lg-11, .o-col-lg-12, .o-col-xl-1, .o-col-xl-2, .o-col-xl-3, .o-col-xl-4, .o-col-xl-5, .o-col-xl-6, .o-col-xl-7, .o-col-xl-8, .o-col-xl-9, .o-col-xl-10, .o-col-xl-11, .o-col-xl-12 {
+  box-sizing: border-box;
   float: left;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
+  position: relative; }
+
+.o-col-xs-1 {
   width: 8.3333333333%; }
 
 .o-col-xs-2 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 16.6666666667%; }
 
 .o-col-xs-3 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 25%; }
 
 .o-col-xs-4 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 33.3333333333%; }
 
 .o-col-xs-5 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 41.6666666667%; }
 
 .o-col-xs-6 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 50%; }
 
 .o-col-xs-7 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 58.3333333333%; }
 
 .o-col-xs-8 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 66.6666666667%; }
 
 .o-col-xs-9 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 75%; }
 
 .o-col-xs-10 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 83.3333333333%; }
 
 .o-col-xs-11 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 91.6666666667%; }
 
 .o-col-xs-12 {
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
   width: 100%; }
 
 .o-col-xs-offset-1 {
@@ -548,88 +533,28 @@ dd {
 
 @media (min-width: 544px) {
   .o-col-sm-1 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 8.3333333333%; }
   .o-col-sm-2 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 16.6666666667%; }
   .o-col-sm-3 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 25%; }
   .o-col-sm-4 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 33.3333333333%; }
   .o-col-sm-5 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 41.6666666667%; }
   .o-col-sm-6 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 50%; }
   .o-col-sm-7 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 58.3333333333%; }
   .o-col-sm-8 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 66.6666666667%; }
   .o-col-sm-9 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 75%; }
   .o-col-sm-10 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 83.3333333333%; }
   .o-col-sm-11 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 91.6666666667%; }
   .o-col-sm-12 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 100%; }
   .o-col-sm-offset-0 {
     margin-left: 0%; }
@@ -658,88 +583,28 @@ dd {
 
 @media (min-width: 768px) {
   .o-col-md-1 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 8.3333333333%; }
   .o-col-md-2 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 16.6666666667%; }
   .o-col-md-3 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 25%; }
   .o-col-md-4 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 33.3333333333%; }
   .o-col-md-5 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 41.6666666667%; }
   .o-col-md-6 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 50%; }
   .o-col-md-7 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 58.3333333333%; }
   .o-col-md-8 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 66.6666666667%; }
   .o-col-md-9 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 75%; }
   .o-col-md-10 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 83.3333333333%; }
   .o-col-md-11 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 91.6666666667%; }
   .o-col-md-12 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 100%; }
   .o-col-md-offset-0 {
     margin-left: 0%; }
@@ -768,88 +633,28 @@ dd {
 
 @media (min-width: 992px) {
   .o-col-lg-1 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 8.3333333333%; }
   .o-col-lg-2 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 16.6666666667%; }
   .o-col-lg-3 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 25%; }
   .o-col-lg-4 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 33.3333333333%; }
   .o-col-lg-5 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 41.6666666667%; }
   .o-col-lg-6 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 50%; }
   .o-col-lg-7 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 58.3333333333%; }
   .o-col-lg-8 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 66.6666666667%; }
   .o-col-lg-9 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 75%; }
   .o-col-lg-10 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 83.3333333333%; }
   .o-col-lg-11 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 91.6666666667%; }
   .o-col-lg-12 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 100%; }
   .o-col-lg-offset-0 {
     margin-left: 0%; }
@@ -878,88 +683,28 @@ dd {
 
 @media (min-width: 1200px) {
   .o-col-xl-1 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 8.3333333333%; }
   .o-col-xl-2 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 16.6666666667%; }
   .o-col-xl-3 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 25%; }
   .o-col-xl-4 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 33.3333333333%; }
   .o-col-xl-5 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 41.6666666667%; }
   .o-col-xl-6 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 50%; }
   .o-col-xl-7 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 58.3333333333%; }
   .o-col-xl-8 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 66.6666666667%; }
   .o-col-xl-9 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 75%; }
   .o-col-xl-10 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 83.3333333333%; }
   .o-col-xl-11 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 91.6666666667%; }
   .o-col-xl-12 {
-    float: left;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
     width: 100%; }
   .o-col-xl-offset-0 {
     margin-left: 0%; }
@@ -987,6 +732,7 @@ dd {
     margin-left: 91.6666666667%; } }
 
 .o-inline {
+  box-sizing: border-box;
   list-style: none;
   margin-bottom: -5px;
   margin-left: 0; }
@@ -995,6 +741,7 @@ dd {
     content: "";
     display: table; }
   .o-inline__item {
+    box-sizing: border-box;
     display: inline-block;
     margin: 0 0 5px;
     padding: 0 0;
@@ -1361,6 +1108,18 @@ dd {
 .u-text-default {
   color: #2b2b2b !important; }
 
+.u-text-subtle {
+  color: #394956 !important; }
+
+.u-text-muted {
+  color: #A5B2BD !important; }
+
+.u-text-faint {
+  color: #B4C0CA !important; }
+
+.u-text-fainter {
+  color: #C1CBD4 !important; }
+
 .u-text-capitalize {
   text-transform: capitalize !important; }
 
@@ -1399,10 +1158,10 @@ dd {
   font-weight: 300 !important; }
 
 .u-text-normal {
-  font-weight: normal !important; }
+  font-weight: 400 !important; }
 
 .u-text-bold {
-  font-weight: bold !important; }
+  font-weight: 600 !important; }
 
 .u-text-break-all {
   word-break: break-all !important; }

@@ -1,0 +1,62 @@
+// Components :: Card
+
+.c-card {
+  background-color: color(white);
+  border-radius: $HS-border-radius;
+  box-shadow: 0 1px 2px rgba(color(black),.2);
+  margin-bottom: space(lg);
+
+  & > * {
+    border-radius: $HS-border-radius;
+
+    &:first-child {
+      @include border-bottom-radius(0);
+    }
+
+    &:last-child {
+      @include border-top-radius(0);
+    }
+  }
+}
+
+.c-card__header {
+  border-bottom: $HS-border;
+  padding: space(sm) space(lg);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  & + .c-card__footer {
+    border-top: none;
+  }
+}
+
+.c-card__block {
+  padding: space(md) space(lg);
+
+  & + & {
+    border-top: $HS-border;
+  }
+}
+
+.c-card__footer {
+  background-color: color(grey, 200);
+  border-top: $HS-border;
+  padding: space(sm) space(lg);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+
+// Modifiers
+.c-card--flat {
+  border: $HS-border;
+  box-shadow: none;
+}
+
+.is-borderless {
+  border: none !important;
+}
