@@ -20,7 +20,7 @@
     $_util-classname: #{$_util-classname}--at-#{$breakpoint};
   }
 
-  &.#{$_util-classname} {
+  .#{$_util-classname} {
 
     @if $modifier == "max" {
       max-width: $_width;
