@@ -56,7 +56,7 @@ b, strong {
 }
 
 small {
-  font-size: $HS-font-size-xs;
+  font-size: 80%;
 }
 
 
@@ -110,7 +110,7 @@ blockquote:after {
 // Code
 code, kbd, pre, samp {
   font-family: $HS-font-family-mono;
-  font-size: $HS-font-size-base;
+  font-size: 80%;
 }
 
 code,
@@ -119,7 +119,7 @@ pre {
   border: $HS-border;
   border-radius: $HS-border-radius-md;
   color: color(red, 600);
-  font-size: $HS-font-size-sm;
+  font-size: 80%;
   padding: 2px space(xs);
 }
 

@@ -1,0 +1,13 @@
+// Mixins :: Spacing
+
+@mixin normalize-margin() {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin normalize-padding() {
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

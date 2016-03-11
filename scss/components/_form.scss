@@ -1,0 +1,15 @@
+// Components :: Form group
+
+// Labels
+.c-form-label {
+  color: color(charcoal, 300);
+  font-size: $HS-font-size-sm;
+}
+
+
+// Groups
+.c-form-group {
+  @include clearfix;
+  @include normalize-margin;
+  margin-bottom: space(sm);
+}

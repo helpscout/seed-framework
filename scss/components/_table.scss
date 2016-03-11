@@ -1,0 +1,26 @@
+// Component :: Table
+
+.c-table {
+  @include normalize-margin;
+  margin-bottom: space(md);
+  width: 100%;
+
+
+  th {
+    border-bottom: $HS-border;
+    color: color(charcoal, 300);
+    font-weight: $HS-font-weight-bold;
+    padding: space(sm);
+    text-align: left;
+  }
+
+  td {
+    border-top: $HS-border;
+    padding: space(sm);
+    word-break: normal;
+
+    &:only-of-type {
+      width: 100%;
+    }
+  }
+}
