@@ -108,14 +108,26 @@ blockquote:after {
 
 
 // Code
+code, kbd, pre, samp {
+  font-family: $HS-font-family-mono;
+  font-size: $HS-font-size-base;
+}
+
 code,
 pre {
+  background-color: color(grey, 200);
+  border: $HS-border;
   border-radius: $HS-border-radius-md;
-  color: color(grey-dark);
-  font-family: $HS-font-family-mono;
-  font-size: $HS-font-size-base - 2;
-  padding: 0 3px 2px;
+  color: color(red, 600);
+  font-size: $HS-font-size-sm;
+  padding: 2px space(xs);
 }
+
+mark {
+  background-color: color(yellow, 200);
+  padding: 0.2em;
+}
+
 
 
 

@@ -69,7 +69,7 @@
 .c-btn--sm {
   height: $HS-form-height-sm;
   line-height: $HS-form-line-height-sm;
-  font-size: $HS-font-size-xs;
+  font-size: $HS-font-size-sm;
   padding: $HS-form-padding-sm;
 }
 
@@ -119,6 +119,15 @@
     background-color: transparent;
     border-color: transparent;
     text-decoration: underline;
+  }
+}
+
+.c-btn--block {
+  display: block;
+  width: 100%;
+
+  & + & {
+    margin-top: space(sm);
   }
 }
 
