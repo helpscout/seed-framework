@@ -222,7 +222,7 @@ b, strong {
   font-weight: 600; }
 
 small {
-  font-size: 11px; }
+  font-size: 80%; }
 
 a {
   color: #3197D6;
@@ -256,7 +256,7 @@ blockquote:after {
 
 code, kbd, pre, samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 14px; }
+  font-size: 80%; }
 
 code,
 pre {
@@ -264,7 +264,7 @@ pre {
   border: 1px solid #D6DDE3;
   border-radius: 3px;
   color: #D21B14;
-  font-size: 12px;
+  font-size: 80%;
   padding: 2px 5px; }
 
 mark {
@@ -495,6 +495,19 @@ dd {
 .is-borderless {
   border: none !important; }
 
+.c-form-label {
+  color: #72808E;
+  font-size: 12px; }
+
+.c-form-group {
+  margin-bottom: 10px; }
+  .c-form-group::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .c-form-group:last-child {
+    margin-bottom: 0; }
+
 .c-form-control {
   -webkit-transition: border 0.2s linear;
   -moz-transition: border 0.2s linear;
@@ -548,6 +561,24 @@ dd {
 
 .c-form-control.is-warning {
   border-color: #B37100; }
+
+.c-table {
+  margin-bottom: 15px;
+  width: 100%; }
+  .c-table:last-child {
+    margin-bottom: 0; }
+  .c-table th {
+    border-bottom: 1px solid #D6DDE3;
+    color: #72808E;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left; }
+  .c-table td {
+    border-top: 1px solid #D6DDE3;
+    padding: 10px;
+    word-break: normal; }
+    .c-table td:only-of-type {
+      width: 100%; }
 
 .o-control-group {
   display: -webkit-box;
