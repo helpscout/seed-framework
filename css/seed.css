@@ -217,6 +217,8 @@ h6, .h6 {
 p {
   line-height: 1.4;
   margin: 0 0 9px; }
+  p:last-child {
+    margin-bottom: 0; }
 
 b, strong {
   font-weight: 600; }
@@ -318,6 +320,13 @@ dd {
   padding: 0 5px;
   text-transform: uppercase;
   vertical-align: middle; }
+
+.c-badge--count {
+  background: #F1F3F5;
+  border-radius: 3px;
+  border: 1px solid #D6DDE3;
+  color: #93A1AF;
+  font-weight: 400; }
 
 .c-badge.is-active, .c-badge.is-success {
   background-color: #3CB170; }
@@ -570,7 +579,7 @@ dd {
   .c-table th {
     border-bottom: 1px solid #D6DDE3;
     color: #72808E;
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px;
     text-align: left; }
   .c-table td {
@@ -579,6 +588,20 @@ dd {
     word-break: normal; }
     .c-table td:only-of-type {
       width: 100%; }
+
+.c-table--fixed {
+  table-layout: fixed; }
+
+.c-tag {
+  background-color: #A5B2BD;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 1px 4px;
+  line-height: 14px;
+  vertical-align: middle; }
 
 .o-control-group {
   display: -webkit-box;
@@ -1375,7 +1398,7 @@ dd {
   color: #2b2b2b !important; }
 
 .u-text-subtle {
-  color: #394956 !important; }
+  color: #72808E !important; }
 
 .u-text-muted {
   color: #A5B2BD !important; }
@@ -1446,11 +1469,30 @@ dd {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.u-text-truncate--block {
-  display: block;
+.u-text-truncate-block {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  display: block; }
+
+.u-text-truncate-fade {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  z-index: 1; }
+  .u-text-truncate-fade:after {
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(right, #fff, transparent);
+    background-image: linear-gradient(to left,#fff, transparent);
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    z-index: 2; }
 
 .u-width-1 {
   max-width: 100%;
