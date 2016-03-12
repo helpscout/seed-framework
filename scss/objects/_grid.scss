@@ -11,15 +11,25 @@
   padding-right: ceil($HS-grid-gutter / 2);
 }
 
-.o-row {
-  @include clearfix;
-  margin-left: -(ceil($HS-grid-gutter / 2));
-  margin-right: -(ceil($HS-grid-gutter / 2));
-}
 
+// Row
+@include generate-row;
+
+
+// Columns
 // Placeholder column class
 // This exists to better render the grid classes
-%HS-col {
+%HS-col-flex {
+  @include flex-basis(0);
+  @include flex-grow(1);
+  max-width: 100%;
+  min-height: 1px;
+  padding-left: ($HS-grid-gutter / 2);
+  padding-right: ($HS-grid-gutter / 2);
+  position: relative;
+}
+
+%HS-col-float {
   float: left;
   min-height: 1px;
   padding-left: ($HS-grid-gutter / 2);

@@ -11,8 +11,31 @@
   }
 }
 
+@mixin generate-row($gutter: $HS-grid-gutter) {
+  .o-row{
+    @if $HS-config-enable-flex {
+      @include display(flex);
+      @include flex-wrap(wrap);
+    }
+    @else {
+      @include clearfix();
+    }
+    margin-left: -(ceil($gutter / 2));
+    margin-right: -(ceil($gutter / 2));
+  }
+}
+
 @mixin generate-col($size, $columns: $HS-grid-columns, $gutter: $HS-grid-gutter) {
-  width: percentage($size / $columns);
+  @if $HS-config-enable-flex {
+    @include flex(0 0 percentage($size / $columns));
+    // Add a `max-width` to ensure content within each column does not blow out
+    // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+    // do not appear to require this.
+    max-width: percentage($size / $columns);
+  }
+  @else {
+    width: percentage($size / $columns);
+  }
 }
 
 @mixin generate-col-offset($size, $columns: $HS-grid-columns) {
@@ -47,7 +70,12 @@
 
     @for $i from 1 through $columns {
       .#{$_class}-#{$breakpoint}-#{$i} {
-        @extend %HS-col;
+        @if $HS-config-enable-flex {
+          @extend %HS-col-flex;
+        }
+        @else {
+          @extend %HS-col-float;
+        }
       }
     }
 

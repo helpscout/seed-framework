@@ -6,15 +6,13 @@
   $_columns: ceil($HS-grid-columns * 2);
   $_width: ceil(($index / $_columns) * container(xl)) !important;
 
-  // Fluid widths
-  @if $modifier == "fluid" {
+  @if $modifier {
     $_util-classname: u-width-#{$index}-#{$modifier};
-    $_width: percentage($index / $_columns) !important;
   }
 
-  // Max widths
-  @if $modifier == "max" {
-    $_util-classname: u-width-#{$index}-#{$modifier};
+  // Fluid widths
+  @if $modifier == "fluid" {
+    $_width: percentage($index / $_columns) !important;
   }
 
   @if $breakpoint != "xs" {
@@ -25,6 +23,10 @@
 
     @if $modifier == "max" {
       max-width: $_width;
+    }
+    @else if $modifier == "min" {
+      max-width: 100%;
+      min-width: $_width;
     }
     @else {
       max-width: 100%;

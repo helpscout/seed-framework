@@ -2,4 +2,5 @@
 
 @include generate-width();
 @include generate-width(fluid);
+@include generate-width(min);
 @include generate-width(max);
