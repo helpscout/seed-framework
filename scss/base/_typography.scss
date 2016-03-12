@@ -47,6 +47,7 @@ h6, .h6 {
 
 // Body
 p {
+  @include normalize-margin;
   line-height: $HS-line-height-p;
   margin: 0 0 ($HS-line-height-base-px / 2);
 }

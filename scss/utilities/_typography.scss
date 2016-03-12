@@ -32,7 +32,7 @@
 }
 
 .u-text-subtle {
-  color: color(charcoal, 500) !important;
+  color: color(charcoal, 300) !important;
 }
 
 .u-text-muted {
@@ -141,7 +141,25 @@
   @include text-truncate();
 }
 
-.u-text-truncate--block {
-  display: block;
+.u-text-truncate-block {
   @include text-truncate();
+  display: block;
+}
+
+.u-text-truncate-fade {
+  @include text-truncate();
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    @include linear-gradient(right, color(white), transparent, $fallback: transparent);
+    bottom: 0;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: space(lg);
+    z-index: 2;
+  }
 }

@@ -22,6 +22,16 @@ $HS-badge-height:         18px;
 }
 
 
+// Modifiers
+.c-badge--count {
+  background: color(grey, 300);
+  border-radius: $HS-border-radius-md;
+  border: $HS-border;
+  color: color(charcoal, 200);
+  font-weight: $HS-font-weight-normal;
+}
+
+
 // Badge states
 .c-badge {
   &.is-active,
