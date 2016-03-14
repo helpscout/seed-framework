@@ -1,0 +1,45 @@
+// Components :: Alerts
+
+.c-alert {
+  background-color: color(yellow, 200);
+  box-shadow: inset 5px 0 0 0 color(yellow, 500);
+  margin-bottom: space(md);
+  padding: space(md) space(lg);
+  position: relative;
+  z-index: z-index(alerts);
+
+  @include all-text() {
+    color: color(yellow, 800);
+  }
+}
+
+
+// States
+.c-alert {
+  &.is-info {
+    background-color: color(blue, 200);
+    box-shadow: inset 5px 0 0 0 color(blue, 500);
+
+    @include all-text() {
+      color: color(blue, 800);
+    }
+  }
+
+  &.is-error {
+    background-color: color(red, 200);
+    box-shadow: inset 5px 0 0 0 color(red, 500);
+
+    @include all-text() {
+      color: color(red, 800);
+    }
+  }
+
+  &.is-success {
+    background-color: color(green, 200);
+    box-shadow: inset 5px 0 0 0 color(green, 500);
+
+    @include all-text() {
+      color: color(green, 800);
+    }
+  }
+}

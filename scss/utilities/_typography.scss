@@ -150,6 +150,7 @@
   @include text-truncate();
   display: block;
   position: relative;
+  text-overflow: inherit;
   z-index: 1;
 
   &:after {
