@@ -1,5 +1,14 @@
 // Component :: Table
 
+
+// Table of contents
+// - Base
+// - Styles
+// - States
+
+
+
+// Base
 .c-table {
   @include normalize-margin;
   margin-bottom: space(md);
@@ -26,7 +35,99 @@
 }
 
 
-// Modifiers
+
+// Styles
 .c-table--fixed {
   table-layout: fixed;
+}
+
+.c-table--bordered {
+  border: $HS-border-dark;
+  border-collapse: separate;
+  border-left: 0;
+  border-radius: $HS-border-radius;
+
+  th {
+    background-color: color(grey, 400);
+    border-bottom: none;
+    border-left: $HS-border-dark;
+
+    &:first-child {
+      border-top-left-radius: $HS-border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $HS-border-radius;
+    }
+  }
+
+  td {
+    border-top: $HS-border-dark;
+    border-left: $HS-border-dark;
+  }
+}
+
+.c-table--condensed {
+  td {
+    padding-bottom: space(xs);
+    padding-top: space(xs);
+  }
+}
+
+.c-table--striped {
+  tbody {
+    tr:nth-child(odd) {
+      & > td,
+      & > th {
+        background-color: color(grey, 200);
+      }
+    }
+  }
+}
+
+.c-table--hover {
+  tbody {
+    tr {
+      &:hover {
+        & > td,
+        & > th {
+          background-color: color(grey, 300);
+        }
+      }
+    }
+  }
+}
+
+
+
+// States
+.c-table tr {
+  &.is-error {
+    td,
+    th {
+      background-color: color(red, 200);
+    }
+  }
+
+  &.is-inactive {
+    td,
+    th {
+      background-color: color(grey, 300);
+      color: color(charcoal, 300);
+    }
+  }
+
+  &.is-success {
+    td,
+    th {
+      background-color: color(green, 200);
+    }
+  }
+
+  &.is-warning {
+    td,
+    th {
+      background-color: color(yellow, 200);
+    }
+  }
 }

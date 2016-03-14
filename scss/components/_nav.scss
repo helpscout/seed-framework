@@ -1,0 +1,18 @@
+// Components :: Nav
+
+.c-nav {
+  @include clearfix;
+  @include list-unstyled;
+  margin: 0 0 space(md);
+  overflow: auto;
+
+  li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+  }
+}
+
+.c-nav__link {
+  display: inline-block;
+}

@@ -1,0 +1,37 @@
+// Components :: Nav (Stacked)
+
+// Nav variables
+$HS-nav-stacked-item-margin:         2px;
+
+
+// Nav component
+.c-nav--stacked {
+  padding-bottom: space(md);
+
+  li {
+    display: block;
+  }
+
+  .c-nav__link {
+    border-radius: $HS-border-radius-md;
+    color: color(charcoal, 200);
+    display: block;
+    font-size: $HS-font-size-sm;
+    margin-bottom: $HS-nav-stacked-item-margin;
+    margin-top: $HS-nav-stacked-item-margin;
+    padding: space(xs) space(sm);
+    text-decoration: none;
+    word-wrap: break-word;
+
+    &:hover {
+      background-color: color(grey, 400);
+      color: color(charcoal, 500);
+    }
+  }
+
+  // Modifiers
+  .c-nav__link.is-active {
+    color: color(charcoal, 500);
+    font-weight: $HS-font-weight-bold;
+  }
+}

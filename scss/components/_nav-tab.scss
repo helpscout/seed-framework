@@ -1,0 +1,22 @@
+// Components :: Nav (Stacked)
+
+.c-nav--tab {
+  border-bottom: $HS-border;
+
+  .c-nav__link {
+    border-bottom: 2px solid transparent;
+    color: color(charcoal, 200);
+    padding: space(md) space(lg);
+    text-decoration: none;
+
+    &:hover {
+      border-bottom-color: color(grey, 500);
+    }
+  }
+
+  // Modifiers
+  .c-nav__link.is-active {
+    border-bottom-color: color(blue, 500);
+    color: color(charcoal, 500);
+  }
+}

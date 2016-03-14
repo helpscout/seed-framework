@@ -80,6 +80,14 @@
   padding: $HS-form-padding-xs;
 }
 
+.c-btn--block {
+  display: block;
+  width: 100%;
+
+  & + & {
+    margin-top: space(sm);
+  }
+}
 
 
 // Styles
@@ -122,12 +130,13 @@
   }
 }
 
-.c-btn--block {
-  display: block;
-  width: 100%;
+.c-btn--subtle {
+  background-color: transparent;
+  color: color(charcoal, 200);
 
-  & + & {
-    margin-top: space(sm);
+  &:hover {
+    background-color: rgba(color(black), 0.05);
+    color: color(charcoal, 300);
   }
 }
 
