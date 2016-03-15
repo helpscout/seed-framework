@@ -7,56 +7,47 @@
   vertical-align: middle;
 }
 
-.o-control-group__item {
+// Items
+.o-control-group > * {
   margin-top: 0;
   position: relative;
   width: auto;
 
   &:hover {
-    z-index: z-index(control-group-hover);
+    z-index: z-index(base);
   }
 
-  & + & {
+  & + * {
     margin-left: -1px;
   }
 
   // Automagical stuff happens below!
 
-  &:first-child > * {
-    & {
-      @include border-left-radius($HS-border-radius-md);
-      @include border-right-radius(0);
-    }
+  &:first-child {
+    @include border-left-radius($HS-border-radius-md);
+    @include border-right-radius(0);
   }
 
-  &:last-child > * {
-    & {
-      @include border-left-radius(0);
-      @include border-right-radius($HS-border-radius-md);
-    }
+  &:last-child {
+    @include border-left-radius(0);
+    @include border-right-radius($HS-border-radius-md);
   }
 
-  &:not(:first-child):not(:last-child) > * {
-    & {
-      border-radius: 0;
-    }
+  &:not(:first-child):not(:last-child) {
+    border-radius: 0;
   }
 
   &:only-child > * {
-    & {
-      border-radius: $HS-border-radius-md;
-    }
+    border-radius: $HS-border-radius-md;
   }
 
-  & > * {
-    &:focus {
-      z-index: z-index(control-group-hover);
-    }
+  &:focus {
+    z-index: z-index(control-group-focus);
   }
 }
 
 
 // Modifiers
-.o-control-group__item--block {
+.o-control-group__block {
   @include flex(1);
 }
