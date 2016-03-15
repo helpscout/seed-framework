@@ -341,6 +341,30 @@ dd {
   .c-alert.is-success .h1, .c-alert.is-success .h2, .c-alert.is-success .h3, .c-alert.is-success .h4, .c-alert.is-success .h5, .c-alert.is-success .h6 {
     color: #228350; }
 
+.c-avatar {
+  background-color: #F1F3F5;
+  border-radius: 50%;
+  box-shadow: 0 1px 0 0 #E3E8EB;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  width: 50px; }
+  .c-avatar > img {
+    bottom: 0;
+    display: block;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.c-avatar--photo {
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  height: 45px;
+  width: 45px; }
+
 .c-badge {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -495,6 +519,13 @@ dd {
     background-color: rgba(0, 0, 0, 0.05);
     color: #72808E; }
 
+.c-btn--rounded {
+  border-color: #d5d5d5;
+  border-radius: 200px; }
+  .c-btn--rounded:hover {
+    background-color: #fff;
+    border-color: #c1c1c1; }
+
 .c-btn.is-danger {
   background-color: #E52F28;
   border-color: #E52F28;
@@ -545,6 +576,9 @@ dd {
   border: 1px solid #D6DDE3;
   box-shadow: none; }
 
+.c-card--square > *:first-child, .c-card--square > *:last-child {
+  border-radius: 0; }
+
 .is-borderless {
   border: none !important; }
 
@@ -557,6 +591,12 @@ dd {
   margin-left: 2px;
   vertical-align: middle;
   width: 0; }
+
+.c-caret--subtle {
+  border-top-color: #72808E; }
+
+.c-caret--muted {
+  border-top-color: #A5B2BD; }
 
 .c-dropdown {
   position: relative; }
@@ -595,6 +635,10 @@ dd {
   bottom: 100%;
   margin-bottom: 15px;
   top: auto; }
+
+.c-dropdown--right > .c-dropdown__content {
+  left: auto;
+  right: 0; }
 
 .c-dropdown--wide > .c-dropdown__content {
   max-width: 480px;
@@ -837,6 +881,68 @@ dd {
   padding: 1px 4px;
   line-height: 14px;
   vertical-align: middle; }
+
+.c-thread {
+  background-color: #fff;
+  border-bottom: 1px solid #D6DDE3;
+  border-top: 1px solid #D6DDE3;
+  box-shadow: 5px 0 #A5B2BD inset;
+  padding: 25px;
+  position: relative; }
+  .c-thread + .c-thread {
+    border-top: none; }
+
+.c-thread-avatar {
+  width: 45px; }
+
+.c-thread-title {
+  color: #72808E;
+  font-size: 16px;
+  font-weight: 400; }
+  .c-thread-title__name {
+    color: #000 !important;
+    font-weight: 500; }
+
+.c-thread-pin {
+  height: 0;
+  width: 0;
+  border-top: 40px solid #A5B2BD;
+  border-right: 40px solid transparent;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  z-index: 1; }
+
+.c-thread--customer {
+  box-shadow: none; }
+
+.c-thread--draft {
+  box-shadow: 5px 0 #3197D6 inset; }
+  .c-thread--draft .c-thread-title {
+    color: #3197D6; }
+  .c-thread--draft .c-thread-pin {
+    border-top-color: #3197D6; }
+
+.c-thread--forward {
+  box-shadow: 5px 0 #7E80E7 inset; }
+  .c-thread--forward .c-thread-title {
+    color: #7E80E7; }
+  .c-thread--forward .c-thread-pin {
+    border-top-color: #7E80E7; }
+
+.c-thread--note {
+  box-shadow: 5px 0 #FFC646 inset; }
+  .c-thread--note .c-thread-title {
+    color: #F5B126; }
+  .c-thread--note .c-thread-pin {
+    border-top-color: #FFC646; }
+
+.c-thread--traffic-cop {
+  box-shadow: 5px 0 #F45B55 inset; }
+  .c-thread--traffic-cop .c-thread-title {
+    color: #F45B55; }
+  .c-thread--traffic-cop .c-thread-pin {
+    border-top-color: #E52F28; }
 
 .o-control-group {
   display: -webkit-box;
@@ -1644,6 +1750,9 @@ dd {
 .u-text-fainter {
   color: #C1CBD4 !important; }
 
+.u-text-link {
+  color: #3197D6 !important; }
+
 .u-text-capitalize {
   text-transform: capitalize !important; }
 
@@ -1661,6 +1770,15 @@ dd {
 
 .u-text-no-underline {
   text-decoration: none !important; }
+
+.u-text-sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+.u-text-serif {
+  font-family: Georgia, "Times New Roman", Times, serif !important; }
+
+.u-text-mono {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important; }
 
 .u-text-smooth {
   -webkit-font-smoothing: antialiased;
@@ -1683,6 +1801,9 @@ dd {
 
 .u-text-normal {
   font-weight: 400 !important; }
+
+.u-text-boldish {
+  font-weight: 500 !important; }
 
 .u-text-bold {
   font-weight: 600 !important; }
