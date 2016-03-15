@@ -1848,8 +1848,8 @@ dd {
   display: block;
   position: relative;
   text-overflow: inherit;
-  z-index: 1 .u-text-truncate-fade; }
-  .u-text-truncate-fade :after {
+  z-index: 1; }
+  .u-text-truncate-fade:after {
     background-color: transparent;
     background-image: -webkit-linear-gradient(right, #fff, transparent);
     background-image: linear-gradient(to left,#fff, transparent);
