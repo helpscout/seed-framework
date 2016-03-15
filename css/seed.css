@@ -777,7 +777,7 @@ dd {
     position: relative;
     margin: 0; }
 
-.c-nav__link {
+.c-nav__item {
   display: inline-block; }
 
 .c-nav--stacked {
@@ -786,7 +786,7 @@ dd {
     display: block; }
   .c-nav--stacked .c-nav__item {
     border-radius: 3px;
-    color: #93A1AF;
+    color: #72808E;
     display: block;
     font-size: 12px;
     margin-bottom: 2px;
@@ -1022,7 +1022,7 @@ dd {
     border-top-right-radius: 3px; }
   .o-control-group > *:not(:first-child):not(:last-child) {
     border-radius: 0; }
-  .o-control-group > *:only-child > * {
+  .o-control-group > *:only-child {
     border-radius: 3px; }
   .o-control-group > *:focus {
     z-index: 2; }
