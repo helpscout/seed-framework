@@ -523,7 +523,7 @@ dd {
 
 .c-card__header {
   border-bottom: 1px solid #D6DDE3;
-  padding: 10px 20px; }
+  padding: 12px 20px; }
   .c-card__header:last-child {
     border-bottom: none; }
   .c-card__header + .c-card__footer {
@@ -537,7 +537,7 @@ dd {
 .c-card__footer {
   background-color: #F9FAFA;
   border-top: 1px solid #D6DDE3;
-  padding: 10px 20px; }
+  padding: 12px 20px; }
   .c-card__footer:first-child {
     border-top: none; }
 
@@ -547,6 +547,49 @@ dd {
 
 .is-borderless {
   border: none !important; }
+
+.c-caret {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #1D2B36;
+  display: inline-block;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  width: 0; }
+
+.c-dropdown {
+  position: relative; }
+  .c-dropdown::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.c-dropdown__content {
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #D6DDE3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  display: none;
+  float: left;
+  left: 0;
+  list-style: none;
+  margin: 2px 0 0;
+  min-width: 160px;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000; }
+
+.c-dropdown__menu {
+  list-style: none;
+  padding-left: 0;
+  padding: 5px 0; }
+
+.c-dropdown.open > .c-dropdown__content {
+  display: block; }
 
 .c-form-label {
   color: #72808E;
@@ -2291,3 +2334,22 @@ dd {
 
 .u-width-24-max {
   max-width: 1140px !important; }
+
+.collapsing {
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-property: height, visibility;
+  -moz-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  height: 0;
+  overflow: hidden;
+  position: relative; }
+
+.collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }

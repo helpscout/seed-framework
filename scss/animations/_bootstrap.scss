@@ -1,0 +1,19 @@
+// Animations :: Bootstrap
+
+// Collapse animation class
+.collapsing {
+  @include transition-duration(0.35s);
+  @include transition-property(height, visibility);
+  @include transition-timing-function(ease);
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.collapse {
+  display: none;
+
+  &.in {
+    display: block;
+  }
+}

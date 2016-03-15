@@ -1,0 +1,59 @@
+// Components :: Menu
+
+// Menu variables
+$HS-menu-padding:               4px 0;
+$HS-menu-divider-height:        2px;
+$HS-menu-divider-margin:        3px 1px;
+
+// Menu component
+.c-menu {
+  @include list-unstyled;
+  margin: 0;
+  padding: $HS-menu-padding;
+
+  & > li:not(.c-menu__divider) {
+    margin: 0;
+  }
+}
+
+.c-menu__item {
+  color: color(charcoal, 600);
+  display: block;
+  font-size: $HS-font-size-md;
+  line-height: 1;
+  margin: 0;
+  padding: space(xs) space(sm);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: color(blue);
+    color: color(white);
+    text-decoration: none;
+  }
+}
+
+.c-menu__divider {
+  background-color: color(grey, 400);
+  border-bottom: 1px solid color(white);
+  height: $HS-menu-divider-height;
+  margin: $HS-menu-divider-margin;
+  overflow: hidden;
+}
+
+
+
+// States
+.c-menu__item {
+  &.is-active {
+    font-weight: $HS-font-weight-bold;
+  }
+
+  &.is-disabled {
+    color: color(charcoal, 200);
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

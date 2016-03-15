@@ -1,5 +1,10 @@
 // Components :: Card
 
+// Card variables
+$HS-card-header-padding:        12px space(lg);
+
+
+// Card component
 .c-card {
   background-color: color(white);
   border-radius: $HS-border-radius;
@@ -19,7 +24,7 @@
 
 .c-card__header {
   border-bottom: $HS-border;
-  padding: space(sm) space(lg);
+  padding: $HS-card-header-padding;
 
   &:last-child {
     border-bottom: none;
@@ -41,7 +46,7 @@
 .c-card__footer {
   background-color: color(grey, 200);
   border-top: $HS-border;
-  padding: space(sm) space(lg);
+  padding: $HS-card-header-padding;
 
   &:first-child {
     border-top: none;

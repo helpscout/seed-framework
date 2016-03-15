@@ -1,0 +1,76 @@
+// Components :: Dropdown
+
+// Dropdown variables
+$HS-dropdown-box-shadow:          0 6px 12px rgba(color(black),.175);
+$HS-dropdown-margin:              2px 0 0;
+$HS-dropdown-width:               160px;
+$HS-dropdown-width-wide:          480px;
+
+
+// Dropdown component
+.c-dropdown {
+  @include clearfix;
+  position: relative;
+}
+
+.c-dropdown__toggle {
+  color: color(blue);
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.c-dropdown__content {
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: color(grey, 200);
+  border-radius: $HS-border-radius;
+  border: 1px solid rgba(color(black), 0.2);
+  box-shadow: $HS-dropdown-box-shadow;
+  display: none;
+  float: left;
+  left: 0;
+  list-style: none;
+  margin: $HS-dropdown-margin;
+  min-width: $HS-dropdown-width;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+}
+
+
+
+// Modifiers
+.c-dropdown--up {
+  & > .c-dropdown__content {
+    bottom: 100%;
+    margin-bottom: space(md);
+    top: auto;
+  }
+}
+
+.c-dropdown--wide {
+  & > .c-dropdown__content {
+    max-width: 480px;
+    white-space: nowrap;
+  }
+}
+
+
+
+// States
+.c-dropdown.open {
+  & > .c-dropdown__toggle {
+    color: color(blue, 600);
+  }
+
+  & > .c-dropdown__content {
+    display: block;
+  }
+}
