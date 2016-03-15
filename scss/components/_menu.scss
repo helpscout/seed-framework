@@ -1,9 +1,9 @@
 // Components :: Menu
 
 // Menu variables
-$HS-menu-padding:               4px 0;
-$HS-menu-divider-height:        2px;
-$HS-menu-divider-margin:        3px 1px;
+$HS-menu-padding:               4px 0 !default;
+$HS-menu-divider-height:        2px !default;
+$HS-menu-divider-margin:        3px 1px !default;
 
 // Menu component
 .c-menu {

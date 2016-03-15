@@ -1,7 +1,8 @@
 // Components :: Badges
 
 // Badge variables
-$HS-badge-height:         18px;
+$HS-badge-height:                 18px !default;
+$HS-badge-line-height-count:      $HS-badge-height - 2 !default;
 
 
 // Badge component
@@ -29,7 +30,7 @@ $HS-badge-height:         18px;
   border: $HS-border;
   color: color(charcoal, 200);
   font-weight: $HS-font-weight-normal;
-  line-height: $HS-badge-height - 2;
+  line-height: $HS-badge-line-height-count;
 }
 
 

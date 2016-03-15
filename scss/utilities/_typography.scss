@@ -173,7 +173,7 @@
   display: block;
   position: relative;
   text-overflow: inherit;
-  z-index: 1;
+  z-index: z-index(base)
 
   &:after {
     @include linear-gradient(right, color(white), transparent, $fallback: transparent);
@@ -183,6 +183,6 @@
     right: 0;
     top: 0;
     width: space(lg);
-    z-index: 2;
+    z-index: z-index(text-truncate-fade);
   }
 }

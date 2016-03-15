@@ -1,8 +1,17 @@
 // Variables :: Z-index
 
 $HS-z-index: (
+  reset:                  0,
+  base:                   1,
+
   alerts:                 2,
+
   control-group-hover:    2,
   control-group-focus:    3,
-  thread-pin:             1
+
+  dropdown:               1000,
+
+  thread-pin:             1,
+
+  text-truncate-fade:     2
 ) !default;
