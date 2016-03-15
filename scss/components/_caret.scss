@@ -1,12 +1,19 @@
 // Components :: Caret
 
+// Caret variables
+$HS-caret-margin:                   2px;
+$HS-caret-size:                     4px;
+
+
+
+// Caret component
 .c-caret {
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid color(charcoal, 800);
+  border-left: $HS-caret-size solid transparent;
+  border-right: $HS-caret-size solid transparent;
+  border-top: $HS-caret-size solid color(charcoal, 800);
   display: inline-block;
   height: 0;
-  margin-left: 2px;
+  margin-left: $HS-caret-margin;
   vertical-align: middle;
   width: 0;
 }
