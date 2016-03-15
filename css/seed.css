@@ -738,10 +738,10 @@ dd {
 .c-menu__item {
   color: #2A3B47;
   display: block;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1;
   margin: 0;
-  padding: 5px 10px;
+  padding: 7px 12px;
   text-decoration: none; }
   .c-menu__item:hover, .c-menu__item:focus {
     background-color: #3197D6;
@@ -784,7 +784,7 @@ dd {
   padding-bottom: 15px; }
   .c-nav--stacked li {
     display: block; }
-  .c-nav--stacked .c-nav__link {
+  .c-nav--stacked .c-nav__item {
     border-radius: 3px;
     color: #93A1AF;
     display: block;
@@ -794,25 +794,58 @@ dd {
     padding: 5px 10px;
     text-decoration: none;
     word-wrap: break-word; }
-    .c-nav--stacked .c-nav__link:hover {
+    .c-nav--stacked .c-nav__item:hover {
       background-color: #E3E8EB;
       color: #394956; }
-  .c-nav--stacked .c-nav__link.is-active {
+  .c-nav--stacked .c-nav__item.is-active {
     color: #394956;
     font-weight: 600; }
 
 .c-nav--tab {
   border-bottom: 1px solid #D6DDE3; }
-  .c-nav--tab .c-nav__link {
+  .c-nav--tab .c-nav__item {
     border-bottom: 2px solid transparent;
     color: #93A1AF;
     padding: 15px 20px;
     text-decoration: none; }
-    .c-nav--tab .c-nav__link:hover {
+    .c-nav--tab .c-nav__item:hover {
       border-bottom-color: #D6DDE3; }
-  .c-nav--tab .c-nav__link.is-active {
+  .c-nav--tab .c-nav__item.is-active {
     border-bottom-color: #3197D6;
     color: #394956; }
+
+.c-navbar {
+  background-color: #2a4258;
+  height: 40px;
+  padding: 0 7px; }
+
+.c-navbar__link {
+  color: rgba(255, 255, 255, 0.65);
+  display: block;
+  font-size: 12px;
+  line-height: 40px;
+  padding: 0 15px;
+  text-decoration: none; }
+  .c-navbar__link > .c-caret {
+    border-top-color: rgba(255, 255, 255, 0.65); }
+  .c-navbar__link:hover {
+    color: #fff;
+    text-decoration: none; }
+    .c-navbar__link:hover > .c-caret {
+      border-top-color: #fff; }
+
+.c-navbar__link.is-active {
+  background-color: #09243A;
+  color: #fff; }
+  .c-navbar__link.is-active > .c-caret {
+    border-top-color: #fff; }
+
+.c-navbar .c-dropdown > .c-dropdown__content {
+  background-color: #fff;
+  top: 35px; }
+
+.c-navbar .c-dropdown.open > .c-dropdown__toggle {
+  color: #fff; }
 
 .c-table {
   margin-bottom: 15px;
@@ -1085,6 +1118,13 @@ dd {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.o-container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px; }
 

@@ -2,6 +2,7 @@
 
 // Menu variables
 $HS-menu-padding:               4px 0 !default;
+$HS-menu-item-padding:          7px 12px !default;
 $HS-menu-divider-height:        2px !default;
 $HS-menu-divider-margin:        3px 1px !default;
 
@@ -19,10 +20,10 @@ $HS-menu-divider-margin:        3px 1px !default;
 .c-menu__item {
   color: color(charcoal, 600);
   display: block;
-  font-size: $HS-font-size-md;
+  font-size: $HS-font-size-sm;
   line-height: 1;
   margin: 0;
-  padding: space(xs) space(sm);
+  padding: $HS-menu-item-padding;
   text-decoration: none;
 
   &:hover,

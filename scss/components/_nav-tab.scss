@@ -3,7 +3,7 @@
 .c-nav--tab {
   border-bottom: $HS-border;
 
-  .c-nav__link {
+  .c-nav__item {
     border-bottom: 2px solid transparent;
     color: color(charcoal, 200);
     padding: space(md) space(lg);
@@ -15,7 +15,7 @@
   }
 
   // Modifiers
-  .c-nav__link.is-active {
+  .c-nav__item.is-active {
     border-bottom-color: color(blue, 500);
     color: color(charcoal, 500);
   }

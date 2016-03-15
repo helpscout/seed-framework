@@ -37,7 +37,7 @@
     border-radius: 0;
   }
 
-  &:only-child > * {
+  &:only-child {
     border-radius: $HS-border-radius-md;
   }
 

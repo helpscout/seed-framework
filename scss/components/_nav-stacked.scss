@@ -12,9 +12,9 @@ $HS-nav-stacked-item-margin:         2px !default;
     display: block;
   }
 
-  .c-nav__link {
+  .c-nav__item {
     border-radius: $HS-border-radius-md;
-    color: color(charcoal, 200);
+    color: color(charcoal, 300);
     display: block;
     font-size: $HS-font-size-sm;
     margin-bottom: $HS-nav-stacked-item-margin;
@@ -30,7 +30,7 @@ $HS-nav-stacked-item-margin:         2px !default;
   }
 
   // Modifiers
-  .c-nav__link.is-active {
+  .c-nav__item.is-active {
     color: color(charcoal, 500);
     font-weight: $HS-font-weight-bold;
   }
