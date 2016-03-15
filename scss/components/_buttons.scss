@@ -140,6 +140,16 @@
   }
 }
 
+.c-btn--rounded {
+  border-color: color(button-border);
+  border-radius: 200px;
+
+  &:hover {
+    background-color: color(white);
+    border-color: darken(color(button-border), 8);
+  }
+}
+
 
 
 // States

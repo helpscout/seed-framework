@@ -47,6 +47,10 @@
   color: color(grey, 600) !important;
 }
 
+.u-text-link {
+  color: color(blue) !important;
+}
+
 
 
 // Cases
@@ -77,6 +81,20 @@
   text-decoration: none !important;
 }
 
+
+
+// Font family
+.u-text-sans-serif {
+  font-family: $HS-font-family-sans-serif !important;
+}
+
+.u-text-serif {
+  font-family: $HS-font-family-serif !important;
+}
+
+.u-text-mono {
+  font-family: $HS-font-family-mono !important;
+}
 
 
 // Readability
@@ -112,6 +130,10 @@
 
 .u-text-normal {
   font-weight: $HS-font-weight-normal !important;
+}
+
+.u-text-boldish {
+  font-weight: $HS-font-weight-boldish !important;
 }
 
 .u-text-bold {

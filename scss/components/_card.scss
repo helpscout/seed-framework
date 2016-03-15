@@ -60,6 +60,15 @@ $HS-card-header-padding:        12px space(lg);
   box-shadow: none;
 }
 
+.c-card--square {
+  & > * {
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+}
+
 .is-borderless {
   border: none !important;
 }

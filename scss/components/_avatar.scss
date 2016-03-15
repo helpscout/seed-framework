@@ -1,0 +1,37 @@
+// Components :: Avatar
+
+// Avatar variables
+$HS-avatar-size:              50px;
+$HS-avatar-size-photo:        45px;
+
+
+// Avatar component
+.c-avatar {
+  background-color: color(grey, 300);
+  border-radius: 50%;
+  box-shadow: 0 1px 0 0 color(grey, 400);
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: $HS-avatar-size;
+  width: $HS-avatar-size;
+
+  & > img {
+    bottom: 0;
+    display: block;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+
+// Modifiers
+.c-avatar--photo {
+  border-radius: $HS-border-radius;
+  box-shadow: 0 1px 1px rgba(color(black), 0.2);
+  height: $HS-avatar-size-photo;
+  width: $HS-avatar-size-photo;
+}

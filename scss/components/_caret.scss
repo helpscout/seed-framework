@@ -17,3 +17,15 @@ $HS-caret-size:                     4px;
   vertical-align: middle;
   width: 0;
 }
+
+
+// Modifiers
+.c-caret {
+  &--subtle {
+    border-top-color: color(charcoal, 300);
+  }
+
+  &--muted {
+    border-top-color: color(grey, 800);
+  }
+}

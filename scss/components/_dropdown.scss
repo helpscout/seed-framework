@@ -55,6 +55,13 @@ $HS-dropdown-width-wide:          480px;
   }
 }
 
+.c-dropdown--right {
+  & > .c-dropdown__content {
+    left: auto;
+    right: 0;
+  }
+}
+
 .c-dropdown--wide {
   & > .c-dropdown__content {
     max-width: 480px;

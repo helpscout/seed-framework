@@ -1,0 +1,102 @@
+// Components :: Thread
+
+// Thread variables
+$HS-thread-border-size:             5px !default;
+$HS-thread-avatar-size:             45px !default;
+$HS-thread-padding:                 25px !default;
+$HS-thread-pin-size:                40px !default;
+$HS-thread-pin-offset:              3px !default;
+
+
+// Thead component
+.c-thread {
+  background-color: color(white);
+  border-bottom: $HS-border;
+  border-top: $HS-border;
+  box-shadow: $HS-thread-border-size 0 color(grey, 800) inset;
+  padding: $HS-thread-padding;
+  position: relative;
+
+  & + & {
+    border-top: none;
+  }
+}
+
+.c-thread-avatar {
+  width: $HS-thread-avatar-size;
+}
+
+.c-thread-title {
+  color: color(charcoal, 300);
+  font-size: $HS-font-size-h3;
+  font-weight: $HS-font-weight-normal;
+
+  &__name {
+    color: color(black) !important;
+    font-weight: $HS-font-weight-boldish;
+  }
+}
+
+.c-thread-pin {
+  @include triangle($HS-thread-pin-size $HS-thread-pin-size, color(grey, 800) transparent, up-left);
+  left: $HS-thread-pin-offset;
+  position: absolute;
+  top: 0;
+  z-index: z-index(thread-pin);
+}
+
+
+
+// Modifiers
+.c-thread--customer {
+  box-shadow: none;
+}
+
+.c-thread--draft {
+  box-shadow: $HS-thread-border-size 0 color(blue, 500) inset;
+
+  .c-thread-title {
+    color: color(blue, 500);
+  }
+
+  .c-thread-pin {
+    border-top-color: color(blue, 500);
+  }
+}
+
+.c-thread--forward {
+  box-shadow: $HS-thread-border-size 0 color(purple, 500) inset;
+
+  .c-thread-title {
+    color: color(purple, 500);
+  }
+
+  .c-thread-pin {
+    border-top-color: color(purple, 500);
+  }
+}
+
+.c-thread--note {
+  box-shadow: $HS-thread-border-size 0 color(yellow, 500) inset;
+
+  .c-thread-title {
+    color: color(yellow, 600);
+  }
+
+  .c-thread-pin {
+    border-top-color: color(yellow, 500);
+  }
+}
+
+.c-thread--traffic-cop {
+  box-shadow: $HS-thread-border-size 0 color(red, 400) inset;
+
+  .c-thread-title {
+    color: color(red, 400);
+  }
+
+  .c-thread-pin {
+    border-top-color: color(red, 500);
+  }
+}
+
