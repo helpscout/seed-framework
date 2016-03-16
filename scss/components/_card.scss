@@ -24,6 +24,7 @@ $HS-card-header-padding:        12px space(lg) !default;
 
 .c-card__header {
   border-bottom: $HS-border;
+  display: block;
   padding: $HS-card-header-padding;
 
   &:last-child {
@@ -35,7 +36,19 @@ $HS-card-header-padding:        12px space(lg) !default;
   }
 }
 
+a.c-card__header {
+  color: color(text);
+  text-decoration: none;
+
+  &:hover {
+    color: color(text);
+    text-decoration: none;
+  }
+}
+
+
 .c-card__block {
+  display: block;
   padding: space(md) space(lg);
 
   & + & {
@@ -43,8 +56,16 @@ $HS-card-header-padding:        12px space(lg) !default;
   }
 }
 
+.c-card__accordion {
+  border-bottom: $HS-border;
+  display: block;
+  position: relative;
+  margin-bottom: -1px;
+}
+
 .c-card__footer {
   background-color: color(grey, 200);
+  display: block;
   border-top: $HS-border;
   padding: $HS-card-header-padding;
 
@@ -71,4 +92,10 @@ $HS-card-header-padding:        12px space(lg) !default;
 
 .is-borderless {
   border: none !important;
+}
+
+.c-card__header.is-clickable {
+  &:hover {
+    background-color: color(grey, 300);
+  }
 }
