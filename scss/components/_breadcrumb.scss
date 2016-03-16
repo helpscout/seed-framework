@@ -1,0 +1,66 @@
+// Components :: Breadcrumb
+
+// Breadcrumb variables
+$HS-breadcrumb-height:                        40px !default;
+$HS-breadcrumb-arrow-size:                    13px !default;
+
+// Breadcrumb component
+.c-breadcrumb {
+  @include list-unstyled;
+  background-color: color(white);
+  border-bottom: $HS-border;
+
+  & > li {
+    margin: 0;
+  }
+}
+
+// Item
+.c-breadcrumb__item {
+  display: inline-block;
+  font-size: $HS-font-size-xl;
+  font-weight: $HS-font-weight-normal;
+  height: $HS-breadcrumb-height;
+  line-height: $HS-breadcrumb-height;
+  padding-left: space(lg);
+  padding-right: space(xs);
+  position: relative;
+
+  & > a {
+    color: color(grey, 800);
+    text-decoration: none;
+
+    &:hover {
+      color: color(text);
+      text-decoration: none;
+    }
+  }
+}
+
+// Arrow
+.c-breadcrumb__item {
+  & + & {
+    padding-left: space(lg) + space(xs);
+
+    &:before,
+    &:after {
+      border: solid transparent;
+      border-width: space(lg) 0 space(lg) $HS-breadcrumb-arrow-size;
+      content: " ";
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: $HS-breadcrumb-arrow-size;
+    }
+
+    &:before {
+      border-left-color: color(grey, 600);
+      margin-left: 1px;
+    }
+
+    &:after {
+      border-left-color: color(white);
+    }
+  }
+}

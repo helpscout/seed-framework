@@ -1,0 +1,28 @@
+// Components :: Loader
+
+// Loader variables
+$HS-loader-border-radius:                        6px !default;
+$HS-loader-offset-top:                           30% !default;
+$HS-loader-padding:                              space(sm) !default;
+
+
+// Loader component
+.c-loader {
+  @include align-items(center);
+  @include backface-visibility(hidden);
+  @include display(flex);
+  @include filter(blur(0));
+  @include justify-content(center);
+  @include perspective(1000);
+  @include transform(translate3d(-50%, 0, 0));
+  background-color: rgba(color(black), 0.55);
+  border-radius: $HS-loader-border-radius;
+  box-shadow: none;
+  color: color(white);
+  left: 50%;
+  overflow: hidden;
+  padding: $HS-loader-padding;
+  position: fixed;
+  top: $HS-loader-offset-top;
+  z-index: z-index(loader);
+}
