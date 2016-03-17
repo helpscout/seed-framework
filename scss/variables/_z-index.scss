@@ -1,26 +1,32 @@
 // Variables :: Z-index
 
 $HS-z-index: (
-  reset:                  0,
-  base:                   1,
+  reset:                            0,
+  base:                             1,
 
-  alerts:                 2,
+  alerts:                            2,
 
-  control-group-focus:    2,
+  control-group-focus:              2,
 
-  dropdown:               1000,
+  dropdown:                         1000,
 
-  modal:                  1050,
-  modal-backdrop:         1040,
-  noty:                   1080,
+  modal:                            1050,
+  modal-backdrop:                   1040,
 
-  loader:                 1060,
+  fancybox-modal:                   1052,
 
-  popover:                1060,
+  redactor-modal-backdrop:          1041,
+  redactor-modal:                   1051,
 
-  text-truncate-fade:     2,
+  noty:                             1080,
 
-  thread-pin:             1,
-  tooltip:                1070
+  loader:                           1060,
+
+  popover:                          1060,
+
+  text-truncate-fade:               2,
+
+  thread-pin:                       1,
+  tooltip:                          1070
 
 ) !default;

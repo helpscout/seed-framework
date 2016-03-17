@@ -1,0 +1,44 @@
+// Plugins :: Redactor (Modal)
+
+#redactor_modal_overlay {
+  @include modal-backdrop;
+  z-index: z-index(redactor-modal-backdrop);
+}
+
+#redactor_modal {
+  @include modal-box;
+  z-index: z-index(redactor-modal);
+}
+
+#redactor_modal_close {
+  @include modal-close;
+}
+
+#redactor_modal_header {
+  @include modal-header;
+}
+
+#redactor_modal section {
+  @include modal-body;
+}
+
+#redactor_modal footer {
+  @include modal-footer;
+}
+
+
+// States
+#redactor_modal_overlay.hide {
+  top: auto;
+  display: block;
+}
+
+
+
+// Redactor modal: Open state
+#redactor_modal_overlay {
+  &.in,
+  &.fade.in {
+    @include modal-fade-in;
+  }
+}

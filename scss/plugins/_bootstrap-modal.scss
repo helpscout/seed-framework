@@ -1,0 +1,45 @@
+// Plugins :: Bootstrap (Modal)
+
+.modal-backdrop {
+  @include modal-backdrop;
+  z-index: z-index(modal-backdrop);
+}
+
+.modal {
+  @include modal-box;
+}
+
+.modal .close {
+  @include modal-close;
+}
+
+.modal-header {
+  @include modal-header;
+}
+
+.modal-body {
+  @include modal-body;
+}
+
+.modal-footer {
+  @include modal-footer;
+}
+
+
+// Bootstrap modal: Open state
+body.modal-open {
+  overflow: hidden;
+
+  .modal,
+  .c-modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.modal {
+  &.in,
+  &.fade.in {
+    @include modal-fade-in;
+  }
+}

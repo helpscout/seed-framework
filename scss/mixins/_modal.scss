@@ -1,0 +1,103 @@
+// Mixins :: Modal
+
+// These mixins and placeholders were created to help unify the modal experience from Bootstrap, Redactor, and Fancybox.
+// Once we refactor the modals (or build our own), we can refactor Seed's modal implementation as needed.
+
+// Modal mixins
+@mixin modal-backdrop() {
+  @extend %HS-modal-backdrop;
+}
+
+@mixin modal-box() {
+  @extend %HS-modal-box;
+}
+
+@mixin modal-close() {
+  display: none !important;
+}
+
+@mixin modal-header() {
+  @extend %HS-modal-header;
+}
+
+@mixin modal-body() {
+  @extend %HS-modal-body;
+}
+
+@mixin modal-footer() {
+  @extend %HS-modal-footer;
+}
+
+
+// States
+@mixin modal-fade-in() {
+  opacity: 1;
+}
+
+
+
+// Modal placeholders
+// Placeholder classes for extension
+%HS-modal-backdrop {
+  @include transition($HS-modal-transition);
+  background-color: rgba(color(modal-backdrop), $HS-modal-backdrop-opacity);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+%HS-modal-box {
+  @include transition($HS-modal-transition);
+  background-color: color(white);
+  background-clip: padding-box;
+  border: $HS-modal-border;
+  border-radius: $HS-border-radius;
+  box-shadow: $HS-modal-content-box-shadow;
+  cursor: auto;
+  left: auto !important;
+  margin: 30px auto !important;
+  outline: 0;
+  position: relative !important;
+}
+
+%HS-modal-header {
+  @include clearfix;
+  background: color(white);
+  border-bottom: $HS-border;
+  color: color(charcoal, 300);
+  font-size: $HS-font-size-h3;
+  overflow: hidden;
+  padding: 0 space(lg);
+  position: relative;
+  margin: 0;
+  border-radius: $HS-border-radius $HS-border-radius 0 0;
+
+  & > h5 {
+    color: color(charcoal, 300);
+    float: left;
+    font-size: $HS-font-size-h3;
+    font-weight: $HS-font-weight-normal;
+    line-height: $HS-modal-title-line-height;
+    padding: $HS-modal-title-padding;
+  }
+}
+
+%HS-modal-body {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: space(lg);
+  position: relative;
+}
+
+%HS-modal-footer {
+  @include clearfix;
+  margin-bottom: 0;
+  padding: $HS-modal-footer-padding;
+  text-align: center;
+}
