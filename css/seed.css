@@ -1018,6 +1018,71 @@ body.modal-open {
 .c-navbar .c-dropdown.open > .c-dropdown__toggle {
   color: #fff; }
 
+.c-noty-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 16px;
+  z-index: 1080; }
+
+.c-noty {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  background-color: #DAF1FF;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #3197D6;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  color: #194C6E;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 50%;
+  padding: 5px 15px;
+  text-align: left;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75); }
+
+.c-noty.is-error {
+  background-color: #FFE3E2;
+  border-color: #E52F28;
+  color: #9D1F1A; }
+
+.c-noty.is-success {
+  background-color: #E4FBE6;
+  border-color: #4BC27D;
+  color: #228350; }
+
+.c-noty.is-warning {
+  background-color: #FFFDF6;
+  border-color: #FFC646;
+  color: #B37100; }
+
 .c-pagination {
   font-size: 11px;
   margin-bottom: 20px;
@@ -1050,11 +1115,12 @@ body.modal-open {
   background-clip: padding-box;
   background-color: #fff;
   border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #D6DDE3;
+  box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.08);
+  color: #72808E;
   display: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   left: 0;
@@ -1116,7 +1182,7 @@ body.modal-open {
 
 .popover.top > .arrow {
   border-bottom-width: 0;
-  border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-color: #D6DDE3;
   bottom: -11px;
   left: 50%;
   margin-left: -11px; }
