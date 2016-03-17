@@ -1,5 +1,9 @@
 // Utilities :: Width
 
+[class*="u-width-"] {
+  max-width: 100%;
+}
+
 @include generate-width();
 @include generate-width(fluid);
 @include generate-width(min);

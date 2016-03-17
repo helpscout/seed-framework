@@ -25,11 +25,9 @@
       max-width: $_width;
     }
     @else if $modifier == "min" {
-      max-width: 100%;
       min-width: $_width;
     }
     @else {
-      max-width: 100%;
       width: $_width;
     }
   }
@@ -43,6 +41,7 @@
 
   // Generate responsive widths for default .u-width only
   @if $modifier == false {
+
     @each $breakpoint in map-keys($HS-breakpoints) {
       @include breakpoint-up($breakpoint, $HS-breakpoints) {
 
