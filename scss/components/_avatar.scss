@@ -17,13 +17,19 @@ $HS-avatar-size-photo:        45px !default;
   width: $HS-avatar-size;
 
   & > img {
+    @include transform(translateX(-50%));
     bottom: 0;
     display: block;
     height: auto;
+    left: 50%;
     margin: auto;
+    max-width: 200%;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: auto;
   }
 }
 

@@ -9,6 +9,10 @@
     @include clearfix;
   }
 
+  &:last-child {
+    margin-bottom: -(space(xs));
+  }
+
   &__item {
     display: inline-block;
     margin: 0 0 space(xs);

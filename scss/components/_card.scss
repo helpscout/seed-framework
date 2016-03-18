@@ -82,6 +82,8 @@ a.c-card__header {
 }
 
 .c-card--square {
+  border-radius: 0;
+
   & > * {
     &:first-child,
     &:last-child {
