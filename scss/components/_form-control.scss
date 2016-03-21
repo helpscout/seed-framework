@@ -27,7 +27,10 @@
   &[readonly] {
     background-color: color(button-hover);
     border-color: color(button-border);
-    cursor: not-allowed;
+
+    &:focus {
+      border-color: color(blue);
+    }
   }
 
   @include form-disabled-styles() {
@@ -35,6 +38,12 @@
     border-color: color(button-border);
     cursor: not-allowed;
   }
+}
+
+// Textarea
+textarea.c-form-control {
+  padding: $HS-form-padding-xs-box;
+  height: auto;
 }
 
 

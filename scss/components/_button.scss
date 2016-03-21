@@ -172,3 +172,18 @@
     }
   }
 }
+
+.c-btn--link {
+  &.is-danger {
+    background-color: transparent;
+    border-color: transparent;
+    color: color(red, 500);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}

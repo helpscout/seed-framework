@@ -13,3 +13,34 @@
   @include normalize-margin;
   margin-bottom: space(sm);
 }
+
+
+// Checkbox + radio
+.c-form-checkbox,
+.c-form-radio {
+  @include normalize-margin;
+  display: block;
+  margin-bottom: space(sm);
+  padding-left: space(lg);
+  position: relative;
+
+  & > input[type="checkbox"],
+  & > input[type="radio"] {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+}
+
+
+// States
+.c-form-checkbox,
+.c-form-radio {
+  @include form-disabled-styles() {
+    color: color(charcoal, 300);
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}

@@ -81,6 +81,10 @@ a.c-card__header {
   box-shadow: none;
 }
 
+.c-card--index {
+  border-top: 5px solid color(yellow, 500);
+}
+
 .c-card--square {
   border-radius: 0;
 
@@ -99,5 +103,17 @@ a.c-card__header {
 .c-card__header.is-clickable {
   &:hover {
     background-color: color(grey, 300);
+  }
+}
+
+
+
+
+// Configurations
+
+// Nav tabs
+.c-card__header {
+  .c-nav--tab {
+    border-bottom: none;
   }
 }

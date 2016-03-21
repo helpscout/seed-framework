@@ -9,6 +9,7 @@ $HS-breadcrumb-arrow-size:                    13px !default;
   @include list-unstyled;
   background-color: color(white);
   border-bottom: $HS-border;
+  margin: 0;
 
   & > li {
     margin: 0;

@@ -131,6 +131,19 @@
 
 
 
+// Types
+.u-text-section-title {
+  @include normalize-margin;
+  color: color(charcoal, 200);
+  font-size: $HS-font-size-xs;
+  font-weight: $HS-font-weight-boldish;
+  letter-spacing: $HS-letter-spacing-wide;
+  margin-bottom: space(sm);
+  text-transform: uppercase;
+}
+
+
+
 // Weight
 .u-text-light {
   font-weight: $HS-font-weight-light !important;

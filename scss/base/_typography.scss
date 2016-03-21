@@ -108,6 +108,15 @@ blockquote:after {
 
 
 
+// Address
+address {
+  display: block;
+  font-style: normal;
+  margin-bottom: space(lg);
+}
+
+
+
 // Code
 code, kbd, pre, samp {
   font-family: $HS-font-family-mono;

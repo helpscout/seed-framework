@@ -1,0 +1,10 @@
+// Utilities :: Interactions
+
+.is-clickable {
+  @include clickable;
+}
+
+.is-disabled {
+  @include disable-select;
+  cursor: not-allowed !important;
+}

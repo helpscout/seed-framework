@@ -3,3 +3,53 @@
 .u-list-unstyled {
   @include list-unstyled;
 }
+
+
+.u-list-bordered {
+  @extend .u-list-unstyled;
+
+  li {
+    border-bottom: 1px solid color(grey);
+    margin: 0;
+    padding: space(sm) 0;
+
+    &:first-of-type {
+      margin: 0;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+
+.u-list-dotted {
+  @extend .u-list-unstyled;
+
+  li {
+    border-bottom: 1px dotted color(grey);
+    margin: 0;
+    padding: space(sm) 0;
+
+    &:first-of-type {
+      margin: 0;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+
+.u-list-inline {
+  @extend .u-list-unstyled;
+  margin-left: -(space(xs));
+
+  li {
+    display: inline-block;
+    padding-left: space(xs);
+    padding-right: space(xs);
+  }
+}

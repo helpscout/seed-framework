@@ -51,7 +51,7 @@
     $_property: #{$property}-#{$dir-prop};
 
     @if ($dir-class == false) {
-      $_util-classname: u-#{$class}--auto;
+      $_util-classname: u-#{$class}-auto;
       $_property: #{$property};
     }
 
