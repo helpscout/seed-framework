@@ -2,8 +2,6 @@
 
 // Conversation variables
 $HS-conversation-font-size:                 $HS-font-size-md;
-$HS-conversation-background-closed:         color(grey, 200) !default;
-$HS-conversation-subject-p-margin:          2px;
 
 $HS-conversation-col-active-width:          2px;
 $HS-conversation-col-check-width:           34px;
@@ -15,6 +13,10 @@ $HS-conversation-col-owner-width:           150px;
 $HS-conversation-col-number-width:          86px;
 $HS-conversation-col-update-width:          118px;
 
+$HS-conversation-background-closed:         color(grey, 200) !default;
+$HS-conversation-header-padding:            6px;
+$HS-conversation-header-caret-offset:       2px;
+$HS-conversation-subject-p-margin:          2px;
 
 
 // Conversation component
@@ -67,6 +69,32 @@ $HS-conversation-col-update-width:          118px;
 }
 
 
+// Header
+.c-conversation-header,
+table .c-conversation-header {
+  th {
+    font-size: $HS-font-size-sm;
+    padding-bottom: $HS-conversation-header-padding;
+    padding-top: $HS-conversation-header-padding;
+  }
+
+  a {
+    color: color(charcoal, 200);
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      color: color(text);
+      text-decoration: none;
+    }
+  }
+
+  .c-caret {
+    display: none;
+  }
+}
+
+
 // Item
 .c-conversation-item {
   a {
@@ -94,10 +122,23 @@ $HS-conversation-col-update-width:          118px;
 
 
 // States
+.c-conversation-header {
+  th.is-selected {
+    a {
+      color: color(text);
+        font-weight: $HS-font-weight-bold;
+    }
+    .c-caret {
+      display: inline-block;
+      margin-bottom: $HS-conversation-header-caret-offset;
+    }
+  }
+}
+
 .c-conversation-item.is-active {
   [class*="c-conversation-item__"] {
     a {
-      color: color(charcoal, 800);
+      color: color(text);
       font-weight: $HS-font-weight-bold;
     }
   }
