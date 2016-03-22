@@ -1,10 +1,5 @@
 // Components :: Card
 
-// Card variables
-$HS-card-header-padding:        12px space(lg) !default;
-
-
-// Card component
 .c-card {
   background-color: color(white);
   border-radius: $HS-border-radius;
@@ -19,58 +14,6 @@ $HS-card-header-padding:        12px space(lg) !default;
     &:last-child {
       @include border-bottom-radius($HS-border-radius);
     }
-  }
-}
-
-.c-card__header {
-  border-bottom: $HS-border;
-  display: block;
-  padding: $HS-card-header-padding;
-
-  &:last-child {
-    border-bottom: none;
-  }
-
-  & + .c-card__footer {
-    border-top: none;
-  }
-}
-
-a.c-card__header {
-  color: color(text);
-  text-decoration: none;
-
-  &:hover {
-    color: color(text);
-    text-decoration: none;
-  }
-}
-
-
-.c-card__block {
-  display: block;
-  padding: space(md) space(lg);
-
-  & + & {
-    border-top: $HS-border;
-  }
-}
-
-.c-card__accordion {
-  border-bottom: $HS-border;
-  display: block;
-  position: relative;
-  margin-bottom: -1px;
-}
-
-.c-card__footer {
-  background-color: color(grey, 200);
-  display: block;
-  border-top: $HS-border;
-  padding: $HS-card-header-padding;
-
-  &:first-child {
-    border-top: none;
   }
 }
 
@@ -103,17 +46,5 @@ a.c-card__header {
 .c-card__header.is-clickable {
   &:hover {
     background-color: color(grey, 300);
-  }
-}
-
-
-
-
-// Configurations
-
-// Nav tabs
-.c-card__header {
-  .c-nav--tab {
-    border-bottom: none;
   }
 }

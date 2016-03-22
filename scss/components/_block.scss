@@ -1,0 +1,76 @@
+// block :: Block
+
+// Card variables
+$HS-block-header-padding:        12px space(lg) !default;
+
+
+// Block components
+.c-block {
+  display: block;
+  padding: space(md) space(lg);
+  position: relative;
+
+  & + & {
+    border-top: $HS-border;
+  }
+}
+
+
+.c-block-header {
+  border-bottom: $HS-border;
+  display: block;
+  padding: $HS-block-header-padding;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  & + .c-block-footer {
+    border-top: none;
+  }
+}
+
+a.c-block-header {
+  color: color(text);
+  text-decoration: none;
+
+  &:hover {
+    color: color(text);
+    text-decoration: none;
+  }
+}
+
+
+.c-block-footer {
+  background-color: color(grey, 200);
+  display: block;
+  border-top: $HS-border;
+  padding: $HS-block-header-padding;
+  position: relative;
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.c-block-collapsible {
+  border-bottom: $HS-border;
+  display: block;
+  margin-bottom: -1px;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+
+// Configurations
+
+// Nav tabs
+.c-block-header {
+  .c-nav--tab {
+    border-bottom: none;
+  }
+}
