@@ -76,6 +76,10 @@ table .c-conversation-header {
     font-size: $HS-font-size-sm;
     padding-bottom: $HS-conversation-header-padding;
     padding-top: $HS-conversation-header-padding;
+
+    &:first-child {
+      text-align: center;
+    }
   }
 
   a {
@@ -158,5 +162,11 @@ table .c-conversation-header {
     &:after {
       @include linear-gradient(right, $HS-conversation-background-closed, transparent, $fallback: transparent);
     }
+  }
+}
+
+.c-conversation-item.is-current {
+  .c-conversation-item__active {
+    background-color: color(blue);
   }
 }
