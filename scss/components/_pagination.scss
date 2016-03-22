@@ -36,7 +36,7 @@ $HS-pagination-link-box-shadow-active:            0 3px 4px 0 rgba(color(black),
 
 // States
 .c-pagination__link.is-active {
-  border-color: $HS-color-text;
+  border-color: $HS-color-text-subtler;
   color: $HS-color-link;
   font-weight: $HS-font-weight-bold;
   box-shadow: $HS-pagination-link-box-shadow-active;

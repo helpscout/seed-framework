@@ -1,4 +1,4 @@
-// Variables :: Colors
+// Variables :: Color (Base)
 
 // Base colors (Palette)
 $HS-colors: (
@@ -119,54 +119,3 @@ $HS-colors: (
   navbar-active: #09243A
 
 ) !default;
-
-
-
-// Color variables
-$HS-color-primary:                  color(blue, 500) !default;
-$HS-color-primary-hover:            color(blue, 600) !default;
-
-
-// Typography
-$HS-color-text:                     color(text) !default;
-$HS-color-text-subtler:             color(charcoal, 200) !default;
-$HS-color-text-subtle:              color(charcoal, 300) !default;
-$HS-color-text-muted:               color(grey, 800) !default;
-$HS-color-text-faint:               color(grey, 700) !default;
-$HS-color-text-fainter:             color(grey, 600) !default;
-$HS-color-link:                     $HS-color-primary !default;
-
-
-// States
-$HS-color-error-background:         color(red, 200) !default;
-$HS-color-error-border:             color(red, 500) !default;
-$HS-color-error-box-shadow:         color(red, 500) !default;
-$HS-color-error-badge:              color(red, 600) !default;
-$HS-color-error-text:               color(red, 800) !default;
-
-$HS-color-info-background:          color(blue, 200) !default;
-$HS-color-info-border:              color(blue, 500) !default;
-$HS-color-info-box-shadow:          color(blue, 500) !default;
-$HS-color-info-badge:               color(blue, 600) !default;
-$HS-color-info-text:                color(blue, 800) !default;
-
-$HS-color-success-background:       color(green, 200) !default;
-$HS-color-success-border:           color(green, 500) !default;
-$HS-color-success-box-shadow:       color(green, 500) !default;
-$HS-color-success-badge:            color(green, 600) !default;
-$HS-color-success-text:             color(green, 800) !default;
-
-$HS-color-warning-background:       color(yellow, 200) !default;
-$HS-color-warning-border:           color(yellow, 500) !default;
-$HS-color-warning-box-shadow:       color(yellow, 500) !default;
-$HS-color-warning-badge:            color(yellow, 600) !default;
-$HS-color-warning-text:             color(yellow, 800) !default;
-
-
-// Backgrounds
-$HS-color-background-lighter:       color(grey, 200) !default;
-$HS-color-background-light:         color(grey, 300) !default;
-$HS-color-background-clickable:     $HS-color-background-light !default;
-$HS-color-inactive-background:      color(grey, 300) !default;
-$HS-color-badge-background:         color(grey, 800) !default;
-$HS-color-closed-badge:             color(charcoal, 300) !default;
