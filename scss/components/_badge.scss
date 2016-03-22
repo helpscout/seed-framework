@@ -38,19 +38,19 @@ $HS-badge-line-height-count:      $HS-badge-height - 2 !default;
 .c-badge {
   &.is-active,
   &.is-success {
-    background-color: color(green, 600);
+    background-color: $HS-color-success-badge;
   }
   &.is-closed {
-    background-color: color(charcoal, 300);
+    background-color: $HS-color-closed-badge;
   }
   &.is-error,
   &.is-spam {
-    background-color: color(red, 600);
+    background-color: $HS-color-error-badge;
   }
   &.is-info {
-    background-color: color(blue, 500);
+    background-color: $HS-color-info-badge;
   }
   &.is-warning {
-    background-color: color(yellow, 600);
+    background-color: $HS-color-warning-badge;
   }
 }

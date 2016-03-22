@@ -1,6 +1,13 @@
 // Components :: Buttons
 
 
+// Button variables
+$HS-button-background-color:            color(white) !default;
+$HS-button-background-color-hover:      color(button-hover) !default;
+$HS-button-border-color:                color(button-border) !default;
+$HS-button-font-weight:                 $HS-font-weight-normal !default;
+
+
 // Table of contents
 // - Base
 // - Sizing
@@ -14,14 +21,15 @@
   @include appearance(none);
   @include transition(background-color 0.1s linear);
   @include user-select(none);
-  background-color: color(white);
+  background-color: $HS-button-background-color;
   border-radius: $HS-border-radius-md;
   border: 1px solid;
-  border-color: color(button-border);
+  border-color: $HS-button-border-color;
   color: color(text);
   cursor: pointer;
   display: inline-block;
   font-size: $HS-font-size-sm;
+  font-weight: $HS-button-font-weight;
   height: $HS-form-height;
   line-height: $HS-form-line-height;
   outline: none;
@@ -32,7 +40,7 @@
 
   &:hover,
   &:focus {
-    background-color: color(button-hover);
+    background-color: $HS-button-background-color-hover;
     text-decoration: none;
   }
 
@@ -48,8 +56,8 @@
   }
 
   @include form-disabled-styles() {
-    background-color: color(button-hover);
-    border-color: color(button-border);
+    background-color: $HS-button-background-color;
+    border-color: $HS-button-border-color;
     box-shadow: none;
     cursor: default;
     opacity: 0.65;
@@ -92,27 +100,27 @@
 
 // Styles
 .c-btn--primary {
-  background-color: color(blue, 600);
-  border-color: color(blue, 600);
+  background-color: $HS-color-primary;
+  border-color: $HS-color-primary;
   color: color(white);
 
   &:hover,
   &:active,
   &:focus {
-    background-color: color(blue, 700);
-    border-color: color(blue, 700);
+    background-color: $HS-color-primary-hover;
+    border-color: $HS-color-primary-hover;
   }
 
   @include form-disabled-styles() {
-    background-color: color(blue, 700);
-    border-color: color(blue, 700);
+    background-color: $HS-color-primary-hover;
+    border-color: $HS-color-primary-hover;
   }
 }
 
 .c-btn--link {
   background-color: transparent;
   border-color: transparent;
-  color: color(blue, 600);
+  color: $HS-color-primary;
 
   &:hover,
   &:active,
@@ -145,7 +153,7 @@
   border-radius: 200px;
 
   &:hover {
-    background-color: color(white);
+    background-color: $HS-button-background-color;
     border-color: darken(color(button-border), 8);
   }
 }
@@ -155,20 +163,20 @@
 // States
 .c-btn {
   &.is-danger {
-    background-color: color(red, 500);
-    border-color: color(red, 500);
+    background-color: $HS-color-error-badge;
+    border-color: $HS-color-error-border;
     color: color(white);
 
     &:hover,
     &:active,
     &:focus {
-      background-color: color(red, 600);
-      border-color: color(red, 600);
+      background-color: $HS-color-error-badge;
+      border-color: $HS-color-error-badge;
     }
 
     @include form-disabled-styles() {
-      background-color: color(red, 600);
-      border-color: color(red, 600);
+      background-color: $HS-color-error-badge;
+      border-color: $HS-color-error-badge;
     }
   }
 }
@@ -177,7 +185,7 @@
   &.is-danger {
     background-color: transparent;
     border-color: transparent;
-    color: color(red, 500);
+    color: $HS-color-error-badge;
 
     &:hover,
     &:active,

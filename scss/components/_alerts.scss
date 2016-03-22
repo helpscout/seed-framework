@@ -6,15 +6,15 @@ $HS-alert-box-shadow:         inset 5px 0 0 0 !default;
 
 // Alert component
 .c-alert {
-  background-color: color(yellow, 200);
-  box-shadow: $HS-alert-box-shadow color(yellow, 500);
+  background-color: $HS-color-warning-background;
+  box-shadow: $HS-alert-box-shadow $HS-color-warning-box-shadow;
   margin-bottom: space(md);
   padding: space(md) space(lg);
   position: relative;
   z-index: z-index(alerts);
 
   @include all-text() {
-    color: color(yellow, 800);
+    color: $HS-color-warning-text;
   }
 }
 
@@ -22,29 +22,29 @@ $HS-alert-box-shadow:         inset 5px 0 0 0 !default;
 // States
 .c-alert {
   &.is-info {
-    background-color: color(blue, 200);
-    box-shadow: $HS-alert-box-shadow color(blue, 500);
+    background-color: $HS-color-info-background;
+    box-shadow: $HS-alert-box-shadow $HS-color-info-box-shadow;
 
     @include all-text() {
-      color: color(blue, 800);
+      color: $HS-color-info-text;
     }
   }
 
   &.is-error {
-    background-color: color(red, 200);
-    box-shadow: $HS-alert-box-shadow color(red, 500);
+    background-color: $HS-color-error-background;
+    box-shadow: $HS-alert-box-shadow $HS-color-error-box-shadow;
 
     @include all-text() {
-      color: color(red, 800);
+      color: $HS-color-error-text;
     }
   }
 
   &.is-success {
-    background-color: color(green, 200);
-    box-shadow: $HS-alert-box-shadow color(green, 500);
+    background-color: $HS-color-success-background;
+    box-shadow: $HS-alert-box-shadow $HS-color-success-box-shadow;
 
     @include all-text() {
-      color: color(green, 800);
+      color: $HS-color-success-text;
     }
   }
 }

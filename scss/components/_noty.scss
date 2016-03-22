@@ -5,6 +5,7 @@ $HS-noty-box-shadow:                        0 3px 8px rgba(color(black), 0.2) !d
 $HS-noty-offset-top:                        16px !default;
 $HS-noty-padding:                           space(xs) space(md) !default;
 $HS-noty-text-shadow:                       1px 1px 0 rgba(color(white), 0.75) !default;
+$HS-noty-text-align:                        left !default;
 $HS-noty-width-max:                         50% !default;
 
 
@@ -25,19 +26,19 @@ $HS-noty-width-max:                         50% !default;
 // Default theme: Warning
 .c-noty {
   @include transform(translateZ(0));
-  background-color: color(blue, 200);
+  background-color: $HS-color-info-background;
   border-radius: $HS-border-radius-md;
   border: 1px solid;
-  border-color: color(blue, 500);
+  border-color: $HS-color-info-border;
   box-shadow: $HS-noty-box-shadow;
-  color: color(blue, 800);
+  color: $HS-color-info-text;
   cursor: pointer;
   display: inline-block;
   font-size: $HS-font-size-md;
   line-height: $HS-line-height-base;
   max-width: $HS-noty-width-max;
   padding: $HS-noty-padding;
-  text-align: left;
+  text-align: $HS-noty-text-align;
   text-shadow: $HS-noty-text-shadow;
 }
 
@@ -45,20 +46,20 @@ $HS-noty-width-max:                         50% !default;
 // States
 .c-noty {
   &.is-error {
-    background-color: color(red, 200);
-    border-color: color(red, 500);
-    color: color(red, 800);
+    background-color: $HS-color-error-background;
+    border-color: $HS-color-error-border;
+    color: $HS-color-error-text;
   }
 
   &.is-success {
-    background-color: color(green, 200);
-    border-color: color(green, 500);
-    color: color(green, 800);
+    background-color: $HS-color-success-background;
+    border-color: $HS-color-success-border;
+    color: $HS-color-success-text;
   }
 
   &.is-warning {
-    background-color: color(yellow, 100);
-    border-color: color(yellow, 500);
-    color: color(yellow, 800);
+    background-color: $HS-color-warning-background;
+    border-color: $HS-color-warning-border;
+    color: $HS-color-warning-text;
   }
 }

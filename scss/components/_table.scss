@@ -105,14 +105,14 @@
   &.is-error {
     td,
     th {
-      background-color: color(red, 200);
+      background-color: $HS-color-error-background;
     }
   }
 
   &.is-inactive {
     td,
     th {
-      background-color: color(grey, 300);
+      background-color: $HS-color-inactive-background;
       color: color(charcoal, 300);
     }
   }
@@ -120,14 +120,14 @@
   &.is-success {
     td,
     th {
-      background-color: color(green, 200);
+      background-color: $HS-color-success-background;
     }
   }
 
   &.is-warning {
     td,
     th {
-      background-color: color(yellow, 200);
+      background-color: $HS-color-warning-background;
     }
   }
 }
