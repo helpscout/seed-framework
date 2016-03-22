@@ -3,9 +3,9 @@
 
 .grunt
 .grunt-tmp
+.publish
 
 node_modules/
 bower_components/
 
-test
-test.html
+npm-debug.log

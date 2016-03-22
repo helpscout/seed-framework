@@ -1,5 +1,6 @@
 {
   "name": "seed",
+  "version": "0.0.1",
   "description": "Help Scout's CSS Framework",
   "main": [
     "scss/seed.scss"
@@ -25,6 +26,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "version": "0.0.1"
+  ]
 }
