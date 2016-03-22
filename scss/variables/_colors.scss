@@ -121,10 +121,22 @@ $HS-colors: (
 ) !default;
 
 
+
 // Color variables
 $HS-color-primary:                  color(blue, 500) !default;
 $HS-color-primary-hover:            color(blue, 600) !default;
 
+
+// Typography
+$HS-color-text:                     color(text) !default;
+$HS-color-text-subtler:             color(charcoal, 200) !default;
+$HS-color-text-subtle:              color(charcoal, 300) !default;
+$HS-color-text-muted:               color(grey, 800) !default;
+$HS-color-text-faint:               color(grey, 700) !default;
+$HS-color-text-fainter:             color(grey, 600) !default;
+
+
+// States
 $HS-color-error-background:         color(red, 200) !default;
 $HS-color-error-border:             color(red, 500) !default;
 $HS-color-error-box-shadow:         color(red, 500) !default;
@@ -149,5 +161,9 @@ $HS-color-warning-box-shadow:       color(yellow, 500) !default;
 $HS-color-warning-badge:            color(yellow, 600) !default;
 $HS-color-warning-text:             color(yellow, 800) !default;
 
+
+// Backgrounds
+$HS-color-background-clickable:     color(grey, 300) !default;
 $HS-color-inactive-background:      color(grey, 300) !default;
+$HS-color-badge-background:         color(grey, 800) !default;
 $HS-color-closed-badge:             color(charcoal, 300) !default;

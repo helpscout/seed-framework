@@ -1,9 +1,15 @@
 // Components :: Card
 
+// Card variables
+$HS-card-background-color:                  color(white) !default;
+$HS-card-box-shadow:                        0 1px 2px rgba(color(black), 0.2) !default;
+$HS-card-index-border:                5px solid color(yellow, 500) !default;
+
+// Card component
 .c-card {
-  background-color: color(white);
+  background-color: $HS-card-background-color;
   border-radius: $HS-border-radius;
-  box-shadow: 0 1px 2px rgba(color(black),.2);
+  box-shadow: $HS-card-box-shadow;
   margin-bottom: space(lg);
 
   & > * {
@@ -25,7 +31,7 @@
 }
 
 .c-card--index {
-  border-top: 5px solid color(yellow, 500);
+  border-top: $HS-card-index-border;
 }
 
 .c-card--square {
@@ -45,6 +51,6 @@
 
 .c-card__header.is-clickable {
   &:hover {
-    background-color: color(grey, 300);
+    background-color: $HS-color-background-clickable;
   }
 }

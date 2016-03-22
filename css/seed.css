@@ -449,10 +449,11 @@ dd {
   height: 45px;
   width: 45px; }
 
+i
 .c-badge {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #A5B2BD;
+  background-color: color(grey, 800);
   border-radius: 2px;
   color: #fff;
   display: inline-block;
@@ -469,7 +470,7 @@ dd {
   background: #F1F3F5;
   border-radius: 3px;
   border: 1px solid #D6DDE3;
-  color: #93A1AF;
+  color: color(charcoal, 200);
   font-weight: 400;
   line-height: 16px; }
 
@@ -551,10 +552,10 @@ a.c-block-header {
   padding-right: 5px;
   position: relative; }
   .c-breadcrumb__item > a {
-    color: #A5B2BD;
+    color: color(grey, 800);
     text-decoration: none; }
     .c-breadcrumb__item > a:hover {
-      color: #2b2b2b;
+      color: color(text);
       text-decoration: none; }
 
 .c-breadcrumb__item + .c-breadcrumb__item {
@@ -569,7 +570,7 @@ a.c-block-header {
     top: 0;
     width: 13px; }
   .c-breadcrumb__item + .c-breadcrumb__item:before {
-    border-left-color: #C1CBD4;
+    border-left-color: color(grey, 600);
     margin-left: 1px; }
   .c-breadcrumb__item + .c-breadcrumb__item:after {
     border-left-color: #fff; }
@@ -747,12 +748,12 @@ a.c-block-header {
   border: none !important; }
 
 .c-card__header.is-clickable:hover {
-  background-color: #F1F3F5; }
+  background-color: color(grey, 300); }
 
 .c-caret {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 4px solid #1D2B36;
+  border-top: 4px solid color(text);
   display: inline-block;
   height: 0;
   margin-left: 2px;
@@ -760,10 +761,10 @@ a.c-block-header {
   width: 0; }
 
 .c-caret--subtle {
-  border-top-color: #72808E; }
+  border-top-color: color(charcoal, 300); }
 
 .c-caret--muted {
-  border-top-color: #A5B2BD; }
+  border-top-color: color(grey, 800); }
 
 .c-conversation {
   font-size: 13px; }
@@ -2690,22 +2691,22 @@ body.modal-open {
   text-align: right !important; }
 
 .u-text-default {
-  color: #2b2b2b !important; }
+  color: color(text) !important; }
 
 .u-text-subtle {
-  color: #72808E !important; }
+  color: color(charcoal, 300) !important; }
 
 .u-text-muted {
-  color: #A5B2BD !important; }
+  color: color(grey, 800) !important; }
 
 .u-text-faint {
-  color: #B4C0CA !important; }
+  color: color(grey, 700) !important; }
 
 .u-text-fainter {
-  color: #C1CBD4 !important; }
+  color: color(grey, 600) !important; }
 
 .u-text-link {
-  color: #3197D6 !important; }
+  color: color(blue, 500) !important; }
 
 .u-text-capitalize {
   text-transform: capitalize !important; }

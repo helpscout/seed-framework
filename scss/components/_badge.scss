@@ -2,22 +2,25 @@
 
 // Badge variables
 $HS-badge-height:                 18px !default;
+$HS-badge-font-size:              $HS-font-size-xs !default;
+$HS-badge-font-weight:            $HS-font-weight-bold !default;
 $HS-badge-line-height-count:      $HS-badge-height - 2 !default;
+$HS-badge-padding:                0 space(xs) !default;i
 
 
 // Badge component
 .c-badge {
   @include font-smooth;
-  background-color: color(grey, 800);
+  background-color: $HS-color-badge-background;
   border-radius: $HS-border-radius-sm;
   color: color(white);
   display: inline-block;
-  font-size: $HS-font-size-xs;
+  font-size: $HS-badge-font-size;
   font-style: normal;
-  font-weight: $HS-font-weight-bold;
+  font-weight: $HS-badge-font-weight;
   height: $HS-badge-height;
   line-height: $HS-badge-height;
-  padding: 0 space(xs);
+  padding: $HS-badge-padding;
   text-transform: uppercase;
   vertical-align: middle;
 }
@@ -28,7 +31,7 @@ $HS-badge-line-height-count:      $HS-badge-height - 2 !default;
   background: color(grey, 300);
   border-radius: $HS-border-radius-md;
   border: $HS-border;
-  color: color(charcoal, 200);
+  color: $HS-color-text-subtler;
   font-weight: $HS-font-weight-normal;
   line-height: $HS-badge-line-height-count;
 }

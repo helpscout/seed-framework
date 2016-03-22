@@ -1,6 +1,7 @@
 // Components :: Caret
 
 // Caret variables
+$HS-caret-color:                    $HS-color-text !default;
 $HS-caret-margin:                   2px !default;
 $HS-caret-size:                     4px !default;
 
@@ -10,7 +11,7 @@ $HS-caret-size:                     4px !default;
 .c-caret {
   border-left: $HS-caret-size solid transparent;
   border-right: $HS-caret-size solid transparent;
-  border-top: $HS-caret-size solid color(charcoal, 800);
+  border-top: $HS-caret-size solid $HS-caret-color;
   display: inline-block;
   height: 0;
   margin-left: $HS-caret-margin;
@@ -22,10 +23,10 @@ $HS-caret-size:                     4px !default;
 // Modifiers
 .c-caret {
   &--subtle {
-    border-top-color: color(charcoal, 300);
+    border-top-color: $HS-color-text-subtle;
   }
 
   &--muted {
-    border-top-color: color(grey, 800);
+    border-top-color: $HS-color-text-muted;
   }
 }

@@ -1,13 +1,15 @@
 // Components :: Breadcrumb
 
 // Breadcrumb variables
+$HS-breadcrumb-background-color:              color(white) !default;
 $HS-breadcrumb-height:                        40px !default;
 $HS-breadcrumb-arrow-size:                    13px !default;
+
 
 // Breadcrumb component
 .c-breadcrumb {
   @include list-unstyled;
-  background-color: color(white);
+  background-color: $HS-breadcrumb-background-color;
   border-bottom: $HS-border;
   margin: 0;
 
@@ -28,11 +30,11 @@ $HS-breadcrumb-arrow-size:                    13px !default;
   position: relative;
 
   & > a {
-    color: color(grey, 800);
+    color: $HS-color-text-muted;
     text-decoration: none;
 
     &:hover {
-      color: color(text);
+      color: $HS-color-text;
       text-decoration: none;
     }
   }
@@ -56,12 +58,12 @@ $HS-breadcrumb-arrow-size:                    13px !default;
     }
 
     &:before {
-      border-left-color: color(grey, 600);
+      border-left-color: $HS-color-text-fainter;
       margin-left: 1px;
     }
 
     &:after {
-      border-left-color: color(white);
+      border-left-color: $HS-breadcrumb-background-color;
     }
   }
 }

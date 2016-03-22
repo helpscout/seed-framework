@@ -28,27 +28,27 @@
 
 // Coloring
 .u-text-default {
-  color: color(text) !important;
+  color: $HS-color-text !important;
 }
 
 .u-text-subtle {
-  color: color(charcoal, 300) !important;
+  color: $HS-color-text-subtle !important;
 }
 
 .u-text-muted {
-  color: color(grey, 800) !important;
+  color: $HS-color-text-muted !important;
 }
 
 .u-text-faint {
-  color: color(grey, 700) !important;
+  color: $HS-color-text-faint !important;
 }
 
 .u-text-fainter {
-  color: color(grey, 600) !important;
+  color: $HS-color-text-fainter !important;
 }
 
 .u-text-link {
-  color: color(blue) !important;
+  color: $HS-color-primary !important;
 }
 
 

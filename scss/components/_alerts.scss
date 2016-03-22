@@ -2,6 +2,7 @@
 
 // Alert variables
 $HS-alert-box-shadow:         inset 5px 0 0 0 !default;
+$HS-alert-padding:            space(md) space(lg) !default;
 
 
 // Alert component
@@ -9,7 +10,7 @@ $HS-alert-box-shadow:         inset 5px 0 0 0 !default;
   background-color: $HS-color-warning-background;
   box-shadow: $HS-alert-box-shadow $HS-color-warning-box-shadow;
   margin-bottom: space(md);
-  padding: space(md) space(lg);
+  padding: $HS-alert-padding;
   position: relative;
   z-index: z-index(alerts);
 
