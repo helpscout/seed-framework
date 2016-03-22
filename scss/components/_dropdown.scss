@@ -15,7 +15,7 @@ $HS-dropdown-width-wide:          480px !default;
 }
 
 .c-dropdown__toggle {
-  color: color(blue);
+  color: $HS-color-link;
   cursor: pointer;
   outline: 0;
   text-decoration: none;

@@ -134,6 +134,7 @@ $HS-color-text-subtle:              color(charcoal, 300) !default;
 $HS-color-text-muted:               color(grey, 800) !default;
 $HS-color-text-faint:               color(grey, 700) !default;
 $HS-color-text-fainter:             color(grey, 600) !default;
+$HS-color-link:                     $HS-color-primary !default;
 
 
 // States
@@ -163,7 +164,9 @@ $HS-color-warning-text:             color(yellow, 800) !default;
 
 
 // Backgrounds
-$HS-color-background-clickable:     color(grey, 300) !default;
+$HS-color-background-lighter:       color(grey, 200) !default;
+$HS-color-background-light:         color(grey, 300) !default;
+$HS-color-background-clickable:     $HS-color-background-light !default;
 $HS-color-inactive-background:      color(grey, 300) !default;
 $HS-color-badge-background:         color(grey, 800) !default;
 $HS-color-closed-badge:             color(charcoal, 300) !default;

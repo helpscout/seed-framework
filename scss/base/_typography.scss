@@ -1,5 +1,8 @@
 // Base :: Typography
 
+// Typography variables
+$HS-blockquote-border:                    5px solid color(grey-lighter) !default;
+
 
 // Table of contents
 // - Headings
@@ -13,7 +16,7 @@
 // Headings
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: color(charcoal, 800);
+  color: $HS-color-text;
   font-weight: $HS-font-weight-bold;
   line-height: $HS-line-height-heading;
   margin: 0;
@@ -63,13 +66,13 @@ small {
 
 // Links
 a {
-  color: color(blue, 500);
-  outline:none;
-  text-decoration:none;
+  color: $HS-color-link;
+  outline: none;
+  text-decoration: none;
 
   &:hover {
     cursor: pointer;
-    text-decoration:underline;
+    text-decoration: underline;
   }
 }
 
@@ -77,7 +80,7 @@ a {
 
 // Blockquotes
 blockquote {
-  border-left: 5px solid color(grey-lighter);
+  border-left: $HS-blockquote-border;
   margin: 0 0 $HS-line-height-base-px;
   padding: 0 0 0 space(md);
 

@@ -17,7 +17,7 @@
 
   th {
     border-bottom: $HS-border;
-    color: color(charcoal, 300);
+    color: $HS-color-text-subtle;
     font-weight: $HS-font-weight-normal;
     padding: space(sm);
     text-align: left;
@@ -48,7 +48,7 @@
   border-radius: $HS-border-radius;
 
   th {
-    background-color: color(grey, 400);
+    background-color: $HS-color-background-light;
     border-bottom: none;
     border-left: $HS-border-dark;
 
@@ -79,7 +79,7 @@
     tr:nth-child(odd) {
       & > td,
       & > th {
-        background-color: color(grey, 200);
+        background-color: $HS-color-background-lighter;
       }
     }
   }
@@ -91,7 +91,7 @@
       &:hover {
         & > td,
         & > th {
-          background-color: color(grey, 300);
+          background-color: $HS-color-background-light;
         }
       }
     }
@@ -113,7 +113,7 @@
     td,
     th {
       background-color: $HS-color-inactive-background;
-      color: color(charcoal, 300);
+      color: $HS-color-text-subtle;
     }
   }
 

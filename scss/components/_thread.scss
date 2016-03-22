@@ -1,6 +1,7 @@
 // Components :: Thread
 
 // Thread variables
+$HS-thread-background-color:        color(white) !default;
 $HS-thread-border-size:             5px !default;
 $HS-thread-avatar-size:             45px !default;
 $HS-thread-padding:                 25px !default;
@@ -10,7 +11,7 @@ $HS-thread-pin-offset:              3px !default;
 
 // Thead component
 .c-thread {
-  background-color: color(white);
+  background-color: $HS-thread-background-color;
   border-bottom: $HS-border;
   border-top: $HS-border;
   box-shadow: $HS-thread-border-size 0 color(grey, 800) inset;
@@ -27,7 +28,7 @@ $HS-thread-pin-offset:              3px !default;
 }
 
 .c-thread-title {
-  color: color(charcoal, 300);
+  color: $HS-color-text-subtle;
   font-size: $HS-font-size-h3;
   font-weight: $HS-font-weight-normal;
 
@@ -53,14 +54,14 @@ $HS-thread-pin-offset:              3px !default;
 }
 
 .c-thread--draft {
-  box-shadow: $HS-thread-border-size 0 color(blue, 500) inset;
+  box-shadow: $HS-thread-border-size 0 $HS-color-primary inset;
 
   .c-thread-title {
-    color: color(blue, 500);
+    color: $HS-color-primary;
   }
 
   .c-thread-pin {
-    border-top-color: color(blue, 500);
+    border-top-color: $HS-color-primary;
   }
 }
 

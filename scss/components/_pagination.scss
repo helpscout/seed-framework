@@ -1,6 +1,7 @@
 // Components :: Pagination
 
 // Pagination variables
+$HS-pagination-link-background-color:             color(white) !default;
 $HS-pagination-link-margin:                       0 2px;
 $HS-pagination-link-padding:                      space(xs) 8px;
 $HS-pagination-link-box-shadow-active:            0 3px 4px 0 rgba(color(black),.11) !default;
@@ -25,18 +26,18 @@ $HS-pagination-link-box-shadow-active:            0 3px 4px 0 rgba(color(black),
 }
 
 .c-pagination__link {
-  background-color: color(white);
+  background-color: $HS-pagination-link-background-color;
   border: $HS-border;
   border-radius: $HS-border-radius;
-  color: color(charcoal, 300);
+  color: $HS-color-text;
   font-size: $HS-font-size-sm;
 }
 
 
 // States
 .c-pagination__link.is-active {
-  border-color: color(charcoal, 300);
-  color: color(blue);
+  border-color: $HS-color-text;
+  color: $HS-color-link;
   font-weight: $HS-font-weight-bold;
   box-shadow: $HS-pagination-link-box-shadow-active;
 }

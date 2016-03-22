@@ -2,7 +2,7 @@
 
 // Labels
 .c-form-label {
-  color: color(charcoal, 300);
+  color: $HS-color-text-subtler;
   font-size: $HS-font-size-sm;
 }
 
@@ -39,7 +39,7 @@
 .c-form-checkbox,
 .c-form-radio {
   @include form-disabled-styles() {
-    color: color(charcoal, 300);
+    color: $HS-color-text-subtler;
     cursor: not-allowed;
     opacity: 0.6;
   }

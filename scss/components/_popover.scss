@@ -1,6 +1,8 @@
 // Components :: Popover
 
 // Popover variables
+$HS-popover-background-color:                         color(white) !default;
+$HS-popover-box-shadow:                               0 1px 7px 0 rgba(color(black),.08) !default;
 $HS-popover-width-max:                                276px !default;
 $HS-popover-border-color:                             color(grey) !default;
 $HS-popover-offset:                                   10px !default;
@@ -14,11 +16,11 @@ $HS-popover-arrow-size-offset:                        ($HS-popover-arrow-size - 
 .popover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background-color: color(white);
+  background-color: $HS-popover-background-color;
   border-radius: $HS-border-radius-md;
   border: 1px solid $HS-popover-border-color;
-  box-shadow: 0 1px 7px 0 rgba(color(black),.08);
-  color: color(charcoal, 300);
+  box-shadow: $HS-popover-box-shadow;
+  color: $HS-color-text;
   display: none;
   font-family: $HS-font-family-base;
   font-size: $HS-font-size-base;
@@ -64,7 +66,7 @@ $HS-popover-arrow-size-offset:                        ($HS-popover-arrow-size - 
 }
 
 .popover-title {
-  background-color: color(grey, 300);
+  background-color: $HS-color-background-light;
   border-bottom: $HS-border;
   border-radius: $HS-border-radius-md $HS-border-radius-md 0 0;
   font-size: $HS-font-size-sm;

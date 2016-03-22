@@ -2,6 +2,7 @@
 
 // Nav variables
 $HS-nav-stacked-item-margin:         2px !default;
+$HS-nav-stacked-item-padding:        space(xs) space(sm) !default;
 
 
 // Nav component
@@ -14,24 +15,24 @@ $HS-nav-stacked-item-margin:         2px !default;
 
   .c-nav__item {
     border-radius: $HS-border-radius-md;
-    color: color(charcoal, 300);
+    color: $HS-color-text;
     display: block;
     font-size: $HS-font-size-sm;
     margin-bottom: $HS-nav-stacked-item-margin;
     margin-top: $HS-nav-stacked-item-margin;
-    padding: space(xs) space(sm);
+    padding: $HS-nav-stacked-item-padding;
     text-decoration: none;
     word-wrap: break-word;
 
     &:hover {
-      background-color: color(grey, 400);
-      color: color(charcoal, 500);
+      background-color: $HS-color-background-light;
+      color: $HS-color-text;
     }
   }
 
   // Modifiers
   .c-nav__item.is-active {
-    color: color(charcoal, 500);
+    color: $HS-color-text;
     font-weight: $HS-font-weight-bold;
   }
 }
