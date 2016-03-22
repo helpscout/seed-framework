@@ -1,0 +1,29 @@
+{
+  "name": "seed",
+  "description": "Help Scout's CSS Framework",
+  "main": [
+    "scss/seed.scss"
+  ],
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/helpscout/seed",
+  "moduleType": [],
+  "keywords": [
+    "Help Scout",
+    "Helpscout",
+    "framework",
+    "css",
+    "mixins",
+    "sass",
+    "scss"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

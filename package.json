@@ -1,8 +1,8 @@
 {
   "name": "seed",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Help Scout's CSS Framework",
-  "main": "index.js",
+  "main": "scss/seed.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed.git"
   },
-  "author": "",
-  "license": "ISC",
+  "authors": [
+    "ItsJonQ <itsjonq@gmail.com>"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/helpscout/seed/issues"
   },
