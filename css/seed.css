@@ -294,7 +294,7 @@ small {
   font-size: 80%; }
 
 a {
-  color: #3197D6;
+  color: #237AB3;
   outline: none;
   text-decoration: none; }
   a:hover {
@@ -653,23 +653,23 @@ a.c-block-header {
     margin-top: 10px; }
 
 .c-btn--primary {
-  background-color: #3197D6;
-  border-color: #3197D6;
+  background-color: #237AB3;
+  border-color: #237AB3;
   color: #fff; }
   .c-btn--primary:hover, .c-btn--primary:active, .c-btn--primary:focus {
-    background-color: #237AB3;
-    border-color: #237AB3; }
+    background-color: #1F5E89;
+    border-color: #1F5E89; }
   .c-btn--primary.is-disabled, .c-btn--primary[disabled] {
-    background-color: #237AB3;
-    border-color: #237AB3; }
+    background-color: #1F5E89;
+    border-color: #1F5E89; }
     .c-btn--primary.is-disabled:hover, .c-btn--primary.is-disabled:active, .c-btn--primary.is-disabled:focus, .c-btn--primary[disabled]:hover, .c-btn--primary[disabled]:active, .c-btn--primary[disabled]:focus {
-      background-color: #237AB3;
-      border-color: #237AB3; }
+      background-color: #1F5E89;
+      border-color: #1F5E89; }
 
 .c-btn--link {
   background-color: transparent;
   border-color: transparent;
-  color: #3197D6; }
+  color: #237AB3; }
   .c-btn--link:hover, .c-btn--link:active, .c-btn--link:focus {
     background-color: transparent;
     border-color: transparent;
@@ -860,7 +860,7 @@ table .c-conversation-header .c-caret {
     background-image: linear-gradient(to left,#F9FAFA, transparent); }
 
 .c-conversation-item.is-current .c-conversation-item__active {
-  background-color: #3197D6; }
+  background-color: #237AB3; }
 
 .c-dropdown {
   display: inline-block;
@@ -871,7 +871,7 @@ table .c-conversation-header .c-caret {
     display: table; }
 
 .c-dropdown__toggle {
-  color: #3197D6;
+  color: #237AB3;
   cursor: pointer;
   outline: 0;
   text-decoration: none; }
@@ -1004,13 +1004,13 @@ table .c-conversation-header .c-caret {
     -o-appearance: none;
     appearance: none; }
   .c-form-control:focus {
-    border-color: #3197D6;
+    border-color: #237AB3;
     outline: none; }
   .c-form-control[readonly] {
     background-color: #e6e6e6;
     border-color: #d5d5d5; }
     .c-form-control[readonly]:focus {
-      border-color: #3197D6; }
+      border-color: #237AB3; }
   .c-form-control.is-disabled, .c-form-control[disabled] {
     background-color: #e6e6e6;
     border-color: #d5d5d5;
@@ -1098,7 +1098,7 @@ textarea.c-form-control {
     margin: 0; }
 
 .c-menu__item {
-  color: #2A3B47;
+  color: #2b2b2b;
   display: block;
   font-size: 12px;
   line-height: 1;
@@ -1106,12 +1106,12 @@ textarea.c-form-control {
   padding: 7px 12px;
   text-decoration: none; }
   .c-menu__item:hover, .c-menu__item:focus {
-    background-color: #3197D6;
+    background-color: #237AB3;
     color: #fff;
     text-decoration: none; }
 
 .c-menu__divider {
-  background-color: #E3E8EB;
+  background-color: #A5B2BD;
   border-bottom: 1px solid #fff;
   height: 2px;
   margin: 3px 1px;
@@ -1121,7 +1121,7 @@ textarea.c-form-control {
   font-weight: 600; }
 
 .c-menu__item.is-disabled {
-  color: #93A1AF; }
+  color: #B4C0CA; }
   .c-menu__item.is-disabled:hover {
     background-color: transparent; }
 
@@ -1223,7 +1223,7 @@ body.overflow-hidden {
     .c-nav--tab .c-nav__item:hover {
       border-bottom-color: #D6DDE3; }
   .c-nav--tab .c-nav__item.is-active {
-    border-bottom-color: #3197D6;
+    border-bottom-color: #237AB3;
     color: #2b2b2b; }
 
 .c-navbar {
@@ -1347,7 +1347,7 @@ body.overflow-hidden {
 
 .c-pagination__link.is-active {
   border-color: #93A1AF;
-  color: #3197D6;
+  color: #237AB3;
   font-weight: 600;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.11); }
 
@@ -1608,11 +1608,11 @@ body.overflow-hidden {
   box-shadow: none; }
 
 .c-thread--draft {
-  box-shadow: 5px 0 #3197D6 inset; }
+  box-shadow: 5px 0 #237AB3 inset; }
   .c-thread--draft .c-thread-title {
-    color: #3197D6; }
+    color: #237AB3; }
   .c-thread--draft .c-thread-pin {
-    border-top-color: #3197D6; }
+    border-top-color: #237AB3; }
 
 .c-thread--forward {
   box-shadow: 5px 0 #7E80E7 inset; }
@@ -2706,7 +2706,7 @@ body.modal-open {
   color: #B4C0CA !important; }
 
 .u-text-link {
-  color: #3197D6 !important; }
+  color: #237AB3 !important; }
 
 .u-text-capitalize {
   text-transform: capitalize !important; }

@@ -29,7 +29,7 @@ $HS-dropdown-width-wide:          480px !default;
 .c-dropdown__content {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background-color: color(grey, 200);
+  background-color: $HS-color-background-lighter;
   border-radius: $HS-border-radius;
   border: 1px solid rgba(color(black), 0.2);
   box-shadow: $HS-dropdown-box-shadow;
@@ -81,7 +81,7 @@ $HS-dropdown-width-wide:          480px !default;
 // States
 .c-dropdown.open {
   & > .c-dropdown__toggle {
-    color: color(blue, 600);
+    color: $HS-color-link;
   }
 
   & > .c-dropdown__content {
