@@ -1,0 +1,121 @@
+// Components :: Conversation
+
+// Conversation variables
+$HS-conversation-font-size:                 $HS-font-size-md;
+$HS-conversation-background-closed:         color(grey, 200) !default;
+$HS-conversation-subject-p-margin:          2px;
+
+$HS-conversation-col-active-width:          2px;
+$HS-conversation-col-check-width:           34px;
+$HS-conversation-col-customer-width:        140px;
+$HS-conversation-col-attachment-width:      20px;
+$HS-conversation-col-subject-width:         140px;
+$HS-conversation-col-count-width:           42px;
+$HS-conversation-col-owner-width:           150px;
+$HS-conversation-col-number-width:          86px;
+$HS-conversation-col-update-width:          118px;
+
+
+
+// Conversation component
+.c-conversation {
+  font-size: $HS-conversation-font-size;
+
+  abbr {
+    border: none;
+  }
+}
+
+
+// Column widths
+.c-conversation-col {
+  &--active {
+    width: $HS-conversation-col-active-width;
+  }
+
+  &--check {
+    width: $HS-conversation-col-check-width;
+  }
+
+  &--customer {
+    width: $HS-conversation-col-customer-width;
+  }
+
+  &--attachment {
+    width: $HS-conversation-col-attachment-width;
+  }
+
+  &--subject {
+    min-width: $HS-conversation-col-subject-width;
+  }
+
+  &--count {
+    width: $HS-conversation-col-count-width;
+  }
+
+  &--owner {
+    width: $HS-conversation-col-owner-width;
+  }
+
+  &--number {
+    width: $HS-conversation-col-number-width;
+  }
+
+  &--update {
+    width: $HS-conversation-col-update-width;
+  }
+}
+
+
+// Item
+.c-conversation-item {
+  a {
+    color: color(charcoal, 200);
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      color: color(charcoal, 200);
+      text-decoration: none;
+    }
+  }
+
+  &__subject {
+    p {
+      @include normalize-margin;
+      margin-bottom: $HS-conversation-subject-p-margin;
+
+      &:not(:first-child) {
+        font-size: ($HS-conversation-font-size - 1);
+      }
+    }
+  }
+}
+
+
+// States
+.c-conversation-item.is-active {
+  [class*="c-conversation-item__"] {
+    a {
+      color: color(charcoal, 800);
+      font-weight: $HS-font-weight-bold;
+    }
+  }
+
+  .c-conversation-item__subject {
+    p:not(:first-child) {
+      color: color(charcoal, 200);
+      font-weight: $HS-font-weight-normal;
+    }
+  }
+}
+
+.c-conversation-item.is-closed {
+  background-color: $HS-conversation-background-closed;
+
+  .u-text-truncate-fade {
+    &:after {
+      @include linear-gradient(right, $HS-conversation-background-closed, transparent, $fallback: transparent);
+    }
+  }
+}
