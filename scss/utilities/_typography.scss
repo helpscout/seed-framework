@@ -105,6 +105,34 @@
 
 
 // Sizing
+.u-text-display-1 {
+  font-size: $HS-font-size-display-4 !important;
+  @include breakpoint(sm) {
+    font-size: $HS-font-size-display-1 !important;
+  }
+}
+
+.u-text-display-2 {
+  font-size: $HS-font-size-display-4 !important;
+  @include breakpoint(sm) {
+    font-size: $HS-font-size-display-2 !important;
+  }
+}
+
+.u-text-display-3 {
+  font-size: $HS-font-size-display-4 !important;
+  @include breakpoint(sm) {
+    font-size: $HS-font-size-display-3 !important;
+  }
+}
+
+.u-text-display-4 {
+  font-size: $HS-font-size-h1 !important;
+  @include breakpoint(sm) {
+    font-size: $HS-font-size-display-4 !important;
+  }
+}
+
 .u-text-xl {
   font-size: $HS-font-size-xl !important;
 }

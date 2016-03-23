@@ -107,13 +107,13 @@ $HS-button-font-weight:                 $HS-font-weight-normal !default;
   &:hover,
   &:active,
   &:focus {
-    background-color: $HS-color-primary-hover;
-    border-color: $HS-color-primary-hover;
+    background-color: darken($HS-color-primary, 10);
+    border-color: darken($HS-color-primary, 10);
   }
 
   @include form-disabled-styles() {
-    background-color: $HS-color-primary-hover;
-    border-color: $HS-color-primary-hover;
+    background-color: darken($HS-color-primary, 10);
+    border-color: darken($HS-color-primary, 10);
   }
 }
 

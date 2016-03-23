@@ -1,0 +1,9 @@
+// Functions :: Utilities
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function rem($value, $font-size-base: $HS-font-size-base) {
+  @return (strip-unit($value) / strip-unit($font-size-base)) * 1rem;
+}

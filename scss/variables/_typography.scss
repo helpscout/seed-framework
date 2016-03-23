@@ -14,27 +14,39 @@ $HS-font-family-base:         $HS-font-family-sans-serif !default;
 
 
 // Sizes
-$HS-font-size-xl:            18px !default;
-$HS-font-size-lg:            15px !default;
-$HS-font-size-md:            13px !default;
-$HS-font-size-sm:            12px !default;
-$HS-font-size-xs:            11px !default;
-$HS-font-size-xxs:           10px !default;
 
+// This is the default font size that all the font variables are based on
 $HS-font-size-base:          14px !default;
+// A special px version is provided for special use cases.
 $HS-font-size-app-px:        12px !default;
+
+
+$HS-font-size-xl:            rem(18px) !default;
+$HS-font-size-lg:            rem(15px) !default;
+$HS-font-size-md:            rem(13px) !default;
+$HS-font-size-sm:            rem(12px) !default;
+$HS-font-size-xs:            rem(11px) !default;
+$HS-font-size-xxs:           rem(10px) !default;
+
 // This is calculated by taking $HS-font-size-app-px and dividing by
 // the default font size of the browser
 $HS-font-size-app:           percentage(strip-unit($HS-font-size-app-px) / 16) !default;
 
 // Headings
-$HS-font-size-h1:            24px !default;
-$HS-font-size-h2:            20px !default;
-$HS-font-size-h3:            16px !default;
-$HS-font-size-h4:            $HS-font-size-base !default;
-$HS-font-size-h5:            $HS-font-size-md !default;
-$HS-font-size-h6:            $HS-font-size-sm !default;
+$HS-font-size-h1:            rem(24px) !default;
+$HS-font-size-h2:            rem(20px) !default;
+$HS-font-size-h3:            rem(16px) !default;
+$HS-font-size-h4:            rem($HS-font-size-base) !default;
+$HS-font-size-h5:            rem($HS-font-size-md) !default;
+$HS-font-size-h6:            rem($HS-font-size-sm) !default;
 
+$HS-font-size-display-1:     rem(48px) !default;
+$HS-font-size-display-2:     rem(42px) !default;
+$HS-font-size-display-3:     rem(36px) !default;
+$HS-font-size-display-4:     rem(32px) !default;
+
+
+$HS-font-size-p-lead:        rem(18px) !default;
 
 
 // Letter spacing
@@ -43,7 +55,7 @@ $HS-letter-spacing-wide:     0.05rem !default;
 
 
 // Line Heights
-$HS-line-height-app:         1.22 !default;
+$HS-line-height-app:         1.5 !default;
 $HS-line-height-heading:     $HS-line-height-app !default;
 $HS-line-height-quote:       1.25 !default;
 $HS-line-height-p:           1.4 !default;
