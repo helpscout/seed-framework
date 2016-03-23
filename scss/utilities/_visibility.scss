@@ -1,27 +1,27 @@
 // Utilities :: Visibility
 
 .is-invisible {
-  @include breakpoint-each() {
+  @include breakpoint-all() {
     visibility: hidden !important;
   }
 }
 
 .is-visible {
-  @include breakpoint-each() {
+  @include breakpoint-all() {
     visibility: visible !important;
   }
 }
 
 .hidden,
 .is-hidden {
-  @include breakpoint-each() {
+  @include breakpoint-all() {
     display: none !important;
     visibility: hidden !important;
   }
 }
 
 .is-not-hidden {
-  @include breakpoint-each() {
+  @include breakpoint-all() {
     display: initial !important;
   }
 }

@@ -2238,6 +2238,41 @@ body.modal-open {
   .o-col-xl-offset-11 {
     margin-left: 91.66667%; } }
 
+.o-col {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 100%; }
+
+.o-row-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .o-row-flex [class*="o-col"] {
+    float: none; }
+
+@media (min-width: 768px) {
+  .o-row-flex--fancy [class*="o-col"]:first-child:nth-last-child(2) {
+    width: 50%; }
+    .o-row-flex--fancy [class*="o-col"]:first-child:nth-last-child(2) + [class*="o-col"] {
+      width: 50%; }
+  .o-row-flex--fancy [class*="o-col"]:only-child {
+    width: 100%; } }
+
 .o-inline {
   list-style: none;
   margin-bottom: -5px;

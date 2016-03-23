@@ -5,13 +5,13 @@
 }
 
 .u-pull-left {
-  @include breakpoint-each() {
+  @include breakpoint-all() {
     float: left !important;
   }
 }
 
 .u-pull-right {
-  @include breakpoint-each() {
+  @include breakpoint-all() {
     float: right !important;
   }
 }

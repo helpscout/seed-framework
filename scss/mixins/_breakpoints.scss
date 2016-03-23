@@ -13,9 +13,9 @@
 }
 
 
-// Each breakpoint
+// All breakpoint
 // Loops through all the breakpoints and outputs attributes
-@mixin breakpoint-each() {
+@mixin breakpoint-all() {
   @each $name, $breakpoint in $HS-breakpoints {
 
     @if($breakpoint == 0) {
@@ -23,6 +23,21 @@
     }
 
     @else {
+      @include breakpoint($name) {
+        &--at-#{$name} {
+          @content;
+        }
+      }
+    }
+  }
+}
+
+// Each breakpoint
+// Loops through all the breakpoints and outputs attributes
+@mixin breakpoint-each() {
+  @each $name, $breakpoint in $HS-breakpoints {
+
+    @if($breakpoint != 0) {
       @include breakpoint($name) {
         &--at-#{$name} {
           @content;
