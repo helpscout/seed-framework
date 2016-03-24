@@ -11,31 +11,8 @@
   }
 }
 
-@mixin generate-row($gutter: $HS-grid-gutter) {
-  .o-row{
-    @if $HS-config-enable-flex {
-      @include display(flex);
-      @include flex-wrap(wrap);
-    }
-    @else {
-      @include clearfix();
-    }
-    margin-left: -(ceil($gutter / 2));
-    margin-right: -(ceil($gutter / 2));
-  }
-}
-
 @mixin generate-col($size, $columns: $HS-grid-columns, $gutter: $HS-grid-gutter) {
-  @if $HS-config-enable-flex {
-    @include flex(0 0 percentage($size / $columns));
-    // Add a `max-width` to ensure content within each column does not blow out
-    // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
-    // do not appear to require this.
-    max-width: percentage($size / $columns);
-  }
-  @else {
-    width: percentage($size / $columns);
-  }
+  width: percentage($size / $columns);
 }
 
 @mixin generate-col-offset($size, $columns: $HS-grid-columns) {
@@ -69,35 +46,43 @@
     $_class: o-col;
 
     @for $i from 1 through $columns {
-      .#{$_class}-#{$breakpoint}-#{$i} {
-        @if $HS-config-enable-flex {
-          @extend %HS-col-flex;
-        }
-        @else {
-          @extend %HS-col-float;
-        }
+      @if $breakpoint == xs {
+        $_col-class: #{$_class}-#{$i};
+      }
+      @else {
+        $_col-class: #{$_class}-#{$i}--at-#{$breakpoint};
+      }
+
+      .#{$_col-class} {
+        @extend .o-col;
       }
     }
 
     @include breakpoint-up($breakpoint, $breakpoints) {
       @for $i from 1 through $columns {
-        .#{$_class}-#{$breakpoint}-#{$i} {
+
+        @if $breakpoint == xs {
+          $_col-class: #{$_class}-#{$i};
+        }
+        @else {
+          $_col-class: #{$_class}-#{$i}--at-#{$breakpoint};
+        }
+
+        .#{$_col-class} {
           @include generate-col($i, $columns, $gutter);
         }
       }
-
-      // @each $modifier in (pull, push) {
-      //   @for $i from 0 through $columns {
-      //     .#{$_class}-#{$modifier}-#{$breakpoint}-#{$i} {
-      //       @include generate-col-modifier($modifier, $i, $columns)
-      //     }
-      //   }
-      // }
-
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
+        @if $breakpoint == xs {
+          $_col-offset-class: #{$_class}-offset-#{$i};
+        }
+        @else {
+          $_col-offset-class: #{$_class}-offset-#{$i}--at-#{$breakpoint};
+        }
+
         @if $breakpoint-counter != 1 or $i != 0 { // Avoid emitting useless .col-xs-offset-0
-          .#{$_class}-#{$breakpoint}-offset-#{$i} {
+          .#{$_col-offset-class} {
             @include generate-col-modifier(offset, $i, $columns)
           }
         }

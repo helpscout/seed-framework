@@ -41,3 +41,4 @@ $HS-container-max-widths: (
 
 $HS-grid-columns:        12 !default;
 $HS-grid-gutter:         space(xl) !default; // 30px
+$HS-grid-gutter-offset:  ceil($HS-grid-gutter / 2) !default; // 30px

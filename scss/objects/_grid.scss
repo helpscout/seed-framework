@@ -7,66 +7,51 @@
   margin-left: auto;
   margin-right: auto;
   max-width: container(xl);
-  padding-left: ceil($HS-grid-gutter / 2);
-  padding-right: ceil($HS-grid-gutter / 2);
+  padding-left: $HS-grid-gutter-offset;
+  padding-right: $HS-grid-gutter-offset;
 }
 
 .o-container-fluid {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  padding-left: ceil($HS-grid-gutter / 2);
-  padding-right: ceil($HS-grid-gutter / 2);
+  padding-left: $HS-grid-gutter-offset;
+  padding-right: $HS-grid-gutter-offset;
 }
 
 
 // Row
-@include generate-row;
+.o-row {
+  @include clearfix();
+  margin-left: -($HS-grid-gutter-offset);
+  margin-right: -($HS-grid-gutter-offset);
+
+  [class*="o-col"] {
+    float: left;
+  }
+}
+
+.o-row-flex {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  margin-left: -($HS-grid-gutter-offset);
+  margin-right: -($HS-grid-gutter-offset);
+}
 
 
 // Columns
-// Placeholder column class
-// This exists to better render the grid classes
-%HS-col-flex {
-  @include flex-basis(0);
-  @include flex-grow(1);
-  max-width: 100%;
+.o-col {
   min-height: 1px;
-  padding-left: ($HS-grid-gutter / 2);
-  padding-right: ($HS-grid-gutter / 2);
-  position: relative;
-}
-
-%HS-col-float {
-  float: left;
-  min-height: 1px;
-  padding-left: ($HS-grid-gutter / 2);
-  padding-right: ($HS-grid-gutter / 2);
+  padding-left: $HS-grid-gutter;
+  padding-right: $HS-grid-gutter;
   position: relative;
   width: 100%;
 }
 
 @include generate-grid-columns;
 
-.o-col {
-  min-height: 1px;
-  padding-left: ($HS-grid-gutter / 2);
-  padding-right: ($HS-grid-gutter / 2);
-  position: relative;
-  width: 100%;
-}
 
-.o-row-flex {
-  @include display(flex);
-  @include flex-wrap(wrap);
-  margin-left: -(ceil($HS-grid-gutter / 2));
-  margin-right: -(ceil($HS-grid-gutter / 2));
-
-  [class*="o-col"] {
-    float: none;
-  }
-}
-
+// Modifiers
 .o-row-flex--fancy {
   [class*="o-col"] {
     @include breakpoint(md) {
@@ -76,9 +61,6 @@
         & + [class*="o-col"] {
           width: 50%;
         }
-      }
-      &:only-child {
-        width: 100%;
       }
     }
   }
