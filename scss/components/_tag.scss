@@ -1,12 +1,7 @@
 // Components :: Tags
 
-// Tag variables
-$HS-tag-padding:         1px 4px !default;
-
-
-// Tag component
 .c-tag {
-  background-color: color(grey, 800);
+  background-color: $HS-color-badge-background;
   border-radius: $HS-border-radius-sm;
   color: color(white);
   display: inline-block;

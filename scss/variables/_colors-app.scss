@@ -1,8 +1,5 @@
 // Variables :: Color (App)
 
-// Dependencies
-@import "../functions/all";
-
 
 // Color variables
 $HS-color-primary:                  color(blue, 500) !default;
@@ -18,6 +15,7 @@ $HS-color-link:                     $HS-color-primary !default;
 
 
 // States
+$HS-color-focus:                    $HS-color-primary !default;
 $HS-color-error-background:         color(red, 200) !default;
 $HS-color-error-border:             color(red, 500) !default;
 $HS-color-error-box-shadow:         color(red, 500) !default;

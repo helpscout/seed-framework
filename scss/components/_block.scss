@@ -1,13 +1,8 @@
-// block :: Block
+// Component :: Block
 
-// Card variables
-$HS-block-header-padding:        12px space(lg) !default;
-
-
-// Block components
 .c-block {
   display: block;
-  padding: space(md) space(lg);
+  padding: $HS-block-padding;
   position: relative;
 
   & + & {
@@ -32,18 +27,18 @@ $HS-block-header-padding:        12px space(lg) !default;
 }
 
 a.c-block-header {
-  color: color(text);
+  color: $HS-color-text;
   text-decoration: none;
 
   &:hover {
-    color: color(text);
+    color: $HS-color-text;
     text-decoration: none;
   }
 }
 
 
 .c-block-footer {
-  background-color: color(grey, 200);
+  background-color: $HS-color-background-lighter;
   display: block;
   border-top: $HS-border;
   padding: $HS-block-header-padding;

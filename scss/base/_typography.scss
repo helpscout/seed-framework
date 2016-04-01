@@ -1,8 +1,5 @@
 // Base :: Typography
 
-// Typography variables
-$HS-blockquote-border:                    5px solid color(grey-lighter) !default;
-
 
 // Table of contents
 // - Headings
@@ -128,7 +125,7 @@ code, kbd, pre, samp {
 
 code,
 pre {
-  background-color: color(grey, 200);
+  background-color: $HS-color-background-lighter;
   border: $HS-border;
   border-radius: $HS-border-radius-md;
   color: color(red, 600);

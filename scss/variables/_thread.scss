@@ -1,0 +1,18 @@
+// Variables :: Thread
+
+$HS-thread-background-color:               color(white) !default;
+$HS-thread-border-size:                    5px !default;
+$HS-thread-avatar-size:                    45px !default;
+$HS-thread-padding:                        25px !default;
+$HS-thread-pin-size:                       40px !default;
+$HS-thread-pin-offset:                     3px !default;
+
+$HS-thread-accent-default:                 color(grey, 800) !default;
+$HS-thread-accent-default-title:           $HS-color-text-subtle !default;
+$HS-thread-accent-forward:                 color(purple, 500) !default;
+$HS-thread-accent-forward-title:           color(purple, 500) !default;
+$HS-thread-accent-note:                    color(yellow, 500) !default;
+$HS-thread-accent-note-title:              color(yellow, 600) !default;
+$HS-thread-accent-traffic-cop:             color(red, 400) !default;
+$HS-thread-accent-traffic-cop-title:       color(red, 400) !default;
+

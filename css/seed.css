@@ -449,8 +449,8 @@ dd {
 .c-avatar--photo {
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  height: 45px;
-  width: 45px; }
+  height: 46px;
+  width: 46px; }
 
 .c-badge {
   -webkit-font-smoothing: antialiased;
@@ -1506,11 +1506,11 @@ body.overflow-hidden {
     border-bottom: 1px solid #D6DDE3;
     color: #72808E;
     font-weight: 400;
-    padding: 10px;
+    padding: 15px !important;
     text-align: left; }
   .c-table td {
     border-top: 1px solid #D6DDE3;
-    padding: 10px;
+    padding: 10px !important;
     word-break: normal; }
     .c-table td:only-of-type {
       width: 100%; }
@@ -1536,8 +1536,8 @@ body.overflow-hidden {
     border-left: 1px solid #C1CBD4; }
 
 .c-table--condensed td {
-  padding-bottom: 5px;
-  padding-top: 5px; }
+  padding-bottom: 5px !important;
+  padding-top: 5px !important; }
 
 .c-table--striped tbody tr:nth-child(odd) > td,
 .c-table--striped tbody tr:nth-child(odd) > th {
@@ -1635,7 +1635,7 @@ body.overflow-hidden {
   .c-thread--traffic-cop .c-thread-title {
     color: #F45B55; }
   .c-thread--traffic-cop .c-thread-pin {
-    border-top-color: #E52F28; }
+    border-top-color: #F45B55; }
 
 .tooltip {
   -webkit-font-smoothing: antialiased;
