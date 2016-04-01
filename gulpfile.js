@@ -1,9 +1,9 @@
 var gulp        = require('gulp');
+var cssmin      = require('gulp-cssmin');
 var exec        = require('child_process').exec;
 var plumber     = require('gulp-plumber');
-var sass        = require('gulp-sass');
-var cssmin      = require('gulp-cssmin');
 var rename      = require('gulp-rename');
+var sass        = require('gulp-sass');
 
 var config = {
   src: 'scss',
@@ -29,7 +29,7 @@ gulp.task('sass', function () {
 
 
 // Minify
-gulp.task('min',['sass'], function () {
+gulp.task('min', ['sass'], function () {
   return gulp.src([
     config.dist + '/seed.css'
   ])
