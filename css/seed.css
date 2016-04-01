@@ -1506,11 +1506,11 @@ body.overflow-hidden {
     border-bottom: 1px solid #D6DDE3;
     color: #72808E;
     font-weight: 400;
-    padding: 10px !important;
+    padding: 10px;
     text-align: left; }
   .c-table td {
     border-top: 1px solid #D6DDE3;
-    padding: 10px !important;
+    padding: 10px;
     word-break: normal; }
     .c-table td:only-of-type {
       width: 100%; }
@@ -1536,8 +1536,8 @@ body.overflow-hidden {
     border-left: 1px solid #C1CBD4; }
 
 .c-table--condensed td {
-  padding-bottom: 5px !important;
-  padding-top: 5px !important; }
+  padding-bottom: 5px;
+  padding-top: 5px; }
 
 .c-table--striped tbody tr:nth-child(odd) > td,
 .c-table--striped tbody tr:nth-child(odd) > th {
