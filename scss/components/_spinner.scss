@@ -1,14 +1,5 @@
 // Components :: Spinner
 
-// Spinner variables
-$HS-spinner-size:                                   16px !default;
-$HS-spinner-size-sm:                                14px !default;
-$HS-spinner-size-lg:                                32px !default;
-$HS-spinner-border:                                 2px !default;
-$HS-spinner-border-color:                           color(white) !default;
-$HS-spinner-color:                                  color(grey, 700) !default;
-
-// Spinner component
 .c-spinner {
   @include animation(spin 1.2s infinite linear);
   border: $HS-spinner-border solid;

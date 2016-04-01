@@ -1,13 +1,5 @@
 // Components :: Navbar
 
-// Navbar variables
-$HS-navbar-background-color:      color(navbar) !default;
-$HS-navbar-height:                40px !default;
-$HS-navbar-padding:               0 7px !default;
-$HS-navbar-dropdown-offset:       35px !default;
-
-
-// Navbar component
 .c-navbar {
   background-color: $HS-navbar-background-color;
   height: $HS-navbar-height;
@@ -15,23 +7,23 @@ $HS-navbar-dropdown-offset:       35px !default;
 }
 
 .c-navbar__link {
-  color: rgba(color(white), 0.65);
+  color: rgba($HS-navbar-text-color, 0.65);
   display: block;
   font-size: $HS-font-size-sm;
   line-height: $HS-navbar-height;
-  padding: 0 space(md);
+  padding: $HS-navbar-item-padding;
   text-decoration: none;
 
   & > .c-caret {
-    border-top-color: rgba(color(white), 0.65);
+    border-top-color: rgba($HS-navbar-text-color, 0.65);
   }
 
   &:hover {
-    color: color(white);
+    color: $HS-navbar-text-color;
     text-decoration: none;
 
     & > .c-caret {
-      border-top-color: color(white);
+      border-top-color: $HS-navbar-text-color;
     }
   }
 }
@@ -40,10 +32,10 @@ $HS-navbar-dropdown-offset:       35px !default;
 // States
 .c-navbar__link.is-active {
   background-color: color(navbar-active);
-  color: color(white);
+  color: $HS-navbar-text-color;
 
   & > .c-caret {
-    border-top-color: color(white);
+    border-top-color: $HS-navbar-text-color;
   }
 }
 
@@ -57,6 +49,6 @@ $HS-navbar-dropdown-offset:       35px !default;
   }
 
   &.open > .c-dropdown__toggle {
-    color: color(white);
+    color: $HS-navbar-text-color;
   }
 }

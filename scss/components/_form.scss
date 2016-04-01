@@ -41,6 +41,6 @@
   @include form-disabled-styles() {
     color: $HS-color-text-subtler;
     cursor: not-allowed;
-    opacity: 0.6;
+    opacity: $HS-opacity-disabled;
   }
 }

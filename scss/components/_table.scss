@@ -7,7 +7,6 @@
 // - States
 
 
-
 // Base
 .c-table {
   @include normalize-margin;
@@ -19,13 +18,13 @@
     border-bottom: $HS-border;
     color: $HS-color-text-subtle;
     font-weight: $HS-font-weight-normal;
-    padding: space(sm);
+    padding: $HS-table-th-padding;
     text-align: left;
   }
 
   td {
     border-top: $HS-border;
-    padding: space(sm);
+    padding: $HS-table-td-padding;
     word-break: normal;
 
     &:only-of-type {
@@ -69,8 +68,8 @@
 
 .c-table--condensed {
   td {
-    padding-bottom: space(xs);
-    padding-top: space(xs);
+    padding-bottom: $HS-table-td-padding-condensed;
+    padding-top: $HS-table-td-padding-condensed;
   }
 }
 

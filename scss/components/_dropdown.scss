@@ -1,13 +1,5 @@
 // Components :: Dropdown
 
-// Dropdown variables
-$HS-dropdown-box-shadow:          0 6px 12px rgba(color(black),.175) !default;
-$HS-dropdown-margin:              2px 0 0 !default;
-$HS-dropdown-width:               160px !default;
-$HS-dropdown-width-wide:          480px !default;
-
-
-// Dropdown component
 .c-dropdown {
   @include clearfix;
   display: inline-block;
@@ -31,7 +23,7 @@ $HS-dropdown-width-wide:          480px !default;
   background-clip: padding-box;
   background-color: $HS-color-background-lighter;
   border-radius: $HS-border-radius;
-  border: 1px solid rgba(color(black), 0.2);
+  border: $HS-dropdown-content-border;
   box-shadow: $HS-dropdown-box-shadow;
   display: none;
   float: left;
@@ -71,7 +63,7 @@ $HS-dropdown-width-wide:          480px !default;
 
 .c-dropdown--wide {
   & > .c-dropdown__content {
-    max-width: 480px;
+    max-width: $HS-dropdown-width-wide;
     white-space: nowrap;
   }
 }

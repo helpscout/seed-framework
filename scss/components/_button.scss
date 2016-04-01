@@ -1,19 +1,11 @@
 // Components :: Buttons
 
 
-// Button variables
-$HS-button-background-color:            color(white) !default;
-$HS-button-background-color-hover:      color(button-hover) !default;
-$HS-button-border-color:                color(button-border) !default;
-$HS-button-font-weight:                 $HS-font-weight-normal !default;
-
-
 // Table of contents
 // - Base
 // - Sizing
 // - Styles
 // - States
-
 
 
 // Base
@@ -25,7 +17,7 @@ $HS-button-font-weight:                 $HS-font-weight-normal !default;
   border-radius: $HS-border-radius-md;
   border: 1px solid;
   border-color: $HS-button-border-color;
-  color: color(text);
+  color: $HS-color-text;
   cursor: pointer;
   display: inline-block;
   font-size: $HS-font-size-sm;
@@ -46,11 +38,11 @@ $HS-button-font-weight:                 $HS-font-weight-normal !default;
 
   &:active {
     border-color: color(button-active);
-    box-shadow: rgba(color(black), 0.15) 0px 2px 4px inset, rgba(color(black), 0.05) 0px 1px 2px;
+    box-shadow: $HS-button-box-shadow-active;
   }
 
   &:focus {
-    border-color: color(blue);
+    border-color: $HS-color-focus;
     outline: 0;
     outline: thin dotted \9; // IE9
   }
@@ -140,11 +132,11 @@ $HS-button-font-weight:                 $HS-font-weight-normal !default;
 
 .c-btn--subtle {
   background-color: transparent;
-  color: color(charcoal, 200);
+  color: $HS-color-text-subtler;
 
   &:hover {
     background-color: rgba(color(black), 0.05);
-    color: color(charcoal, 300);
+    color: $HS-color-text-subtle;
   }
 }
 

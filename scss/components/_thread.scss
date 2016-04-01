@@ -1,20 +1,10 @@
 // Components :: Thread
 
-// Thread variables
-$HS-thread-background-color:        color(white) !default;
-$HS-thread-border-size:             5px !default;
-$HS-thread-avatar-size:             45px !default;
-$HS-thread-padding:                 25px !default;
-$HS-thread-pin-size:                40px !default;
-$HS-thread-pin-offset:              3px !default;
-
-
-// Thead component
 .c-thread {
   background-color: $HS-thread-background-color;
   border-bottom: $HS-border;
   border-top: $HS-border;
-  box-shadow: $HS-thread-border-size 0 color(grey, 800) inset;
+  box-shadow: $HS-thread-border-size 0 $HS-thread-accent-default inset;
   padding: $HS-thread-padding;
   position: relative;
 
@@ -28,7 +18,7 @@ $HS-thread-pin-offset:              3px !default;
 }
 
 .c-thread-title {
-  color: $HS-color-text-subtle;
+  color: $HS-thread-accent-default-title;
   font-size: $HS-font-size-h3;
   font-weight: $HS-font-weight-normal;
 
@@ -39,7 +29,7 @@ $HS-thread-pin-offset:              3px !default;
 }
 
 .c-thread-pin {
-  @include triangle($HS-thread-pin-size $HS-thread-pin-size, color(grey, 800) transparent, up-left);
+  @include triangle($HS-thread-pin-size $HS-thread-pin-size, $HS-thread-accent-default transparent, up-left);
   left: $HS-thread-pin-offset;
   position: absolute;
   top: 0;
@@ -66,38 +56,38 @@ $HS-thread-pin-offset:              3px !default;
 }
 
 .c-thread--forward {
-  box-shadow: $HS-thread-border-size 0 color(purple, 500) inset;
+  box-shadow: $HS-thread-border-size 0 $HS-thread-accent-forward inset;
 
   .c-thread-title {
-    color: color(purple, 500);
+    color: $HS-thread-accent-forward-title;
   }
 
   .c-thread-pin {
-    border-top-color: color(purple, 500);
+    border-top-color: $HS-thread-accent-forward;
   }
 }
 
 .c-thread--note {
-  box-shadow: $HS-thread-border-size 0 color(yellow, 500) inset;
+  box-shadow: $HS-thread-border-size 0 $HS-thread-accent-note inset;
 
   .c-thread-title {
-    color: color(yellow, 600);
+    color: $HS-thread-accent-note-title;
   }
 
   .c-thread-pin {
-    border-top-color: color(yellow, 500);
+    border-top-color: $HS-thread-accent-note;
   }
 }
 
 .c-thread--traffic-cop {
-  box-shadow: $HS-thread-border-size 0 color(red, 400) inset;
+  box-shadow: $HS-thread-border-size 0 $HS-thread-accent-traffic-cop inset;
 
   .c-thread-title {
-    color: color(red, 400);
+    color: $HS-thread-accent-traffic-cop-title;
   }
 
   .c-thread-pin {
-    border-top-color: color(red, 500);
+    border-top-color: $HS-thread-accent-traffic-cop;
   }
 }
 

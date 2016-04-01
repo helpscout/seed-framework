@@ -1,13 +1,5 @@
 // Components :: Tooltip
 
-// Tooltip variables
-$HS-tooltip-background:                         color(grey-dark) !default;
-$HS-tooltip-offset:                             3px !default;
-$HS-tooltip-padding:                            3px space(sm) !default;
-$HS-tooltip-width-max:                          200px !default;
-$HS-tooltop-arrow-size:                         5px !default;
-
-
 // Tooltip component
 // Source: Bootstrap
 // http://getbootstrap.com/javascript/#tooltips
@@ -55,58 +47,58 @@ $HS-tooltop-arrow-size:                         5px !default;
   .tooltip.top & {
     bottom: 0;
     left: 50%;
-    margin-left: -($HS-tooltop-arrow-size);
-    border-width: $HS-tooltop-arrow-size $HS-tooltop-arrow-size 0;
+    margin-left: -($HS-tooltip-arrow-size);
+    border-width: $HS-tooltip-arrow-size $HS-tooltip-arrow-size 0;
     border-top-color: $HS-tooltip-background;
   }
 
   .tooltip.top-left & {
-    right: $HS-tooltop-arrow-size;
+    right: $HS-tooltip-arrow-size;
     bottom: 0;
-    margin-bottom: -($HS-tooltop-arrow-size);
-    border-width: $HS-tooltop-arrow-size $HS-tooltop-arrow-size 0;
+    margin-bottom: -($HS-tooltip-arrow-size);
+    border-width: $HS-tooltip-arrow-size $HS-tooltip-arrow-size 0;
     border-top-color: $HS-tooltip-background;
   }
   .tooltip.top-right & {
     bottom: 0;
-    left: $HS-tooltop-arrow-size;
-    margin-bottom: -($HS-tooltop-arrow-size);
-    border-width: $HS-tooltop-arrow-size $HS-tooltop-arrow-size 0;
+    left: $HS-tooltip-arrow-size;
+    margin-bottom: -($HS-tooltip-arrow-size);
+    border-width: $HS-tooltip-arrow-size $HS-tooltip-arrow-size 0;
     border-top-color: $HS-tooltip-background;
   }
   .tooltip.right & {
     top: 50%;
     left: 0;
-    margin-top: -($HS-tooltop-arrow-size);
-    border-width: $HS-tooltop-arrow-size $HS-tooltop-arrow-size $HS-tooltop-arrow-size 0;
+    margin-top: -($HS-tooltip-arrow-size);
+    border-width: $HS-tooltip-arrow-size $HS-tooltip-arrow-size $HS-tooltip-arrow-size 0;
     border-right-color: $HS-tooltip-background;
   }
   .tooltip.left & {
     top: 50%;
     right: 0;
-    margin-top: -($HS-tooltop-arrow-size);
-    border-width: $HS-tooltop-arrow-size 0 $HS-tooltop-arrow-size $HS-tooltop-arrow-size;
+    margin-top: -($HS-tooltip-arrow-size);
+    border-width: $HS-tooltip-arrow-size 0 $HS-tooltip-arrow-size $HS-tooltip-arrow-size;
     border-left-color: $HS-tooltip-background;
   }
   .tooltip.bottom & {
     top: 0;
     left: 50%;
-    margin-left: -($HS-tooltop-arrow-size);
-    border-width: 0 $HS-tooltop-arrow-size $HS-tooltop-arrow-size;
+    margin-left: -($HS-tooltip-arrow-size);
+    border-width: 0 $HS-tooltip-arrow-size $HS-tooltip-arrow-size;
     border-bottom-color: $HS-tooltip-background;
   }
   .tooltip.bottom-left & {
     top: 0;
-    right: $HS-tooltop-arrow-size;
-    margin-top: -($HS-tooltop-arrow-size);
-    border-width: 0 $HS-tooltop-arrow-size $HS-tooltop-arrow-size;
+    right: $HS-tooltip-arrow-size;
+    margin-top: -($HS-tooltip-arrow-size);
+    border-width: 0 $HS-tooltip-arrow-size $HS-tooltip-arrow-size;
     border-bottom-color: $HS-tooltip-background;
   }
   .tooltip.bottom-right & {
     top: 0;
-    left: $HS-tooltop-arrow-size;
-    margin-top: -($HS-tooltop-arrow-size);
-    border-width: 0 $HS-tooltop-arrow-size $HS-tooltop-arrow-size;
+    left: $HS-tooltip-arrow-size;
+    margin-top: -($HS-tooltip-arrow-size);
+    border-width: 0 $HS-tooltip-arrow-size $HS-tooltip-arrow-size;
     border-bottom-color: $HS-tooltip-background;
   }
 }
@@ -115,19 +107,19 @@ $HS-tooltop-arrow-size:                         5px !default;
 // Modifiers
 .tooltip {
   &.top {
-    padding: $HS-tooltop-arrow-size 0;
+    padding: $HS-tooltip-arrow-size 0;
     margin-top: -($HS-tooltip-offset);
   }
   &.right {
-    padding: 0 $HS-tooltop-arrow-size;
+    padding: 0 $HS-tooltip-arrow-size;
     margin-left: $HS-tooltip-offset;
   }
   &.bottom {
-    padding: $HS-tooltop-arrow-size 0;
+    padding: $HS-tooltip-arrow-size 0;
     margin-top: $HS-tooltip-offset;
   }
   &.left {
-    padding: 0 $HS-tooltop-arrow-size;
+    padding: 0 $HS-tooltip-arrow-size;
     margin-left: -($HS-tooltip-offset);
   }
 }

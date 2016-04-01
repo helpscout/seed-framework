@@ -1,16 +1,12 @@
-// Components :: Nav (Stacked)
+// Components :: Nav (Tab)
 
-// Nav tab variables
-$HS-nav-tab-border-color-hover:               color(grey, 500) !default;
-
-// Nav tab component
 .c-nav--tab {
   border-bottom: $HS-border;
 
   .c-nav__item {
-    border-bottom: 2px solid transparent;
+    border-bottom: $HS-nav-tab-border-size solid transparent;
     color: $HS-color-text;
-    padding: space(md) space(lg);
+    padding: $HS-nav-tab-item-padding;
     text-decoration: none;
 
     &:hover {
