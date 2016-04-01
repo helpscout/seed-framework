@@ -449,8 +449,8 @@ dd {
 .c-avatar--photo {
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  height: 46px;
-  width: 46px; }
+  height: 45px;
+  width: 45px; }
 
 .c-badge {
   -webkit-font-smoothing: antialiased;
@@ -1506,7 +1506,7 @@ body.overflow-hidden {
     border-bottom: 1px solid #D6DDE3;
     color: #72808E;
     font-weight: 400;
-    padding: 15px !important;
+    padding: 10px !important;
     text-align: left; }
   .c-table td {
     border-top: 1px solid #D6DDE3;
