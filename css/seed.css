@@ -1939,7 +1939,7 @@ body.modal-open {
   align-items: flex-end;
   -ms-flex-align: end; }
 
-.o-container {
+.o-container, .o-container-fluid {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
@@ -1947,11 +1947,7 @@ body.modal-open {
   padding-right: 15px; }
 
 .o-container-fluid {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  padding-left: 15px;
-  padding-right: 15px; }
+  max-width: 100%; }
 
 .o-row {
   margin-left: -15px;
@@ -1960,7 +1956,7 @@ body.modal-open {
     clear: both;
     content: "";
     display: table; }
-  .o-row [class*="o-col"] {
+  .o-row > [class*="o-col"] {
     float: left; }
 
 .o-row-flex {
@@ -2258,9 +2254,9 @@ body.modal-open {
     margin-left: 91.66667%; } }
 
 @media (min-width: 768px) {
-  .o-row-flex--fancy [class*="o-col"]:first-child:nth-last-child(2) {
+  .o-row-flex--fancy > [class*="o-col"]:first-child:nth-last-child(2) {
     width: 50%; }
-    .o-row-flex--fancy [class*="o-col"]:first-child:nth-last-child(2) + [class*="o-col"] {
+    .o-row-flex--fancy > [class*="o-col"]:first-child:nth-last-child(2) + [class*="o-col"] {
       width: 50%; } }
 
 .o-inline {
