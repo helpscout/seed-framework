@@ -12,11 +12,8 @@
 }
 
 .o-container-fluid {
-  margin-left: auto;
-  margin-right: auto;
+  @extend .o-container;
   max-width: 100%;
-  padding-left: $HS-grid-gutter-offset;
-  padding-right: $HS-grid-gutter-offset;
 }
 
 
