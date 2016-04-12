@@ -26,7 +26,7 @@
   margin-left: -($HS-grid-gutter-offset);
   margin-right: -($HS-grid-gutter-offset);
 
-  [class*="o-col"] {
+  & > [class*="o-col"] {
     float: left;
   }
 }
@@ -53,7 +53,7 @@
 
 // Modifiers
 .o-row-flex--fancy {
-  [class*="o-col"] {
+  & > [class*="o-col"] {
     @include breakpoint(md) {
       &:first-child:nth-last-child(2) {
         width: 50%;
