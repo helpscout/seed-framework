@@ -1,0 +1,105 @@
+// Components :: Switch
+
+
+// Table of contents
+// - Base
+// - Sizing
+// - States
+
+
+// Base
+.c-switcher {
+  & > input {
+    display: none;
+  }
+}
+
+.c-switch {
+  @include transition(all 0.3s ease);
+  background-color: $HS-switch-background;
+  border-radius: $HS-switch-border-radius;
+  box-shadow: 0 0 0 0 rgba(color(black), 0.1) inset;
+  color: $HS-color-text;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $HS-font-size-sm;
+  height: $HS-switch-height;
+  line-height: $HS-switch-height;
+  padding: $HS-switch-padding;
+  position: relative;
+  text-align: right;
+  width: $HS-switch-width;
+
+  &:before {
+    @include transition(all 0.1s ease);
+    background-color: color(white);
+    border-radius: $HS-switch-border-radius;
+    box-shadow: $HS-z-shadow-2;
+    content: "";
+    height: $HS-switch-trigger-size;
+    left: $HS-switch-offset;
+    position: absolute;
+    top: $HS-switch-offset;
+    width: $HS-switch-trigger-size;
+  }
+
+  &:hover {
+    &:before {
+      box-shadow: $HS-z-shadow-3;
+      width: 50%;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 0 0 $HS-switch-height rgba(color(black), 0.1) inset;
+
+    &:before {
+      // @include transform(translate($HS-switch-offset, 0));
+      box-shadow: $HS-z-shadow-3;
+      width: 60%;
+    }
+  }
+}
+
+
+
+// Sizing
+// Small Switches
+.c-switch--sm {
+  height: $HS-switch-height-sm;
+  line-height: $HS-switch-height-sm;
+  width: $HS-switch-width-sm;
+
+  &:before {
+    height: $HS-switch-trigger-size-sm;
+    width: $HS-switch-trigger-size-sm;
+  }
+}
+
+// Extra Small Switches
+.c-switch--xs {
+  height: $HS-switch-height-xs;
+  line-height: $HS-switch-height-xs;
+  width: $HS-switch-width-xs;
+
+  &:before {
+    height: $HS-switch-trigger-size-xs;
+    width: $HS-switch-trigger-size-xs;
+  }
+}
+
+
+
+// States
+.c-switcher input:checked + .c-switch,
+.c-switch.is-active{
+  background-color: $HS-switch-background-active;
+  box-shadow: 0 0 0 $HS-switch-height $HS-switch-background-active inset;
+  color: color(white);
+  text-align: left;
+
+  &:before {
+    left: inherit;
+    right: $HS-switch-offset;
+  }
+}
