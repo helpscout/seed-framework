@@ -1,0 +1,11 @@
+// Variables :: Box Shadow
+
+// Z-Shadow
+// Use these to help visually "layer" floating components (such as dropdowns)
+// Inspired By: http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality
+$HS-z-shadow-0:          0 1px 1px rgba(0, 0, 0, 0) !default;
+$HS-z-shadow-1:          0 1px 1px rgba(0, 0, 0, 0.10) !default;
+$HS-z-shadow-2:          0 2px 4px rgba(0, 0, 0, 0.10) !default;
+$HS-z-shadow-3:          0 4px 6px rgba(0, 0, 0, 0.12) !default;
+$HS-z-shadow-4:          0 8px 10px rgba(0, 0, 0, 0.12) !default;
+$HS-z-shadow-5:          0 12px 16px rgba(0, 0, 0, 0.12) !default;
