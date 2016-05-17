@@ -33,7 +33,9 @@ gulp.task('min', ['sass'], function () {
   return gulp.src([
     config.dist + '/seed.css'
   ])
-  .pipe(cssmin())
+  .pipe(cssmin({
+    restructuring: false
+  }))
   .pipe(rename({
     suffix: '.min'
   }))
