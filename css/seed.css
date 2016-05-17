@@ -1557,8 +1557,8 @@ body.overflow-hidden {
 
 .c-switcher input:checked + .c-switch,
 .c-switch.is-active {
-  background-color: #56dc74;
-  box-shadow: 0 0 0 28px #56dc74 inset;
+  background-color: #3197D6;
+  box-shadow: 0 0 0 28px #3197D6 inset;
   color: #fff;
   text-align: left; }
   .c-switcher input:checked + .c-switch:before,
