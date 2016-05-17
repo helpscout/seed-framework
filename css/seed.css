@@ -1497,6 +1497,83 @@ body.overflow-hidden {
   height: 32px;
   width: 32px; }
 
+.c-switch {
+  background-color: #d7d7d7;
+  border-radius: 50%;
+  color: #2b2b2b;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.85714rem;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  position: relative;
+  text-align: right;
+  width: 60px; }
+  .c-switch:before {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    content: "";
+    height: 28px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 28px; }
+  .c-switch:hover:before {
+    -webkit-transform: translate(2px, 0);
+    -moz-transform: translate(2px, 0);
+    -ms-transform: translate(2px, 0);
+    -o-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12); }
+  .c-switch:active:before {
+    -webkit-transform: translate(2px, 0);
+    -moz-transform: translate(2px, 0);
+    -ms-transform: translate(2px, 0);
+    -o-transform: translate(2px, 0);
+    transform: translate(2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12); }
+
+.c-switch-sm {
+  height: 28px;
+  line-height: 28px;
+  width: 56px; }
+  .c-switch-sm:before {
+    height: 26px;
+    width: 26px; }
+
+.c-switch-xs {
+  height: 22px;
+  line-height: 22px;
+  width: 44px; }
+  .c-switch-xs:before {
+    height: 20px;
+    width: 20px; }
+
+.c-switch.is-active {
+  background-color: #56dc74;
+  color: #fff;
+  text-align: left; }
+  .c-switch.is-active:before {
+    left: inherit;
+    right: 2px; }
+  .c-switch.is-active:hover:before {
+    -webkit-transform: translate(-2px, 0);
+    -moz-transform: translate(-2px, 0);
+    -ms-transform: translate(-2px, 0);
+    -o-transform: translate(-2px, 0);
+    transform: translate(-2px, 0); }
+  .c-switch.is-active:active:before {
+    -webkit-transform: translate(-4px, 0);
+    -moz-transform: translate(-4px, 0);
+    -ms-transform: translate(-4px, 0);
+    -o-transform: translate(-4px, 0);
+    transform: translate(-4px, 0); }
+
 .c-table {
   margin-bottom: 15px;
   width: 100%; }
