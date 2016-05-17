@@ -3,6 +3,7 @@
 $HS-switch-background:                      color(mac-grey) !default;
 $HS-switch-border-radius:                   100px !default;
 $HS-switch-offset:                          2px !default;
+$HS-switch-offset-inner:                    $HS-switch-offset - 1px !default;
 $HS-switch-padding:                         0 space(sm) !default;
 $HS-switch-height:                          28px !default;
 $HS-switch-width:                           ceil($HS-switch-height * 2) !default;

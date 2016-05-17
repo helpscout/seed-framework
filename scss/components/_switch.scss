@@ -9,14 +9,26 @@
 
 // Base
 .c-switcher {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+
   & > input {
-    display: none;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
   }
 }
 
 .c-switch {
   @include transition(all 0.3s ease);
   background-color: $HS-switch-background;
+  border: 1px solid;
+  border-color: $HS-switch-background;
   border-radius: $HS-switch-border-radius;
   box-shadow: 0 0 0 0 rgba(color(black), 0.1) inset;
   color: $HS-color-text;
@@ -37,24 +49,20 @@
     box-shadow: $HS-z-shadow-2;
     content: "";
     height: $HS-switch-trigger-size;
-    left: $HS-switch-offset;
+    left: $HS-switch-offset-inner;
     position: absolute;
-    top: $HS-switch-offset;
+    top: $HS-switch-offset-inner;
     width: $HS-switch-trigger-size;
   }
 
   &:hover {
     &:before {
       box-shadow: $HS-z-shadow-3;
-      width: 50%;
     }
   }
 
   &:active {
-    box-shadow: 0 0 0 $HS-switch-height rgba(color(black), 0.1) inset;
-
     &:before {
-      // @include transform(translate($HS-switch-offset, 0));
       box-shadow: $HS-z-shadow-3;
       width: 60%;
     }
@@ -94,12 +102,17 @@
 .c-switcher input:checked + .c-switch,
 .c-switch.is-active{
   background-color: $HS-switch-background-active;
-  box-shadow: 0 0 0 $HS-switch-height $HS-switch-background-active inset;
+  border-color: $HS-switch-background-active;
   color: color(white);
   text-align: left;
 
   &:before {
     left: inherit;
-    right: $HS-switch-offset;
+    right: $HS-switch-offset-inner;
   }
+}
+
+.c-switcher > input:focus + .c-switch,
+.c-switch.is-focused {
+  box-shadow: 0 0 0 1px rgba(color(white), 0.5) inset;
 }
