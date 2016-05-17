@@ -20,4 +20,4 @@ $HS-switch-width-xs:                        ceil($HS-switch-height-xs * 2) !defa
 $HS-switch-trigger-size-xs:                 ($HS-switch-height-xs - $HS-switch-trigger-offset) !default;
 
 // States
-$HS-switch-background-active:               color(mac-green) !default;
+$HS-switch-background-active:               $HS-color-primary !default;
