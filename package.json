@@ -1,6 +1,6 @@
 {
   "name": "seed",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Help Scout's CSS Framework",
   "main": "scss/seed.scss",
   "scripts": {
