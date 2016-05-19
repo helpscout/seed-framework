@@ -1497,14 +1497,26 @@ body.overflow-hidden {
   height: 32px;
   width: 32px; }
 
-.c-switcher > input {
-  display: none; }
+.c-switcher {
+  display: inline-block;
+  margin: 0;
+  position: relative; }
+  .c-switcher > input {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
 
 .c-switch {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #d7d7d7;
+  border: 1px solid;
+  border-color: #d7d7d7;
   border-radius: 100px;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1) inset;
   color: #2b2b2b;
@@ -1526,18 +1538,15 @@ body.overflow-hidden {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     content: "";
     height: 24px;
-    left: 2px;
+    left: 1px;
     position: absolute;
-    top: 2px;
+    top: 1px;
     width: 24px; }
   .c-switch:hover:before {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12); }
+  .c-switch:active:before {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
-    width: 50%; }
-  .c-switch:active {
-    box-shadow: 0 0 0 28px rgba(0, 0, 0, 0.1) inset; }
-    .c-switch:active:before {
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
-      width: 60%; }
+    width: 60%; }
 
 .c-switch--sm {
   height: 24px;
@@ -1558,13 +1567,17 @@ body.overflow-hidden {
 .c-switcher input:checked + .c-switch,
 .c-switch.is-active {
   background-color: #3197D6;
-  box-shadow: 0 0 0 28px #3197D6 inset;
+  border-color: #3197D6;
   color: #fff;
   text-align: left; }
   .c-switcher input:checked + .c-switch:before,
   .c-switch.is-active:before {
     left: inherit;
-    right: 2px; }
+    right: 1px; }
+
+.c-switcher > input:focus + .c-switch,
+.c-switch.is-focused {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset; }
 
 .c-table {
   margin-bottom: 15px;
