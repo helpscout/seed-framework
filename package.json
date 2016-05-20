@@ -23,5 +23,8 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7"
   }
 }
