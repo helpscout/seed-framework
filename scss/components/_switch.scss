@@ -25,6 +25,7 @@
 }
 
 .c-switch {
+  @include appearance(none);
   @include transition(all 0.3s ease);
   background-color: $HS-switch-background;
   border: 1px solid;
@@ -100,7 +101,8 @@
 
 // States
 .c-switcher input:checked + .c-switch,
-.c-switch.is-active{
+.c-switch.is-active,
+.c-switch.active {
   background-color: $HS-switch-background-active;
   border-color: $HS-switch-background-active;
   color: color(white);

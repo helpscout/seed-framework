@@ -12,7 +12,7 @@ $HS-switch-trigger-offset:                  ceil($HS-switch-offset * 2) !default
 $HS-switch-trigger-size:                    ($HS-switch-height - $HS-switch-trigger-offset) !default;
 
 // Alternate sizes
-$HS-switch-height-sm:                       24px !default;
+$HS-switch-height-sm:                       20px !default;
 $HS-switch-width-sm:                        ceil($HS-switch-height-sm * 2) !default;
 $HS-switch-trigger-size-sm:                 ($HS-switch-height-sm - $HS-switch-trigger-offset) !default;
 
