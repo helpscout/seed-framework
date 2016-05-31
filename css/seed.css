@@ -2068,8 +2068,8 @@ body.modal-open {
 
 .o-col, .o-col-1, .o-col-2, .o-col-3, .o-col-4, .o-col-5, .o-col-6, .o-col-7, .o-col-8, .o-col-9, .o-col-10, .o-col-11, .o-col-12, .o-col-1--at-sm, .o-col-2--at-sm, .o-col-3--at-sm, .o-col-4--at-sm, .o-col-5--at-sm, .o-col-6--at-sm, .o-col-7--at-sm, .o-col-8--at-sm, .o-col-9--at-sm, .o-col-10--at-sm, .o-col-11--at-sm, .o-col-12--at-sm, .o-col-1--at-md, .o-col-2--at-md, .o-col-3--at-md, .o-col-4--at-md, .o-col-5--at-md, .o-col-6--at-md, .o-col-7--at-md, .o-col-8--at-md, .o-col-9--at-md, .o-col-10--at-md, .o-col-11--at-md, .o-col-12--at-md, .o-col-1--at-lg, .o-col-2--at-lg, .o-col-3--at-lg, .o-col-4--at-lg, .o-col-5--at-lg, .o-col-6--at-lg, .o-col-7--at-lg, .o-col-8--at-lg, .o-col-9--at-lg, .o-col-10--at-lg, .o-col-11--at-lg, .o-col-12--at-lg, .o-col-1--at-xl, .o-col-2--at-xl, .o-col-3--at-xl, .o-col-4--at-xl, .o-col-5--at-xl, .o-col-6--at-xl, .o-col-7--at-xl, .o-col-8--at-xl, .o-col-9--at-xl, .o-col-10--at-xl, .o-col-11--at-xl, .o-col-12--at-xl {
   min-height: 1px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   width: 100%; }
 
@@ -3539,33 +3539,6 @@ body.modal-open {
 
 .u-width-24-max {
   max-width: 1140px !important; }
-
-.collapsing {
-  -webkit-transition-duration: 0.35s;
-  -moz-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -webkit-transition-property: height, visibility;
-  -moz-transition-property: height, visibility;
-  transition-property: height, visibility;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-timing-function: ease;
-  transition-timing-function: ease;
-  height: 0;
-  overflow: hidden;
-  position: relative; }
-
-.collapse {
-  display: none; }
-  .collapse.in {
-    display: block; }
-
-.fade {
-  -webkit-transition: opacity 0.15s linear;
-  -moz-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-  opacity: 0; }
-  .fade.in {
-    opacity: 1; }
 
 @-webkit-keyframes spin {
   from {
