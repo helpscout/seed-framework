@@ -39,8 +39,8 @@
 // Columns
 .o-col {
   min-height: 1px;
-  padding-left: $HS-grid-gutter;
-  padding-right: $HS-grid-gutter;
+  padding-left: $HS-grid-gutter-offset;
+  padding-right: $HS-grid-gutter-offset;
   position: relative;
   width: 100%;
 }
