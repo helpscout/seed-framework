@@ -6,8 +6,8 @@
 // Ordered/unordered list
 ul, ol {
   @include normalize-margin;
-  padding: 0;
-  margin: 0 0 space(lg) space(lg);
+  padding: 0 0 0 space(lg);
+  margin: 0 0 space(lg);
 
   li {
     @include normalize-margin;
