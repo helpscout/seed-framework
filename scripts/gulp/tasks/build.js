@@ -7,6 +7,7 @@ var runSequence = require('run-sequence');
 // Default task
 gulp.task('build', function(callback) {
   runSequence(
+    'verify-dependencies',
     'sass'
   );
 });
