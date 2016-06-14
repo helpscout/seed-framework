@@ -1,57 +1,38 @@
-var gulp        = require('gulp');
-var cssmin      = require('gulp-cssmin');
-var exec        = require('child_process').exec;
-var plumber     = require('gulp-plumber');
-var rename      = require('gulp-rename');
-var sass        = require('gulp-sass');
+// Gulpfile
+'use strict';
 
-var config = {
-  src: 'scss',
-  dist: 'css'
+global.config = require('./scripts/gulp/config');
+global.path = __dirname;
+global.require = function(modulePath, options) {
+  var log = true;
+
+  if (options && typeof(options.log) !== 'undefined') {
+    log = options.log;
+  }
+
+  try {
+    return require(modulePath);
+  }
+  catch (e) {
+    if (log) {
+      console.log(modulePath + ' is missing!');
+      console.log('\x1b[31m' + 'Try running: npm install' + '\x1b[0m');
+    }
+    return false;
+  }
 };
 
-// Sass
-gulp.task('sass', function () {
-  return gulp.src([
-    config.src + '/seed.scss'
-  ])
-  .pipe(plumber())
-  .pipe(
-    sass({
-      includePaths: [
-        config.src
-      ],
-    })
-    .on('error', sass.logError)
-  )
-  .pipe(gulp.dest(config.dist));
-});
 
+var gulp = global.require('gulp');
+var requireDir = global.require('require-dir', { log: false });
 
-// Minify
-gulp.task('min', ['sass'], function () {
-  return gulp.src([
-    config.dist + '/seed.css'
-  ])
-  .pipe(cssmin({
-    restructuring: false
-  }))
-  .pipe(rename({
-    suffix: '.min'
-  }))
-  .pipe(gulp.dest(config.dist));
-});
-
-
-// Watch
-gulp.task('watch', function () {
-  gulp.watch('scss/**/*.scss', ['sass']);
-});
-
-
-
-// Default
-gulp.task('default', ['sass', 'watch']);
-
-// Build
-gulp.task('build', ['sass', 'min']);
+// Require all tasks
+if (requireDir) {
+  requireDir('./scripts/gulp', { recurse: true });
+}
+else {
+  gulp.task('default', function() {
+    console.log('\x1b[31m' + 'Dependencies are missing!' + '\x1b[0m');
+    console.log('\x1b[31m' + 'Try running: npm install' + '\x1b[0m');
+  });
+}

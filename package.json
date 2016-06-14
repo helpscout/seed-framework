@@ -22,7 +22,12 @@
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.2.0"
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "lazypipe": "^1.0.1",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5"
   },
   "dependencies": {
     "bourbon": "^4.2.7"
