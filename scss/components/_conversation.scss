@@ -8,7 +8,7 @@
   font-size: $HS-conversation-font-size;
 
   abbr {
-    border: none;
+    border: 0;
   }
 }
 
@@ -95,15 +95,15 @@ table .c-conversation-header {
       text-decoration: none;
     }
   }
+}
 
-  &__subject {
-    p {
-      @include normalize-margin;
-      margin-bottom: $HS-conversation-subject-p-margin;
+.c-converstation-item__subject {
+  p {
+    @include normalize-margin;
+    margin-bottom: $HS-conversation-subject-p-margin;
 
-      &:not(:first-child) {
-        font-size: ($HS-conversation-font-size - 1);
-      }
+    &:not(:first-child) {
+      font-size: ($HS-conversation-font-size - 1);
     }
   }
 }
@@ -114,7 +114,7 @@ table .c-conversation-header {
   th.is-selected {
     a {
       color: $HS-color-text;
-        font-weight: $HS-font-weight-bold;
+      font-weight: $HS-font-weight-bold;
     }
     .c-caret {
       display: inline-block;
@@ -143,7 +143,7 @@ table .c-conversation-header {
   background-color: $HS-conversation-background-closed;
 
   .u-text-truncate-fade {
-    &:after {
+    &::after {
       @include linear-gradient(right, $HS-conversation-background-closed, transparent, $fallback: transparent);
     }
   }

@@ -6,7 +6,7 @@
   border-bottom: $HS-border;
   margin: 0;
 
-  & > li {
+  > li {
     margin: 0;
   }
 }
@@ -22,7 +22,7 @@
   padding-right: space(xs);
   position: relative;
 
-  & > a {
+  > a {
     color: $HS-color-text-muted;
     text-decoration: none;
 
@@ -38,8 +38,8 @@
   & + & {
     padding-left: space(lg) + space(xs);
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       border: solid transparent;
       border-width: space(lg) 0 space(lg) $HS-breadcrumb-arrow-size;
       content: " ";
@@ -50,12 +50,12 @@
       width: $HS-breadcrumb-arrow-size;
     }
 
-    &:before {
+    &::before {
       border-left-color: $HS-color-text-fainter;
       margin-left: 1px;
     }
 
-    &:after {
+    &::after {
       border-left-color: $HS-breadcrumb-background-color;
     }
   }

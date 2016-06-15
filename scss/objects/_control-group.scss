@@ -17,7 +17,7 @@
     z-index: z-index(base);
   }
 
-  & + * {
+  + * {
     margin-left: -1px;
   }
 

@@ -3,20 +3,3 @@
 @mixin clickable() {
   cursor: pointer;
 }
-
-@mixin enable-select() {
-  -webkit-user-select: inherit;
-  -moz-user-select: inherit;
-  -ms-user-select: inherit;
-  -o-user-select: inherit;
-  user-select: inherit;
-}
-
-@mixin disable-select() {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-

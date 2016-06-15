@@ -1,16 +1,16 @@
-// Tasks :: Default
+// Tasks :: Task
 'use strict';
 
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
 // Default task
-gulp.task('default', function(callback) {
+gulp.task('test', function(callback) {
   runSequence(
     'verify-dependencies',
     'lint',
     'sass-base',
-    'watch-sass'
+    'sass-minify',
+    callback
   );
 });
-

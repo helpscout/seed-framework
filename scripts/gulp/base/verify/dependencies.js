@@ -8,9 +8,10 @@ gulp.task('verify-dependencies', function(callback) {
   console.log('Verifying dependencies!');
 
   runSequence(
+    'verify-bundler',
+    'verify-gems',
     'verify-npm',
     'verify-bower',
     callback
   );
 });
-

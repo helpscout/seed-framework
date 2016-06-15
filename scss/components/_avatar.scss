@@ -10,7 +10,7 @@
   height: $HS-avatar-size;
   width: $HS-avatar-size;
 
-  & > img {
+  > img {
     @include transform(translateX(-50%));
     bottom: 0;
     display: block;

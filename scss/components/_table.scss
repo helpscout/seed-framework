@@ -48,7 +48,7 @@
 
   th {
     background-color: $HS-color-background-light;
-    border-bottom: none;
+    border-bottom: 0;
     border-left: $HS-border-dark;
 
     &:first-child {
@@ -74,25 +74,19 @@
 }
 
 .c-table--striped {
-  tbody {
-    tr:nth-child(odd) {
-      & > td,
-      & > th {
-        background-color: $HS-color-background-lighter;
-      }
+  tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: $HS-color-background-lighter;
     }
   }
 }
 
 .c-table--hover {
-  tbody {
-    tr {
-      &:hover {
-        & > td,
-        & > th {
-          background-color: $HS-color-background-light;
-        }
-      }
+  tr:hover {
+    > td,
+    > th {
+      background-color: $HS-color-background-light;
     }
   }
 }

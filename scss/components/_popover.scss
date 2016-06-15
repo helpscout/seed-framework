@@ -3,7 +3,6 @@
 // Popover variables
 
 .popover {
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: $HS-popover-background-color;
   border-radius: $HS-border-radius-md;
@@ -23,7 +22,6 @@
   padding: $HS-popover-padding;
   position: absolute;
   text-align: left;
-  text-align: start;
   text-decoration: none;
   text-shadow: none;
   text-transform: none;
@@ -70,7 +68,7 @@
 
 // Arrow styles
 .popover > .arrow,
-.popover > .arrow:after {
+.popover > .arrow::after {
   border-color: transparent;
   border-style: solid;
   display: block;
@@ -83,7 +81,7 @@
   .popover > & {
     border-width: $HS-popover-arrow-size;
 
-    &:after {
+    &::after {
       content: "";
       border-width: $HS-popover-arrow-size-offset;
     }
@@ -96,7 +94,7 @@
     left: 50%;
     margin-left: -($HS-popover-arrow-size);
 
-    &:after {
+    &::after {
       border-bottom-width: 0;
       border-top-color: #fff;
       bottom: 1px;
@@ -107,12 +105,12 @@
 
   .popover.right > & {
     border-left-width: 0;
-    border-right-color: rgba(color(black), .2);
+    border-right-color: rgba(color(black), 0.2);
     left: -($HS-popover-arrow-size);
     margin-top: -($HS-popover-arrow-size);
     top: 50%;
 
-    &:after {
+    &::after {
       border-left-width: 0;
       border-right-color: #fff;
       bottom: -($HS-popover-arrow-size-offset);
@@ -122,13 +120,13 @@
   }
 
   .popover.bottom > & {
-    border-bottom-color: rgba(color(black), .2);
+    border-bottom-color: rgba(color(black), 0.2);
     border-top-width: 0;
     left: 50%;
     margin-left: -($HS-popover-arrow-size);
     top: -($HS-popover-arrow-size);
 
-    &:after {
+    &::after {
       border-bottom-color: color(white);
       border-top-width: 0;
       content: " ";
@@ -138,13 +136,13 @@
   }
 
   .popover.left > & {
-    border-left-color: rgba(color(black), .2);
+    border-left-color: rgba(color(black), 0.2);
     border-right-width: 0;
     margin-top: -($HS-popover-arrow-size);
     right: -($HS-popover-arrow-size);
     top: 50%;
 
-    &:after {
+    &::after {
       border-left-color: color(white);
       border-right-width: 0;
       bottom: -($HS-popover-arrow-size-offset);

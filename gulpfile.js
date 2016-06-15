@@ -2,6 +2,7 @@
 'use strict';
 
 global.config = require('./scripts/gulp/config');
+global.exec = require('./scripts/node/utils/exec');
 global.path = __dirname;
 global.require = function(modulePath, options) {
   var log = true;

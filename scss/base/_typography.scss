@@ -93,16 +93,16 @@ blockquote {
     line-height: $HS-line-height-base-px;
     color: color(grey-light);
 
-    &:before {
-      content: '\2014 \00A0';
+    &::before {
+      content: "\2014 \00A0";
     }
   }
 }
 
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
   content: "";
 }
 

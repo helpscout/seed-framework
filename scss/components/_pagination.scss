@@ -6,10 +6,10 @@
   margin-bottom: space(lg);
   text-align: center;
 
-  & > * {
+  > * {
     display: inline-block;
     margin: $HS-pagination-link-margin;
-    padding:$HS-pagination-link-padding;
+    padding: $HS-pagination-link-padding;
     text-decoration: none;
 
     &:hover {

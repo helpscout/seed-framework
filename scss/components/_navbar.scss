@@ -14,7 +14,7 @@
   padding: $HS-navbar-item-padding;
   text-decoration: none;
 
-  & > .c-caret {
+  > .c-caret {
     border-top-color: rgba($HS-navbar-text-color, 0.65);
   }
 
@@ -22,7 +22,7 @@
     color: $HS-navbar-text-color;
     text-decoration: none;
 
-    & > .c-caret {
+    > .c-caret {
       border-top-color: $HS-navbar-text-color;
     }
   }
@@ -34,7 +34,7 @@
   background-color: color(navbar-active);
   color: $HS-navbar-text-color;
 
-  & > .c-caret {
+  > .c-caret {
     border-top-color: $HS-navbar-text-color;
   }
 }
@@ -43,7 +43,7 @@
 
 // Dropdown styles
 .c-navbar .c-dropdown {
-  & > .c-dropdown__content {
+  > .c-dropdown__content {
     background-color: color(white);
     top: $HS-navbar-dropdown-offset;
   }

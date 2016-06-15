@@ -5,7 +5,7 @@
   margin: 0;
   padding: $HS-menu-padding;
 
-  & > li:not(.c-menu__divider) {
+  > li:not(.c-menu__divider) {
     margin: 0;
   }
 }

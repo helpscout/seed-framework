@@ -6,7 +6,7 @@
   box-shadow: $HS-card-box-shadow;
   margin-bottom: space(lg);
 
-  & > * {
+  > * {
     &:first-child {
       @include border-top-radius($HS-border-radius);
     }
@@ -31,7 +31,7 @@
 .c-card--square {
   border-radius: 0;
 
-  & > * {
+  > * {
     &:first-child,
     &:last-child {
       border-radius: 0;
