@@ -39,7 +39,7 @@ gulp.task('lint', function(callback) {
       gutil.log(message, '😄');
     })
     .catch(function(report) {
-      var message = gutil.colors.red('Failed: There were errors in your .scss');
+      var message = gutil.colors.red('Failed! There were errors in your .scss');
       gutil.log(message, '😱');
       console.log(parse(report));
       process.exit(1);
