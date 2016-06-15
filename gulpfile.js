@@ -3,6 +3,7 @@
 
 global.config = require('./scripts/gulp/config');
 global.exec = require('./scripts/node/utils/exec');
+global.package = require('./package.json');
 global.path = __dirname;
 global.require = function(modulePath, options) {
   var log = true;

@@ -8,9 +8,11 @@ var runSequence = require('run-sequence');
 gulp.task('build', function(callback) {
   runSequence(
     'verify-dependencies',
+    'clean',
     'lint',
     'sass-base',
-    'sass-minify'
+    'sass-minify',
+    'header'
   );
 });
 

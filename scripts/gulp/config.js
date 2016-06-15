@@ -2,7 +2,7 @@
 'use strict';
 
 var config = {
-  name: 'seed',
+  name: 'Seed',
   src: 'scss',
   dest: 'css'
 };
