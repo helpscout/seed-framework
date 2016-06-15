@@ -9,6 +9,8 @@ gulp.task('test', function(callback) {
   runSequence(
     'verify-dependencies',
     'lint',
+    'sass-base',
+    'sass-minify',
     callback
   );
 });

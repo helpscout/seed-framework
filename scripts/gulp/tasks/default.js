@@ -8,6 +8,7 @@ var runSequence = require('run-sequence');
 gulp.task('default', function(callback) {
   runSequence(
     'verify-dependencies',
+    'lint',
     'sass-base',
     'watch-sass'
   );
