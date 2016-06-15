@@ -22,12 +22,12 @@
 
       .#{$_util-classname} {
 
-        @if($dir-class == 'h') {
+        @if($dir-class == "h") {
           #{$property}-left: #{$_size} !important;
           #{$property}-right: #{$_size} !important;
         }
 
-        @elseif($dir-class == 'v') {
+        @elseif($dir-class == "v") {
           #{$property}-bottom: #{$_size} !important;
           #{$property}-top: #{$_size} !important;
         }
@@ -57,12 +57,12 @@
 
     .#{$_util-classname} {
 
-      @if($dir-class == 'h') {
+      @if($dir-class == "h") {
         #{$property}-left: #{$_size} !important;
         #{$property}-right: #{$_size} !important;
       }
 
-      @elseif($dir-class == 'v') {
+      @elseif($dir-class == "v") {
         #{$property}-bottom: #{$_size} !important;
         #{$property}-top: #{$_size} !important;
       }

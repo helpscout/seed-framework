@@ -37,7 +37,7 @@
   position: absolute;
   width: 1px;
 
-  & + * {
+  + * {
     margin-top: 0;
   }
 }

@@ -31,10 +31,10 @@
   margin-bottom: space(xl);
   width: 100%;
 
-  & > .c-card {
+  > .c-card {
     @include normalize-margin;
     box-shadow: none;
-    border: none;
+    border: 0;
   }
 }
 

@@ -13,7 +13,7 @@
   margin: 0;
   position: relative;
 
-  & > input {
+  > input {
     bottom: 0;
     left: 0;
     opacity: 0;
@@ -43,7 +43,7 @@
   text-align: right;
   width: $HS-switch-width;
 
-  &:before {
+  &::before {
     @include transition(all 0.1s ease);
     background-color: color(white);
     border-radius: $HS-switch-border-radius;
@@ -57,13 +57,13 @@
   }
 
   &:hover {
-    &:before {
+    &::before {
       box-shadow: $HS-z-shadow-3;
     }
   }
 
   &:active {
-    &:before {
+    &::before {
       box-shadow: $HS-z-shadow-3;
       width: 60%;
     }
@@ -79,7 +79,7 @@
   line-height: $HS-switch-height-sm;
   width: $HS-switch-width-sm;
 
-  &:before {
+  &::before {
     height: $HS-switch-trigger-size-sm;
     width: $HS-switch-trigger-size-sm;
   }
@@ -91,7 +91,7 @@
   line-height: $HS-switch-height-xs;
   width: $HS-switch-width-xs;
 
-  &:before {
+  &::before {
     height: $HS-switch-trigger-size-xs;
     width: $HS-switch-trigger-size-xs;
   }
@@ -108,7 +108,7 @@
   color: color(white);
   text-align: left;
 
-  &:before {
+  &::before {
     left: inherit;
     right: $HS-switch-offset-inner;
   }

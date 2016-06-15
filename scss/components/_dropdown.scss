@@ -19,7 +19,6 @@
 }
 
 .c-dropdown__content {
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background-color: $HS-color-background-lighter;
   border-radius: $HS-border-radius;
@@ -41,13 +40,13 @@
 
 // Modifiers
 .c-dropdown--up {
-  & > .c-dropdown__toggle {
-    & > .c-caret {
+  > .c-dropdown__toggle {
+    > .c-caret {
       @include transform(rotate(180deg));
     }
   }
 
-  & > .c-dropdown__content {
+  > .c-dropdown__content {
     bottom: 100%;
     margin-bottom: space(md);
     top: auto;
@@ -55,14 +54,14 @@
 }
 
 .c-dropdown--right {
-  & > .c-dropdown__content {
+  > .c-dropdown__content {
     left: auto;
     right: 0;
   }
 }
 
 .c-dropdown--wide {
-  & > .c-dropdown__content {
+  > .c-dropdown__content {
     max-width: $HS-dropdown-width-wide;
     white-space: nowrap;
   }
@@ -72,11 +71,11 @@
 
 // States
 .c-dropdown.open {
-  & > .c-dropdown__toggle {
+  > .c-dropdown__toggle {
     color: $HS-color-link;
   }
 
-  & > .c-dropdown__content {
+  > .c-dropdown__content {
     display: block;
   }
 }

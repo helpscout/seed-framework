@@ -224,7 +224,7 @@
   text-overflow: inherit;
   z-index: z-index(base);
 
-  &:after {
+  &::after {
     @include linear-gradient(right, color(white), transparent, $fallback: transparent);
     bottom: 0;
     content: "";

@@ -44,7 +44,6 @@
   &:focus {
     border-color: $HS-color-focus;
     outline: 0;
-    outline: thin dotted \9; // IE9
   }
 
   @include form-disabled-styles() {

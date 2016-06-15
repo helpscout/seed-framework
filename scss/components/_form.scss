@@ -24,8 +24,8 @@
   padding-left: space(lg);
   position: relative;
 
-  & > input[type="checkbox"],
-  & > input[type="radio"] {
+  > input[type="checkbox"],
+  > input[type="radio"] {
     bottom: 0;
     left: 0;
     margin: auto;
