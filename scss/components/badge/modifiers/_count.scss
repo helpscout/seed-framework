@@ -1,0 +1,10 @@
+// Components :: Badge :: Modifiers :: Count
+
+.c-badge--count {
+  background: color(grey, 300);
+  border-radius: $HS-border-radius-md;
+  border: $HS-border;
+  color: $HS-color-text-subtler;
+  font-weight: $HS-font-weight-normal;
+  line-height: $HS-badge-line-height-count;
+}

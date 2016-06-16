@@ -1,0 +1,12 @@
+// Components :: Alerts :: States :: Success
+
+.c-alert {
+  &.is-success {
+    background-color: $HS-color-success-background;
+    box-shadow: $HS-alert-box-shadow $HS-color-success-box-shadow;
+
+    @include all-text() {
+      color: $HS-color-success-text;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+// Components :: Alerts :: States :: Error
+
+.c-alert {
+  &.is-error {
+    background-color: $HS-color-error-background;
+    box-shadow: $HS-alert-box-shadow $HS-color-error-box-shadow;
+
+    @include all-text() {
+      color: $HS-color-error-text;
+    }
+  }
+}

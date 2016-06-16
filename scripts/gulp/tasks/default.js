@@ -13,4 +13,3 @@ gulp.task('default', function(callback) {
     'watch-sass'
   );
 });
-

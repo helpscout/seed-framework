@@ -1,4 +1,4 @@
-// Components :: Avatar
+// Components :: Avatar :: Base
 
 .c-avatar {
   background-color: color(grey, 300);
@@ -25,13 +25,4 @@
     top: 0;
     width: auto;
   }
-}
-
-
-// Modifiers
-.c-avatar--photo {
-  border-radius: $HS-border-radius;
-  box-shadow: 0 1px 1px rgba(color(black), 0.2);
-  height: $HS-avatar-size-photo;
-  width: $HS-avatar-size-photo;
 }

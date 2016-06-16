@@ -1,0 +1,21 @@
+// Components :: Badge :: States :: All
+
+.c-badge {
+  &.is-active,
+  &.is-success {
+    background-color: $HS-color-success-badge;
+  }
+  &.is-closed {
+    background-color: $HS-color-closed-badge;
+  }
+  &.is-error,
+  &.is-spam {
+    background-color: $HS-color-error-badge;
+  }
+  &.is-info {
+    background-color: $HS-color-info-badge;
+  }
+  &.is-warning {
+    background-color: $HS-color-warning-badge;
+  }
+}

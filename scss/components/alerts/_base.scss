@@ -1,0 +1,14 @@
+// Components :: Alerts :: Base
+
+.c-alert {
+  background-color: $HS-color-warning-background;
+  box-shadow: $HS-alert-box-shadow $HS-color-warning-box-shadow;
+  margin-bottom: space(md);
+  padding: $HS-alert-padding;
+  position: relative;
+  z-index: z-index(alerts);
+
+  @include all-text() {
+    color: $HS-color-warning-text;
+  }
+}
