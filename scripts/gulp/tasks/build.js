@@ -11,8 +11,6 @@ gulp.task('build', function(callback) {
     'clean',
     'lint',
     'sass-base',
-    'sass-minify',
-    'header'
+    'sass-minify'
   );
 });
-
