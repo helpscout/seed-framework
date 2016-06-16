@@ -1,0 +1,19 @@
+// Components :: Button :: Modifiers :: Primary
+
+.c-btn--primary {
+  background-color: $HS-color-primary;
+  border-color: $HS-color-primary;
+  color: color(white);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($HS-color-primary, 10);
+    border-color: darken($HS-color-primary, 10);
+  }
+
+  @include form-disabled-styles() {
+    background-color: darken($HS-color-primary, 10);
+    border-color: darken($HS-color-primary, 10);
+  }
+}

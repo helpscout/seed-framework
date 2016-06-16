@@ -1,0 +1,12 @@
+// Components :: Breadcrumb :: Base
+
+.c-breadcrumb {
+  @include list-unstyled;
+  background-color: $HS-breadcrumb-background-color;
+  border-bottom: $HS-border;
+  margin: 0;
+
+  > li {
+    margin: 0;
+  }
+}

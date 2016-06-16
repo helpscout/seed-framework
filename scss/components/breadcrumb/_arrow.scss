@@ -1,0 +1,28 @@
+
+// Arrow
+.c-breadcrumb__item {
+  & + & {
+    padding-left: space(lg) + space(xs);
+
+    &::before,
+    &::after {
+      border: solid transparent;
+      border-width: space(lg) 0 space(lg) $HS-breadcrumb-arrow-size;
+      content: " ";
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: $HS-breadcrumb-arrow-size;
+    }
+
+    &::before {
+      border-left-color: $HS-color-text-fainter;
+      margin-left: 1px;
+    }
+
+    &::after {
+      border-left-color: $HS-breadcrumb-background-color;
+    }
+  }
+}

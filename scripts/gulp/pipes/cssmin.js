@@ -12,7 +12,6 @@ var pipe = lazypipe()
   })
   .pipe(rename, {
     suffix: '.min'
-  })
-  .pipe(gulp.dest, global.config.dest);
+  });
 
 module.exports = pipe;

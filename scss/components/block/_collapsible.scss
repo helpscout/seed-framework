@@ -1,0 +1,12 @@
+// Components :: Block :: Collapsible
+
+.c-block-collapsible {
+  border-bottom: $HS-border;
+  display: block;
+  margin-bottom: -1px;
+  position: relative;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}

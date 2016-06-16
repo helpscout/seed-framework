@@ -1,0 +1,30 @@
+// Components :: Block :: Header
+
+.c-block-header {
+  border-bottom: $HS-border;
+  color: $HS-color-text;
+  display: block;
+  padding: $HS-block-header-padding;
+  position: relative;
+  text-decoration: none;
+
+  &:hover {
+    color: $HS-color-text;
+    text-decoration: none;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  + .c-block-footer {
+    border-top: 0;
+  }
+}
+
+// Nav tabs
+.c-block-header {
+  .c-nav--tab {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,22 @@
+// Components :: Breadcrumb :: Item
+
+.c-breadcrumb__item {
+  display: inline-block;
+  font-size: $HS-font-size-xl;
+  font-weight: $HS-font-weight-normal;
+  height: $HS-breadcrumb-height;
+  line-height: $HS-breadcrumb-height;
+  padding-left: space(lg);
+  padding-right: space(xs);
+  position: relative;
+
+  > a {
+    color: $HS-color-text-muted;
+    text-decoration: none;
+
+    &:hover {
+      color: $HS-color-text;
+      text-decoration: none;
+    }
+  }
+}

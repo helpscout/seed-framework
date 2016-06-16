@@ -16,7 +16,6 @@ var pipe = lazypipe()
     })
     .on('error', sass.logError);
   })
-  .pipe(sourcemaps.write)
-  .pipe(gulp.dest, global.config.dest);
+  .pipe(sourcemaps.write);
 
 module.exports = pipe;
