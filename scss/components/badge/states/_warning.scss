@@ -1,0 +1,7 @@
+// Components :: Badge :: States :: Warning
+
+.c-badge {
+  &.is-warning {
+    background-color: $HS-color-warning-badge;
+  }
+}

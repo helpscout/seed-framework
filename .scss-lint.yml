@@ -14,6 +14,8 @@ linters:
     enabled: false
   ElsePlacement:
     enabled: false
+  ImportPath:
+    enabled: false
   ImportantRule:
     enabled: false
   Indentation:

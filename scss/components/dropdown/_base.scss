@@ -1,0 +1,37 @@
+// Components :: Dropdown :: Base
+
+.c-dropdown {
+  @include clearfix;
+  display: inline-block;
+  position: relative;
+
+  &__toggle {
+    color: $HS-color-link;
+    cursor: pointer;
+    outline: 0;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__content {
+    background-clip: padding-box;
+    background-color: $HS-color-background-lighter;
+    border-radius: $HS-border-radius;
+    border: $HS-dropdown-content-border;
+    box-shadow: $HS-dropdown-box-shadow;
+    display: none;
+    float: left;
+    left: 0;
+    list-style: none;
+    margin: $HS-dropdown-margin;
+    min-width: $HS-dropdown-width;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: z-index(dropdown);
+  }
+}

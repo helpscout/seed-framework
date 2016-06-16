@@ -1,0 +1,11 @@
+// Components :: Block :: Modifiers :: Block
+
+.c-btn--subtle {
+  background-color: transparent;
+  color: $HS-color-text-subtler;
+
+  &:hover {
+    background-color: rgba(color(black), 0.05);
+    color: $HS-color-text-subtle;
+  }
+}

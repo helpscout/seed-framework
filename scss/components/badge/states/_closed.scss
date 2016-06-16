@@ -1,0 +1,7 @@
+// Components :: Badge :: States :: Closed
+
+.c-badge {
+  &.is-closed {
+    background-color: $HS-color-closed-badge;
+  }
+}

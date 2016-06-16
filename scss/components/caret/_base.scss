@@ -1,4 +1,4 @@
-// Components :: Caret
+// Components :: Caret :: Base
 
 .c-caret {
   border-left: $HS-caret-size solid transparent;
@@ -9,16 +9,4 @@
   margin-left: $HS-caret-margin;
   vertical-align: middle;
   width: 0;
-}
-
-
-// Modifiers
-.c-caret {
-  &--subtle {
-    border-top-color: $HS-color-text-subtle;
-  }
-
-  &--muted {
-    border-top-color: $HS-color-text-muted;
-  }
 }

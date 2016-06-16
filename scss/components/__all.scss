@@ -1,16 +1,17 @@
 // Components :: All
-// Imports all the component styles
+// Imports _all the component styles
 
-@import "alerts/all";
-@import "avatar/all";
-@import "badge/all";
-@import "block/all";
-@import "breadcrumb/all";
-@import "button";
-@import "card";
-@import "caret";
+@import "alerts/_all";
+@import "avatar/_all";
+@import "badge/_all";
+@import "block/_all";
+@import "breadcrumb/_all";
+@import "button/_all";
+@import "card/_all";
+@import "caret/_all";
 @import "conversation";
-@import "dropdown";
+@import "dropdown/_all";
+@import "form-group/_all";
 @import "form";
 @import "form-addon";
 @import "form-control";

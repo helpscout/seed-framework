@@ -1,0 +1,15 @@
+// Components :: Dropdown :: Modifiers :: Up
+
+.c-dropdown--up {
+  > .c-dropdown__toggle {
+    > .c-caret {
+      @include transform(rotate(180deg));
+    }
+  }
+
+  > .c-dropdown__content {
+    bottom: 100%;
+    margin-bottom: space(md);
+    top: auto;
+  }
+}

@@ -1,59 +1,47 @@
 // Components :: Buttons :: Base
 
-.c-btn--subtle {
-  background-color: transparent;
-  color: $HS-color-text-subtler;
-
-  &:hover {
-    background-color: rgba(color(black), 0.05);
-    color: $HS-color-text-subtle;
-  }
-}
-
-.c-btn--rounded {
-  border-color: color(button-border);
-  border-radius: 200px;
-
-  &:hover {
-    background-color: $HS-button-background-color;
-    border-color: darken(color(button-border), 8);
-  }
-}
-
-
-
-// States
 .c-btn {
-  &.is-danger {
-    background-color: $HS-color-error-badge;
-    border-color: $HS-color-error-border;
-    color: color(white);
+  @include appearance(none);
+  @include transition(background-color 0.1s linear);
+  @include user-select(none);
+  background-color: $HS-button-background-color;
+  border-radius: $HS-border-radius-md;
+  border: 1px solid;
+  border-color: $HS-button-border-color;
+  color: $HS-color-text;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $HS-font-size-sm;
+  font-weight: $HS-button-font-weight;
+  height: $HS-form-height;
+  line-height: $HS-form-line-height;
+  outline: none;
+  padding: $HS-form-padding;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
 
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: $HS-color-error-badge;
-      border-color: $HS-color-error-badge;
-    }
-
-    @include form-disabled-styles() {
-      background-color: $HS-color-error-badge;
-      border-color: $HS-color-error-badge;
-    }
+  &:hover,
+  &:focus {
+    background-color: $HS-button-background-color-hover;
+    text-decoration: none;
   }
-}
 
-.c-btn--link {
-  &.is-danger {
-    background-color: transparent;
-    border-color: transparent;
-    color: $HS-color-error-badge;
+  &:active {
+    border-color: color(button-active);
+    box-shadow: $HS-button-box-shadow-active;
+  }
 
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: transparent;
-      border-color: transparent;
-    }
+  &:focus {
+    border-color: $HS-color-focus;
+    outline: 0;
+  }
+
+  @include form-disabled-styles() {
+    background-color: $HS-button-background-color;
+    border-color: $HS-button-border-color;
+    box-shadow: none;
+    cursor: default;
+    opacity: 0.65;
   }
 }

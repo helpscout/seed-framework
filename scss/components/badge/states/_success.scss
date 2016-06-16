@@ -1,0 +1,8 @@
+// Components :: Badge :: States :: Success
+
+.c-badge {
+  &.is-active,
+  &.is-success {
+    background-color: $HS-color-success-badge;
+  }
+}

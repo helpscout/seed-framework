@@ -1,0 +1,7 @@
+// Components :: Form Group :: Base
+
+.c-form-group {
+  @include clearfix;
+  @include normalize-margin;
+  margin-bottom: space(sm);
+}

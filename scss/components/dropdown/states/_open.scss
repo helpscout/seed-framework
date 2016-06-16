@@ -1,0 +1,12 @@
+// Components :: Dropdown :: States :: Open
+
+.c-dropdown.open,
+.c-dropdown.is-open {
+  > .c-dropdown__toggle {
+    color: $HS-color-link;
+  }
+
+  > .c-dropdown__content {
+    display: block;
+  }
+}

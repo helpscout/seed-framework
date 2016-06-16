@@ -1,0 +1,7 @@
+// Components :: Badge :: States :: Info
+
+.c-badge {
+  &.is-info {
+    background-color: $HS-color-info-badge;
+  }
+}

@@ -1,0 +1,36 @@
+// Components :: Buttons :: States :: Danger
+
+.c-btn {
+  &.is-danger {
+    background-color: $HS-color-error-badge;
+    border-color: $HS-color-error-border;
+    color: color(white);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $HS-color-error-badge;
+      border-color: $HS-color-error-badge;
+    }
+
+    @include form-disabled-styles() {
+      background-color: $HS-color-error-badge;
+      border-color: $HS-color-error-badge;
+    }
+  }
+}
+
+.c-btn--link {
+  &.is-danger {
+    background-color: transparent;
+    border-color: transparent;
+    color: $HS-color-error-badge;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}

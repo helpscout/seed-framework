@@ -1,0 +1,12 @@
+// Components :: Card :: Modifiers :: Square
+
+.c-card--square {
+  border-radius: 0;
+
+  > * {
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+}
