@@ -1,6 +1,8 @@
 // Components :: Avatar :: All
 
-// Base
-@import "base";
-// Modifiers
-@import "modifiers/photo";
+.c-avatar {
+  // Base
+  @import "base";
+  // Modifiers
+  @import "modifiers/photo";
+}

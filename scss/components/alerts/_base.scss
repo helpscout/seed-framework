@@ -1,6 +1,6 @@
 // Components :: Alerts :: Base
 
-.c-alert {
+& {
   background-color: $HS-color-warning-background;
   box-shadow: $HS-alert-box-shadow $HS-color-warning-box-shadow;
   margin-bottom: space(md);

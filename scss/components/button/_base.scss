@@ -1,6 +1,6 @@
 // Components :: Buttons :: Base
 
-.c-btn {
+& {
   @include appearance(none);
   @include transition(background-color 0.1s linear);
   @include user-select(none);

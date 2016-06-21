@@ -1,6 +1,8 @@
 // Components :: Breadcrumb :: All
 
-// Base
-@import "base";
-// Modifiers
-@import "modifiers/arrow";
+.c-breadcrumb {
+  // Base
+  @import "base";
+  // Modifiers
+  @import "modifiers/arrow";
+}

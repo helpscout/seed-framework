@@ -1,6 +1,6 @@
 // Components :: Breadcrumb :: Modifiers :: Arrow
 
-.c-breadcrumb__item {
+&__item {
   & + & {
     padding-left: space(lg) + space(xs);
 

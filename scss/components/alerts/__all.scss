@@ -1,8 +1,10 @@
 // Component :: Alerts :: All
 
-// Base
-@import "base";
-// States
-@import "states/info";
-@import "states/error";
-@import "states/success";
+.c-alert {
+  // Base
+  @import "base";
+  // States
+  @import "states/info";
+  @import "states/error";
+  @import "states/success";
+}

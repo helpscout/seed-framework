@@ -1,17 +1,19 @@
 // Components :: Button :: All
 
-// Base
-@import "base";
-// Modifiers
-//// Sizing
-@import "modifiers/block";
-@import "modifiers/lg";
-@import "modifiers/sm";
-@import "modifiers/xs";
-//// Styles
-@import "modifiers/link";
-@import "modifiers/primary";
-@import "modifiers/rounded";
-@import "modifiers/subtle";
-// States
-@import "states/danger";
+.c-btn {
+  // Base
+  @import "base";
+  // Modifiers
+  //// Sizing
+  @import "modifiers/block";
+  @import "modifiers/lg";
+  @import "modifiers/sm";
+  @import "modifiers/xs";
+  //// Styles
+  @import "modifiers/link";
+  @import "modifiers/primary";
+  @import "modifiers/rounded";
+  @import "modifiers/subtle";
+  // States
+  @import "states/danger";
+}

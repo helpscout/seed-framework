@@ -1,8 +1,6 @@
 // Components :: Badge :: States :: Error
 
-.c-badge {
-  &.is-error,
-  &.is-spam {
-    background-color: $HS-color-error-badge;
-  }
+&.is-error,
+&.is-spam {
+  background-color: $HS-color-error-badge;
 }

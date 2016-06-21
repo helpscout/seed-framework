@@ -51,3 +51,5 @@ linters:
   StringQuotes:
     enabled: true
     style: double_quotes
+  UnnecessaryParentReference:
+    enabled: false

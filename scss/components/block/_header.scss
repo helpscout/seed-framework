@@ -1,6 +1,6 @@
 // Components :: Block :: Header
 
-.c-block-header {
+&-header {
   border-bottom: $HS-border;
   color: $HS-color-text;
   display: block;
@@ -20,10 +20,8 @@
   + .c-block-footer {
     border-top: 0;
   }
-}
 
-// Nav tabs
-.c-block-header {
+  // Nav tabs
   .c-nav--tab {
     border-bottom: 0;
   }

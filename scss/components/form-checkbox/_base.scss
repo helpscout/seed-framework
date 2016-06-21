@@ -1,9 +1,6 @@
-// Components :: Form group
+// Components :: Form Checkbox :: Base
 
-
-// Checkbox + radio
-.c-form-checkbox,
-.c-form-radio {
+& {
   @include normalize-margin;
   display: block;
   margin-bottom: space(sm);
@@ -17,16 +14,5 @@
     margin: auto;
     position: absolute;
     top: 0;
-  }
-}
-
-
-// States
-.c-form-checkbox,
-.c-form-radio {
-  @include form-disabled-styles() {
-    color: $HS-color-text-subtler;
-    cursor: not-allowed;
-    opacity: $HS-opacity-disabled;
   }
 }

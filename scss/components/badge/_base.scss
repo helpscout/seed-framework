@@ -1,6 +1,6 @@
 // Components :: Badge :: Base
 
-.c-badge {
+& {
   @include font-smooth;
   background-color: $HS-color-badge-background;
   border-radius: $HS-border-radius-sm;

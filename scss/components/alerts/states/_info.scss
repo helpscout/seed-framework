@@ -1,12 +1,10 @@
 // Components :: Alerts :: States :: Info
 
-.c-alert {
-  &.is-info {
-    background-color: $HS-color-info-background;
-    box-shadow: $HS-alert-box-shadow $HS-color-info-box-shadow;
+&.is-info {
+  background-color: $HS-color-info-background;
+  box-shadow: $HS-alert-box-shadow $HS-color-info-box-shadow;
 
-    @include all-text() {
-      color: $HS-color-info-text;
-    }
+  @include all-text() {
+    color: $HS-color-info-text;
   }
 }
