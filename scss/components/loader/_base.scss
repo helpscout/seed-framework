@@ -1,6 +1,6 @@
-// Components :: Loader
+// Components :: Loader :: Base
 
-.c-loader {
+& {
   @include align-items(center);
   @include backface-visibility(hidden);
   @include display(flex);

@@ -1,0 +1,8 @@
+// Components :: Nav :: All
+
+.c-nav {
+  // Base
+  @import "base";
+  // Modifiers
+  @import "modifiers/tab";
+}

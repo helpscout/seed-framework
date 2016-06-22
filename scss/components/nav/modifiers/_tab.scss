@@ -1,6 +1,6 @@
-// Components :: Nav (Tab)
+// Components :: Nav :: Modifiers :: Tab
 
-.c-nav--tab {
+&--tab {
   border-bottom: $HS-border;
 
   .c-nav__item {
@@ -12,11 +12,5 @@
     &:hover {
       border-bottom-color: $HS-nav-tab-border-color-hover;
     }
-  }
-
-  // Modifiers
-  .c-nav__item.is-active {
-    border-bottom-color: $HS-color-primary;
-    color: $HS-color-text;
   }
 }

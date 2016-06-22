@@ -1,6 +1,6 @@
 // Components :: Dropdown :: Base
 
-.c-dropdown {
+& {
   @include clearfix;
   display: inline-block;
   position: relative;

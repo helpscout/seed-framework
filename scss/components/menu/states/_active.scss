@@ -1,0 +1,7 @@
+// Components :: Menu :: States :: Active
+
+&__item {
+  &.is-active {
+    font-weight: $HS-font-weight-bold;
+  }
+}

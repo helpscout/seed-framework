@@ -1,6 +1,6 @@
 // Components :: Dropdown :: Modifiers :: Up
 
-.c-dropdown--up {
+&--up {
   > .c-dropdown__toggle {
     > .c-caret {
       @include transform(rotate(180deg));

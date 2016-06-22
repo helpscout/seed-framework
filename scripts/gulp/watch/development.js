@@ -8,7 +8,7 @@ var path = require('path');
 
 gulp.task('watch-development', function (callback) {
   gulp.watch([
-    global.config.src + '/**/*'
+    global.config.src + '/**/*.scss'
   ], ['sass-base', 'lint-development'])
   .on('change', function(event) {
     var file = event.path;

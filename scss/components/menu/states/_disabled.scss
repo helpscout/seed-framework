@@ -1,0 +1,11 @@
+// Components :: Menu :: States :: Disabled
+
+&__item {
+  &.is-disabled {
+    color: $HS-color-text-fainter;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

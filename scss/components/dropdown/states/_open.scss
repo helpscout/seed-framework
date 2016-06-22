@@ -1,7 +1,7 @@
 // Components :: Dropdown :: States :: Open
 
-.c-dropdown.open,
-.c-dropdown.is-open {
+&.is-open,
+&.open {
   > .c-dropdown__toggle {
     color: $HS-color-link;
   }

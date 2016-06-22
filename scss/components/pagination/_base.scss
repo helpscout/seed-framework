@@ -1,0 +1,27 @@
+// Components :: Pagination :: Base
+
+& {
+  @include normalize-margin;
+  font-size: $HS-font-size-xs;
+  margin-bottom: space(lg);
+  text-align: center;
+
+  > * {
+    display: inline-block;
+    margin: $HS-pagination-link-margin;
+    padding: $HS-pagination-link-padding;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__link {
+    background-color: $HS-pagination-link-background-color;
+    border: $HS-border;
+    border-radius: $HS-border-radius;
+    color: $HS-color-text;
+    font-size: $HS-font-size-sm;
+  }
+}

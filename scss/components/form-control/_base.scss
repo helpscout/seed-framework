@@ -1,6 +1,6 @@
-// Components :: Form control
+// Components :: Form Control :: Base
 
-.c-form-control {
+& {
   @include transition(border 0.2s linear);
   background-color: color(white);
   border: 1px solid;
@@ -38,38 +38,9 @@
     border-color: color(button-border);
     cursor: not-allowed;
   }
-}
 
-// Textarea
-textarea.c-form-control {
-  padding: $HS-form-padding-xs-box;
-  height: auto;
-}
-
-
-
-// Modifiers
-.c-form-control-static {
-  display: inline-block;
-  line-height: $HS-form-line-height-sm;
-  margin: 0;
-  min-height: $HS-form-height-sm;
-  vertical-align: middle;
-}
-
-
-
-// States
-.c-form-control {
-  &.is-danger {
-    border-color: $HS-color-error-text;
-  }
-
-  &.is-success {
-    border-color: $HS-color-success-text;
-  }
-
-  &.is-warning {
-    border-color: $HS-color-warning-text;
+  textarea& {
+    padding: $HS-form-padding-xs-box;
+    height: auto;
   }
 }

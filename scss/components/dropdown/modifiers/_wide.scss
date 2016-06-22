@@ -1,6 +1,6 @@
 // Components :: Dropdown :: Modifiers :: Wide
 
-.c-dropdown--wide {
+&--wide {
   > .c-dropdown__content {
     max-width: $HS-dropdown-width-wide;
     white-space: nowrap;

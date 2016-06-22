@@ -15,4 +15,10 @@
     position: absolute;
     top: 0;
   }
+
+  @include form-disabled-styles() {
+    color: $HS-color-text-subtler;
+    cursor: not-allowed;
+    opacity: $HS-opacity-disabled;
+  }
 }

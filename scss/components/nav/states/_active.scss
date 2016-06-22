@@ -1,0 +1,15 @@
+// Components :: Nav :: States :: Active
+
+&--stacked {
+  .c-nav__item.is-active {
+    color: $HS-color-text;
+    font-weight: $HS-font-weight-bold;
+  }
+}
+
+&--tab {
+  .c-nav__item.is-active {
+    border-bottom-color: $HS-color-primary;
+    color: $HS-color-text;
+  }
+}

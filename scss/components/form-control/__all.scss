@@ -1,0 +1,12 @@
+// Components :: Form Control :: All
+
+.c-form-control {
+  // Base
+  @import "base";
+  // Modifiers
+  @import "modifiers/static";
+  // States
+  @import "states/danger";
+  @import "states/success";
+  @import "states/warning";
+}

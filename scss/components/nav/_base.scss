@@ -1,6 +1,6 @@
-// Components :: Nav
+// Components :: Nav :: Base
 
-.c-nav {
+& {
   @include clearfix;
   @include list-unstyled;
   margin: 0 0 space(md);
@@ -11,8 +11,8 @@
     position: relative;
     margin: 0;
   }
-}
 
-.c-nav__item {
-  display: inline-block;
+  &__item {
+    display: inline-block;
+  }
 }

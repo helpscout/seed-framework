@@ -1,6 +1,6 @@
-// Components :: Nav (Stacked)
+// Components :: Nav Stacked :: Modifiers :: Stacked
 
-.c-nav--stacked {
+&--stacked {
   padding-bottom: space(md);
 
   li {
@@ -22,11 +22,5 @@
       background-color: $HS-color-background-light;
       color: $HS-color-text;
     }
-  }
-
-  // Modifiers
-  .c-nav__item.is-active {
-    color: $HS-color-text;
-    font-weight: $HS-font-weight-bold;
   }
 }

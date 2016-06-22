@@ -1,0 +1,7 @@
+// Components :: Card :: States :: Clickable
+
+&__header.is-clickable {
+  &:hover {
+    background-color: $HS-color-background-clickable;
+  }
+}
