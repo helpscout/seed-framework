@@ -2,11 +2,11 @@
 
 .c-card {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/flat";
-  @import "modifiers/index";
-  @import "modifiers/square";
+  @import "./modifiers/flat";
+  @import "./modifiers/index";
+  @import "./modifiers/square";
   // States
-  @import "states/clickable";
+  @import "./states/clickable";
 }

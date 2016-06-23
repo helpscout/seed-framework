@@ -2,8 +2,8 @@
 
 .c-menu {
   // Base
-  @import "base";
+  @import "./base";
   // States
-  @import "states/active";
-  @import "states/disabled";
+  @import "./states/active";
+  @import "./states/disabled";
 }

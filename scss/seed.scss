@@ -8,22 +8,22 @@
 @import "pack/seed-grid";
 
 // Core
-@import "seed-core";
+@import "./seed-core";
 
 // Base
-@import "base/all";
+@import "./base/all";
 
 // Components
-@import "components/_all";
+@import "./components/_all";
 
 // Plugins
-@import "plugins/all";
+@import "./plugins/all";
 
 // Objects
-@import "objects/all";
+@import "./objects/all";
 
 // Utilities
-@import "utilities/all";
+@import "./utilities/all";
 
 // Animations
-@import "animations/all";
+@import "./animations/all";

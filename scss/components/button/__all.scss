@@ -2,18 +2,18 @@
 
 .c-btn {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
   //// Sizing
-  @import "modifiers/block";
-  @import "modifiers/lg";
-  @import "modifiers/sm";
-  @import "modifiers/xs";
+  @import "./modifiers/block";
+  @import "./modifiers/lg";
+  @import "./modifiers/sm";
+  @import "./modifiers/xs";
   //// Styles
-  @import "modifiers/link";
-  @import "modifiers/primary";
-  @import "modifiers/rounded";
-  @import "modifiers/subtle";
+  @import "./modifiers/link";
+  @import "./modifiers/primary";
+  @import "./modifiers/rounded";
+  @import "./modifiers/subtle";
   // States
-  @import "states/danger";
+  @import "./states/danger";
 }

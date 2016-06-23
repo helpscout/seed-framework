@@ -2,7 +2,7 @@
 
 .c-nav {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/tab";
+  @import "./modifiers/tab";
 }

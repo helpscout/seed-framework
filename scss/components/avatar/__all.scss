@@ -2,7 +2,7 @@
 
 .c-avatar {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/photo";
+  @import "./modifiers/photo";
 }

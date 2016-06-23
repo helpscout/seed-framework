@@ -2,11 +2,11 @@
 
 .c-dropdown {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/right";
-  @import "modifiers/up";
-  @import "modifiers/wide";
+  @import "./modifiers/right";
+  @import "./modifiers/up";
+  @import "./modifiers/wide";
   // States
-  @import "states/open";
+  @import "./states/open";
 }

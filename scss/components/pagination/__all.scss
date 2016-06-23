@@ -2,7 +2,7 @@
 
 .c-pagination {
   // Base
-  @import "base";
+  @import "./base";
   // States
-  @import "states/active";
+  @import "./states/active";
 }

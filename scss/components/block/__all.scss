@@ -2,8 +2,8 @@
 
 .c-block {
   // Base
-  @import "base";
-  @import "collapsible";
-  @import "footer";
-  @import "header";
+  @import "./base";
+  @import "./collapsible";
+  @import "./footer";
+  @import "./header";
 }

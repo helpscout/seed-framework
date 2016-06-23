@@ -2,8 +2,8 @@
 
 .c-caret {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/muted";
-  @import "modifiers/subtle";
+  @import "./modifiers/muted";
+  @import "./modifiers/subtle";
 }

@@ -2,11 +2,11 @@
 
 .c-form-control {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/static";
+  @import "./modifiers/static";
   // States
-  @import "states/danger";
-  @import "states/success";
-  @import "states/warning";
+  @import "./states/danger";
+  @import "./states/success";
+  @import "./states/warning";
 }

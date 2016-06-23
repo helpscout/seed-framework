@@ -2,9 +2,9 @@
 
 .c-alert {
   // Base
-  @import "base";
+  @import "./base";
   // States
-  @import "states/info";
-  @import "states/error";
-  @import "states/success";
+  @import "./states/info";
+  @import "./states/error";
+  @import "./states/success";
 }

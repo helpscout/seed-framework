@@ -2,7 +2,7 @@
 
 .c-breadcrumb {
   // Base
-  @import "base";
+  @import "./base";
   // Modifiers
-  @import "modifiers/arrow";
+  @import "./modifiers/arrow";
 }
