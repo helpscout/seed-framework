@@ -5,7 +5,8 @@
 // This isn't the base solution, but works for me.
 // We can't rely on Bower to take care of this is Seed is imported
 // into another project.
-@import "vendors/bourbon/app/assets/stylesheets/bourbon";
+// @import "vendors/bourbon/app/assets/stylesheets/bourbon";
+@import "bourbon";
 
 // Variables
 @import "variables/all";

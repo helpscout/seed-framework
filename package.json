@@ -20,6 +20,7 @@
     "url": "https://github.com/helpscout/seed/issues"
   },
   "devDependencies": {
+    "bourbon": "^4.2.7",
     "check-dependencies": "^0.12.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
@@ -32,7 +33,8 @@
     "gulp-util": "^3.0.7",
     "lazypipe": "^1.0.1",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "seed-grid": "0.0.1"
   },
   "dependencies": {
     "bourbon": "^4.2.7"
