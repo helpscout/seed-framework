@@ -33,12 +33,13 @@
     "gulp-util": "^3.0.7",
     "lazypipe": "^1.0.1",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.1.5",
-    "sass-pathfinder": "0.0.1",
-    "seed-grid": "0.0.1"
+    "run-sequence": "^1.1.5"
   },
   "dependencies": {
-    "bourbon": "^4.2.7"
+    "bourbon": "^4.2.7",
+    "sass-pathfinder": "0.0.1",
+    "seed-breakpoints": "0.0.2",
+    "seed-grid": "0.0.3"
   },
   "engines": {
     "node": ">=0.10.1"
