@@ -3,9 +3,8 @@
 
 var gulp = require('gulp');
 var sassLint = require('gulp-sass-lint');
-
 gulp.task('lint', function(callback) {
-  return gulp.src(global.config.src + '/seed.scss')
+  return gulp.src(global.config.src + '/**/*.scss')
     .pipe(sassLint({
       configFile: global.path + '/.sass-lint.yml'
     }))
