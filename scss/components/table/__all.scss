@@ -1,0 +1,17 @@
+// Components :: Table :: All
+
+.c-table {
+  // Base
+  @import "./base";
+  // Modifiers
+  @import "./modifiers/bordered";
+  @import "./modifiers/condensed";
+  @import "./modifiers/fixed";
+  @import "./modifiers/hover";
+  @import "./modifiers/striped";
+  // States
+  @import "./states/error";
+  @import "./states/inactive";
+  @import "./states/success";
+  @import "./states/warning";
+}

@@ -1,0 +1,10 @@
+// Components :: Table :: Modifiers :: Striped
+
+&--striped {
+  tr:nth-child(odd) {
+    > td,
+    > th {
+      background-color: $HS-color-background-lighter;
+    }
+  }
+}

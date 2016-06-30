@@ -1,5 +1,7 @@
 // Components :: Nav Stacked :: Modifiers :: Stacked
 
+$component: #{&};
+
 &--stacked {
   padding-bottom: space(md);
 
@@ -7,7 +9,7 @@
     display: block;
   }
 
-  .c-nav__item {
+  #{$component}__item {
     border-radius: $HS-border-radius-md;
     color: $HS-color-text;
     display: block;

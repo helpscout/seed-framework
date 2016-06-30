@@ -1,6 +1,6 @@
 // Components :: Spinner :: Base
 
-.c-spinner {
+& {
   @include animation(spin 1.2s infinite linear);
   border: $HS-spinner-border solid;
   border-bottom-color: $HS-spinner-border-color;
@@ -11,18 +11,4 @@
   display: inline-block;
   height: $HS-spinner-size;
   width: $HS-spinner-size;
-}
-
-
-// Modifiers
-.c-spinner {
-  &--sm {
-    height: $HS-spinner-size-sm;
-    width: $HS-spinner-size-sm;
-  }
-
-  &--lg {
-    height: $HS-spinner-size-lg;
-    width: $HS-spinner-size-lg;
-  }
 }

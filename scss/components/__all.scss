@@ -1,5 +1,5 @@
 // Components :: All
-// Imports _all the component styles
+// Imports all the component styles
 
 @import "./alerts/_all";
 @import "./avatar/_all";
@@ -9,7 +9,6 @@
 @import "./button/_all";
 @import "./card/_all";
 @import "./caret/_all";
-@import "./conversation";
 @import "./dropdown/_all";
 @import "./form-addon/_all";
 @import "./form-checkbox/_all";
@@ -19,15 +18,16 @@
 @import "./form-radio/_all";
 @import "./loader/_all";
 @import "./menu/_all";
-@import "./modal";
 @import "./nav/_all";
-@import "./navbar";
-@import "./noty";
+@import "./navbar/_all";
 @import "./pagination/_all";
+@import "./spinner/_all";
+@import "./switch/_all";
+@import "./switcher/_all";
+@import "./table/_all";
+
+
+// TODO:: Abstract these to seed-bootstrap-pack
+@import "./modal";
 @import "./popover";
-@import "./spinner";
-@import "./switch";
-@import "./table";
-@import "./tag";
-@import "./thread";
 @import "./tooltip";

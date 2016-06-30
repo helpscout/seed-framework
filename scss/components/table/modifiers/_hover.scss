@@ -1,0 +1,10 @@
+// Components :: Table :: Modifiers :: Hover
+
+&--hover {
+  tr:hover {
+    > td,
+    > th {
+      background-color: $HS-color-background-light;
+    }
+  }
+}

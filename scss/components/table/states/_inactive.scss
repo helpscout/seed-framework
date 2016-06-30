@@ -1,0 +1,8 @@
+// Components :: Table :: States :: Inactive
+
+& tr.is-inactive {
+  td,
+  th {
+    background-color: $HS-color-inactive-background;
+  }
+}

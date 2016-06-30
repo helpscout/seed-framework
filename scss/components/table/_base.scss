@@ -1,0 +1,25 @@
+// Components :: Table :: Base
+
+& {
+  @include normalize-margin;
+  margin-bottom: space(md);
+  width: 100%;
+
+  th {
+    border-bottom: $HS-border;
+    color: $HS-color-text-subtle;
+    font-weight: $HS-font-weight-normal;
+    padding: $HS-table-th-padding;
+    text-align: left;
+  }
+
+  td {
+    border-top: $HS-border;
+    padding: $HS-table-td-padding;
+    word-break: normal;
+
+    &:only-of-type {
+      width: 100%;
+    }
+  }
+}

@@ -38,9 +38,4 @@
     border-color: color(button-border);
     cursor: not-allowed;
   }
-
-  textarea& {
-    padding: $HS-form-padding-xs-box;
-    height: auto;
-  }
 }

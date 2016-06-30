@@ -1,9 +1,11 @@
 // Components :: Nav :: Modifiers :: Tab
 
+$component: #{&};
+
 &--tab {
   border-bottom: $HS-border;
 
-  .c-nav__item {
+  #{$component}__item {
     border-bottom: $HS-nav-tab-border-size solid transparent;
     color: $HS-color-text;
     padding: $HS-nav-tab-item-padding;

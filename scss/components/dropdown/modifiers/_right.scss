@@ -1,7 +1,9 @@
 // Components :: Dropdown :: Modifiers :: Right
 
+$component: #{&};
+
 &--right {
-  > .c-dropdown__content {
+  > #{$component}__content {
     left: auto;
     right: 0;
   }

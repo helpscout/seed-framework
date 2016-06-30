@@ -3,4 +3,7 @@
 .c-spinner {
   // Base
   @import "./base";
-}
+  // Modifiers
+  @import "./modifiers/lg";
+  @import "./modifiers/sm";
+ }

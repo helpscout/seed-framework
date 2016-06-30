@@ -10,3 +10,7 @@
   @import "./states/success";
   @import "./states/warning";
 }
+
+textarea.c-form-control {
+  @import "./textarea";
+}

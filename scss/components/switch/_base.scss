@@ -1,30 +1,6 @@
-// Components :: Switch
+// Components :: Switch :: Base
 
-
-// Table of contents
-// - Base
-// - Sizing
-// - States
-
-
-// Base
-.c-switcher {
-  display: inline-block;
-  margin: 0;
-  position: relative;
-
-  > input {
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-  }
-}
-
-.c-switch {
+& {
   @include appearance(none);
   @include transition(all 0.3s ease);
   background-color: $HS-switch-background;
@@ -67,33 +43,6 @@
       box-shadow: $HS-z-shadow-3;
       width: 60%;
     }
-  }
-}
-
-
-
-// Sizing
-// Small Switches
-.c-switch--sm {
-  height: $HS-switch-height-sm;
-  line-height: $HS-switch-height-sm;
-  width: $HS-switch-width-sm;
-
-  &::before {
-    height: $HS-switch-trigger-size-sm;
-    width: $HS-switch-trigger-size-sm;
-  }
-}
-
-// Extra Small Switches
-.c-switch--xs {
-  height: $HS-switch-height-xs;
-  line-height: $HS-switch-height-xs;
-  width: $HS-switch-width-xs;
-
-  &::before {
-    height: $HS-switch-trigger-size-xs;
-    width: $HS-switch-trigger-size-xs;
   }
 }
 
