@@ -10,6 +10,6 @@ gulp.task('default', function(callback) {
     'verify-dependencies',
     'lint',
     'sass-base',
-    'watch-sass'
+    'watch'
   );
 });

@@ -9,7 +9,7 @@ gulp.task('build', function(callback) {
   runSequence(
     'verify-dependencies',
     'clean',
-    'lint',
+    'lint-build',
     'sass-base',
     'sass-minify'
   );

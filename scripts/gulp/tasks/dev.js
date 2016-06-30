@@ -8,6 +8,6 @@ gulp.task('dev', function(callback) {
   runSequence(
     'lint',
     'sass-base',
-    'watch-development'
+    'watch'
   );
 });

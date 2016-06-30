@@ -34,7 +34,7 @@
       // Color is invalid, shade is passed in
       @if type-of($color) == "null" and $shade {
         @warn "No color called \"#{$name}\" with the shade \"#{$shade}\" found. "
-          + "Are you sure it's in `variables/colors`?";
+        + "Are you sure it's in `variables/colors`?";
       }
 
       // Color has no palette
