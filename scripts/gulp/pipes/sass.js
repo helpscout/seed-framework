@@ -9,6 +9,7 @@ var sourcemaps = require('gulp-sourcemaps');
 
 var bourbon = require('bourbon').includePaths;
 var seedGrid = require('seed-grid');
+var seedFloats = require('seed-floats');
 var seedSpacing = require('seed-spacing');
 var seedWidth = require('seed-width');
 
@@ -16,6 +17,7 @@ var includePaths = pathfinder(
   global.config.src,
   bourbon,
   seedGrid,
+  seedFloats,
   seedSpacing,
   seedWidth
 );

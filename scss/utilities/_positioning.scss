@@ -1,21 +1,5 @@
 // Utilities :: Positioning
 
-.u-clearfix {
-  @include clearfix;
-}
-
-.u-pull-left {
-  @include breakpoint-all() {
-    float: left !important;
-  }
-}
-
-.u-pull-right {
-  @include breakpoint-all() {
-    float: right !important;
-  }
-}
-
 .u-v-align-top {
   vertical-align: top;
 }
