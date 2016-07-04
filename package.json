@@ -41,6 +41,7 @@
     "sass-pathfinder": "0.0.2",
     "seed-breakpoints": "0.0.2",
     "seed-grid": "0.0.4",
+    "seed-spacing": "0.0.2",
     "seed-width": "0.0.1"
   },
   "engines": {
