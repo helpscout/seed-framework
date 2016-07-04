@@ -9,11 +9,13 @@ var sourcemaps = require('gulp-sourcemaps');
 
 var bourbon = require('bourbon').includePaths;
 var seedGrid = require('seed-grid');
+var seedWidth = require('seed-width');
 
 var includePaths = pathfinder(
   global.config.src,
   bourbon,
-  seedGrid
+  seedGrid,
+  seedWidth
 );
 
 var pipe = lazypipe()

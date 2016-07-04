@@ -40,7 +40,8 @@
     "bourbon": "^4.2.7",
     "sass-pathfinder": "0.0.2",
     "seed-breakpoints": "0.0.2",
-    "seed-grid": "0.0.3"
+    "seed-grid": "0.0.4",
+    "seed-width": "0.0.1"
   },
   "engines": {
     "node": ">=0.10.1"
