@@ -12,6 +12,19 @@
     "type": "git",
     "url": "git+https://github.com/helpscout/seed.git"
   },
+  "keywords": [
+    "bem",
+    "css",
+    "design",
+    "framework",
+    "functional",
+    "itcss",
+    "modular",
+    "oocss",
+    "performance",
+    "seed",
+    "scss"
+  ],
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
