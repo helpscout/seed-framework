@@ -40,15 +40,6 @@
 }
 
 
-.u-text-justify {
-  text-align: justify !important;
-}
-
-.u-text-nowrap {
-  white-space: nowrap !important;
-}
-
-
 .u-text-truncate-fade {
   @include text-truncate();
   display: block;

@@ -58,7 +58,7 @@
     "seed-grid": "^0.1.0",
     "seed-props": "0.0.3",
     "seed-spacing": "0.0.5",
-    "seed-typography": "0.0.6",
+    "seed-typography": "0.0.7",
     "seed-width": "0.0.3"
   },
   "engines": {
