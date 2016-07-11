@@ -8,17 +8,21 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 
 var bourbon = require('bourbon').includePaths;
+var seedBreakpoints = require('seed-breakpoints');
 var seedGrid = require('seed-grid');
 var seedFloats = require('seed-floats');
 var seedSpacing = require('seed-spacing');
+var seedTypography = require('seed-typography');
 var seedWidth = require('seed-width');
 
 var includePaths = pathfinder(
   global.config.src,
   bourbon,
+  seedBreakpoints,
   seedGrid,
   seedFloats,
   seedSpacing,
+  seedTypography,
   seedWidth
 );
 
