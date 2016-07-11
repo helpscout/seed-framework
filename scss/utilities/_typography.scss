@@ -1,31 +1,5 @@
 // Utilities :: Typography
 
-
-// Table of contents
-// - Alignment
-// - Coloring
-// - Cases
-// - Decoration
-// - Readability
-// - Sizing
-// - Wrapping
-
-
-// Alignment
-.u-text-center {
-  text-align: center !important;
-}
-
-.u-text-left {
-  text-align: left !important;
-}
-
-.u-text-right {
-  text-align: right !important;
-}
-
-
-
 // Coloring
 .u-text-default {
   color: $HS-color-text !important;
@@ -52,37 +26,6 @@
 }
 
 
-
-// Cases
-.u-text-capitalize {
-  text-transform: capitalize !important;
-}
-
-.u-text-lowercase {
-  text-transform: lowercase !important;
-}
-
-.u-text-uppercase {
-  text-transform: uppercase !important;
-}
-
-
-
-// Decoration
-.u-text-strikethrough {
-  text-decoration: line-through !important;
-}
-
-.u-text-underline {
-  text-decoration: underline !important;
-}
-
-.u-text-no-underline {
-  text-decoration: none !important;
-}
-
-
-
 // Font family
 .u-text-sans-serif {
   font-family: $HS-font-family-sans-serif !important;
@@ -97,109 +40,6 @@
 }
 
 
-// Readability
-.u-text-smooth {
-  @include font-smooth;
-}
-
-
-
-// Sizing
-.u-text-display-1 {
-  font-size: $HS-font-size-display-4 !important;
-  @include breakpoint(sm) {
-    font-size: $HS-font-size-display-1 !important;
-  }
-}
-
-.u-text-display-2 {
-  font-size: $HS-font-size-display-4 !important;
-  @include breakpoint(sm) {
-    font-size: $HS-font-size-display-2 !important;
-  }
-}
-
-.u-text-display-3 {
-  font-size: $HS-font-size-display-4 !important;
-  @include breakpoint(sm) {
-    font-size: $HS-font-size-display-3 !important;
-  }
-}
-
-.u-text-display-4 {
-  font-size: $HS-font-size-h1 !important;
-  @include breakpoint(sm) {
-    font-size: $HS-font-size-display-4 !important;
-  }
-}
-
-.u-text-xl {
-  font-size: $HS-font-size-xl !important;
-}
-
-.u-text-lg {
-  font-size: $HS-font-size-lg !important;
-}
-
-.u-text-md {
-  font-size: $HS-font-size-md !important;
-}
-
-.u-text-sm {
-  font-size: $HS-font-size-sm !important;
-}
-
-.u-text-xs {
-  font-size: $HS-font-size-xs !important;
-}
-
-.u-text-xxs {
-  font-size: $HS-font-size-xxs !important;
-}
-
-
-
-// Types
-.u-text-section-title {
-  @include normalize-margin;
-  color: color(charcoal, 200);
-  font-size: $HS-font-size-xs;
-  font-weight: $HS-font-weight-boldish;
-  letter-spacing: $HS-letter-spacing-wide;
-  margin-bottom: space(sm);
-  text-transform: uppercase;
-}
-
-
-
-// Weight
-.u-text-light {
-  font-weight: $HS-font-weight-light !important;
-}
-
-.u-text-normal {
-  font-weight: $HS-font-weight-normal !important;
-}
-
-.u-text-boldish {
-  font-weight: $HS-font-weight-boldish !important;
-}
-
-.u-text-bold {
-  font-weight: $HS-font-weight-bold !important;
-}
-
-
-
-// Wrapping
-.u-text-break-all {
-  word-break: break-all !important;
-}
-
-.u-text-break-word {
-  word-break: break-word !important;
-}
-
 .u-text-justify {
   text-align: justify !important;
 }
@@ -208,14 +48,6 @@
   white-space: nowrap !important;
 }
 
-.u-text-truncate {
-  @include text-truncate();
-}
-
-.u-text-truncate-block {
-  @include text-truncate();
-  display: block;
-}
 
 .u-text-truncate-fade {
   @include text-truncate();
