@@ -1,6 +1,0 @@
-// Components :: Switch :: States :: Focused
-
-.c-switcher > input:focus + &,
-&.is-focused {
-  box-shadow: 0 0 0 1px rgba(color(white), 0.5) inset;
-}
