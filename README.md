@@ -1,6 +1,7 @@
 # seed [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
 
 Seed CSS Framework!
+
 JS is powered by [Bootstrap.js](http://getbootstrap.com/javascript/)
 
 ## Install
