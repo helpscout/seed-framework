@@ -21,6 +21,11 @@ This project has evolved like cray! There's lots more that needs to be added.
 * Tooltips
 
 
+## Documentation
+
+You can find most of our documentation [here](http://style.helpscout.com/seed/packs/)!
+
+
 ## Basic Usage
 
 ### SCSS
