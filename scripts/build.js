@@ -6,7 +6,7 @@ var mkdirp = require('mkdirp');
 var harvester = require('seed-harvester');
 var sass = require('node-sass');
 
-var file = pkg.name;
+var file = 'seed';
 var includePaths = harvester();
 
 // Default .css compile

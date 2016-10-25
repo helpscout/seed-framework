@@ -10,8 +10,10 @@ var homepage = function() {
   }
 };
 
+var name = 'seed';
+
 var banner = ['/**',
-  ' * '+ pkg.name +' v'+ pkg.version + homepage(),
+  ' * '+ name +' v'+ pkg.version + homepage(),
   ' * '+ pkg.description,
   ' * Licensed under '+ pkg.license,
   ' */',
