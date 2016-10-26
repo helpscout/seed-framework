@@ -17,7 +17,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 
 * Base styles
 * Modal
-* Popover
+* [Popover](https://github.com/helpscout/seed-popover) (WIP)
 * Table
 * Tooltips
 
