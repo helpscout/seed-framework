@@ -1,4 +1,4 @@
-# seed [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
+# seed [![Build Status](https://travis-ci.org/helpscout/seed.svg?branch=master)](https://travis-ci.org/helpscout/seed) [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
 
 Seed CSS Framework!
 
