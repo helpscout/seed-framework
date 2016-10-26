@@ -19,7 +19,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 * [x] [Dropdowns](https://github.com/helpscout/seed-dropdown)
 * [ ] Modal
 * [x] [Popover](https://github.com/helpscout/seed-popover)
-* [ ] Table
+* [x] [Table](https://github.com/helpscout/seed-tabl
 * [ ] Tooltips
 
 
