@@ -2135,6 +2135,111 @@ textarea.c-input {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
     width: 60%; }
 
+.c-table,
+.c-table col,
+.c-table colgroup,
+.c-table tbody,
+.c-table td,
+.c-table tfoot,
+.c-table th,
+.c-table thead,
+.c-table tr {
+  box-sizing: border-box; }
+
+.c-table {
+  max-width: 100%;
+  width: 100%; }
+
+.c-table thead th {
+  border-bottom: 1px solid #E3E8EB;
+  vertical-align: bottom; }
+
+.c-table th,
+.c-table td {
+  border-top: 1px solid #E3E8EB;
+  padding: 12px; }
+
+.c-table tbody + tbody {
+  border-bottom: 1px solid #E3E8EB; }
+
+.c-table--top th,
+.c-table--top td {
+  vertical-align: top; }
+
+.c-table--middle th,
+.c-table--middle td {
+  vertical-align: middle; }
+
+.c-table--bottom th,
+.c-table--bottom td {
+  vertical-align: bottom; }
+
+.c-table--sm th,
+.c-table--sm td {
+  padding: 8px; }
+
+.c-table--xs th,
+.c-table--xs td {
+  padding: 4px; }
+
+.c-table--bordered {
+  border-top: 1px solid #E3E8EB; }
+  .c-table--bordered th,
+  .c-table--bordered td {
+    border: 1px solid #E3E8EB; }
+  .c-table--bordered thead th,
+  .c-table--bordered thead td {
+    border-bottom-width: 1px; }
+
+.c-table--fixed {
+  table-layout: fixed; }
+
+.c-table--striped tbody tr:nth-of-type(odd) {
+  background-color: #F9FAFA; }
+
+.c-table--hover tbody tr:hover {
+  background-color: #F1F3F5; }
+
+.c-table th.is-error,
+.c-table tr.is-error,
+.c-table td.is-error {
+  background-color: #ffe3e2; }
+
+.c-table--hover th.is-error:hover,
+.c-table--hover tr.is-error:hover,
+.c-table--hover td.is-error:hover {
+  background-color: #ffd9d8; }
+
+.c-table th.is-info,
+.c-table tr.is-info,
+.c-table td.is-info {
+  background-color: #daf1ff; }
+
+.c-table--hover th.is-info:hover,
+.c-table--hover tr.is-info:hover,
+.c-table--hover td.is-info:hover {
+  background-color: #d0edff; }
+
+.c-table th.is-success,
+.c-table tr.is-success,
+.c-table td.is-success {
+  background-color: #e4fbe6; }
+
+.c-table--hover th.is-success:hover,
+.c-table--hover tr.is-success:hover,
+.c-table--hover td.is-success:hover {
+  background-color: #dbfade; }
+
+.c-table th.is-warning,
+.c-table tr.is-warning,
+.c-table td.is-warning {
+  background-color: #fff6e2; }
+
+.c-table--hover th.is-warning:hover,
+.c-table--hover tr.is-warning:hover,
+.c-table--hover td.is-warning:hover {
+  background-color: #fff3d8; }
+
 .c-thumbnail {
   background-color: #eee;
   border-radius: 0;
