@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "4"
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm set progress=false
+
+install:
+  - npm install
+
+script:
+  - npm test
