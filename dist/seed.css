@@ -1047,6 +1047,11 @@ input[type="search"] {
     margin-bottom: 32px;
     margin-right: 32px; }
 
+.o-responsive-wrapper {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto; }
+
 .c-alert {
   background-color: #fff6e2;
   box-shadow: inset 4px 0 0 0 #ffc646;
