@@ -1511,6 +1511,13 @@ input[type="search"] {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
 
+.c-list__item,
+.c-list > li {
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  padding: 4px 0; }
+
 .c-list {
   list-style: none;
   padding-left: 0;
@@ -1604,13 +1611,6 @@ input[type="search"] {
     .c-list--inline\@lg .c-list__item:first-child,
     .c-list--inline\@lg > li:first-child {
       padding-left: 0; } }
-
-.c-list__item,
-.c-list > li {
-  box-sizing: border-box;
-  display: block;
-  margin: 0;
-  padding: 4px 0; }
 
 .c-dropdown {
   box-sizing: border-box;
