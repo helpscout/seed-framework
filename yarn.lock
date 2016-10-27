@@ -1073,9 +1073,11 @@ seed-helpscout-theme@0.0.3:
     seed-color-scheme-helpscout "0.0.3"
     seed-dash "0.0.1"
 
-seed-hr@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-hr/-/seed-hr-0.0.1.tgz#e8a1bb5f34f9f04c43e10e2f4fab3acc6ac6dbb4"
+seed-hr@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seed-hr/-/seed-hr-0.0.2.tgz#bdea7780fddf7ef64f47747aec05ebc10d74da29"
+  dependencies:
+    seed-publish "0.0.2"
 
 seed-inline@0.0.4:
   version "0.0.4"
@@ -1100,13 +1102,14 @@ seed-input@0.0.1:
     seed-control "0.0.3"
     seed-states "0.0.4"
 
-seed-input@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/seed-input/-/seed-input-0.0.2.tgz#7b59c15eb53e2dab2a495b41eeba3f3357fbe149"
+seed-input@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/seed-input/-/seed-input-0.0.3.tgz#3c8c1f68e8063744c776a8a1cef582030ca88e7f"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-border "0.0.7"
     seed-control "0.0.3"
+    seed-publish "0.0.2"
     seed-states "0.0.4"
 
 seed-link@0.0.2:
