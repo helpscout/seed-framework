@@ -913,26 +913,29 @@ sass-pathfinder@0.0.5:
     lodash.flattendeep "^4.3.0"
     lodash.uniq "^4.4.0"
 
-seed-alert@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/seed-alert/-/seed-alert-0.1.4.tgz#b941bdc63b0fa65227d71bcc4cf4e138eba1ae40"
+seed-alert@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/seed-alert/-/seed-alert-0.1.5.tgz#796fa66591cc962f068e66acb52075d4bde24fbc"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-dash "0.0.1"
+    seed-publish "0.0.2"
     seed-states "0.0.4"
 
-seed-avatar@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/seed-avatar/-/seed-avatar-0.1.0.tgz#f8a39e654caf4a9a79a908143e8fdce213fbac4d"
+seed-avatar@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/seed-avatar/-/seed-avatar-0.1.1.tgz#730012d778edefd4bd0eb39572bb3bd6674981f0"
   dependencies:
     seed-breakpoints "^0.4.0"
+    seed-publish "0.0.2"
 
-seed-badge@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-badge/-/seed-badge-0.0.1.tgz#0e04fc67b920329fef1706abc9ce530e49817d45"
+seed-badge@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seed-badge/-/seed-badge-0.0.2.tgz#5099b2aab2011f294f695be138760dac08e7c34c"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-dash "0.0.1"
+    seed-publish "0.0.2"
     seed-states "0.0.4"
 
 seed-bootstrap-fade@0.0.3:
@@ -951,6 +954,14 @@ seed-border@0.0.7:
   dependencies:
     sass-pathfinder "0.0.5"
     seed-breakpoints "^0.4.0"
+
+seed-border@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/seed-border/-/seed-border-0.0.8.tgz#b4fd2d3d0664701f3b91664e192e845f79c8501c"
+  dependencies:
+    sass-pathfinder "0.0.5"
+    seed-breakpoints "^0.4.0"
+    seed-publish "0.0.2"
 
 seed-breakpoints@^0.4.0, seed-breakpoints@0.4.0:
   version "0.4.0"
@@ -993,12 +1004,13 @@ seed-color-scheme@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/seed-color-scheme/-/seed-color-scheme-0.0.2.tgz#40de2ca0db44cb3bc84461b3266439aeebffc3e7"
 
-seed-control-group@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/seed-control-group/-/seed-control-group-0.0.3.tgz#d34e21faaec86eb49089930a5aa7e8d9dfdfbddb"
+seed-control-group@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/seed-control-group/-/seed-control-group-0.0.4.tgz#1075d27550164971308eefb6115cb446bc664507"
   dependencies:
     sass-pathfinder "0.0.5"
-    seed-border "0.0.3"
+    seed-border "0.0.7"
+    seed-publish "0.0.2"
 
 seed-control@0.0.3:
   version "0.0.3"
@@ -1017,9 +1029,9 @@ seed-display@^0.1.3:
   dependencies:
     seed-breakpoints "^0.4.0"
 
-seed-dropdown@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/seed-dropdown/-/seed-dropdown-0.0.2.tgz#dce70c7960bacea366e5c3efeb265c25d63b974a"
+seed-dropdown@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/seed-dropdown/-/seed-dropdown-0.0.3.tgz#02373672488eccfea85ccc31e71dce0ee61e76f5"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-breakpoints "^0.4.0"
@@ -1027,7 +1039,7 @@ seed-dropdown@0.0.2:
     seed-card "0.0.5"
     seed-dash "0.0.1"
     seed-family "0.0.3"
-    seed-list "0.0.13"
+    seed-list "0.0.14"
     seed-publish "0.0.2"
     seed-this "0.0.4"
 
@@ -1049,12 +1061,13 @@ seed-floats@^0.2.3:
   dependencies:
     seed-breakpoints "0.4.0"
 
-seed-grid@^0.3.8:
-  version "0.3.8"
-  resolved "https://registry.yarnpkg.com/seed-grid/-/seed-grid-0.3.8.tgz#dee028b9f4e2505023810efd64d14d2f77a302ee"
+seed-grid@^0.3.9:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/seed-grid/-/seed-grid-0.3.9.tgz#c958bbfb9f80d55c27a16e3cc4ba33780e69d74c"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-breakpoints "0.4.0"
+    seed-publish "0.0.2"
 
 seed-harvester@^0.1.0:
   version "0.1.0"
@@ -1065,14 +1078,6 @@ seed-harvester@^0.1.0:
     lodash.uniqby "^4.7.0"
     sass-pathfinder "0.0.5"
     seed-packfinder "0.0.2"
-
-seed-helpscout-theme@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/seed-helpscout-theme/-/seed-helpscout-theme-0.0.3.tgz#239a3bdd4b12d6aa22f543bfc43baa7262aa17de"
-  dependencies:
-    sass-pathfinder "0.0.3"
-    seed-color-scheme-helpscout "0.0.3"
-    seed-dash "0.0.1"
 
 seed-hr@0.0.2:
   version "0.0.2"
@@ -1117,9 +1122,9 @@ seed-link@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/seed-link/-/seed-link-0.0.2.tgz#980a99df34dbfffc3132863778d51face301f275"
 
-seed-list@0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/seed-list/-/seed-list-0.0.13.tgz#0b254e84916853d715b8f755f6d393a4e6484a99"
+seed-list@0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/seed-list/-/seed-list-0.0.14.tgz#e232c27571122bf49c8723498ea979b6db280a12"
   dependencies:
     seed-border "0.0.7"
     seed-breakpoints "^0.4.0"
@@ -1190,11 +1195,12 @@ seed-switch@0.0.2:
   dependencies:
     seed-shadow "0.0.1"
 
-seed-table@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-table/-/seed-table-0.0.1.tgz#494a310cf845fbc99171ac7b46bf86ab792dfa03"
+seed-table@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seed-table/-/seed-table-0.0.2.tgz#3c9bb0c6e4b1754024b74d922540af33e1196dc7"
   dependencies:
     seed-dash "0.0.1"
+    seed-publish "0.0.2"
     seed-states "0.0.4"
     seed-this "0.0.4"
 
@@ -1202,14 +1208,15 @@ seed-this@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/seed-this/-/seed-this-0.0.4.tgz#bb8fe24a780316f4376481e206dce6c262c46e21"
 
-seed-thumbnail@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/seed-thumbnail/-/seed-thumbnail-0.0.4.tgz#9374e8d04868b74bfce40ac243bfabfece73f4eb"
+seed-thumbnail@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/seed-thumbnail/-/seed-thumbnail-0.0.5.tgz#87d1a30b8fde18dc80857eeadee3fad26cde1fb6"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-breakpoints "^0.4.0"
     seed-dash "0.0.1"
     seed-props "^0.3.0"
+    seed-publish "0.0.2"
 
 seed-visibility@^0.2.3:
   version "0.2.3"
