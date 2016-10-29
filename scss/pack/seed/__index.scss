@@ -1,12 +1,28 @@
 // Seed CSS Framework
 // Adding all the packs!
 
+//
+// Non-rendering CSS
+//
+
+// Configs
+@import "pack/seed-control/_index";
+@import "pack/seed-states/_index";
 // Functions
 @import "pack/seed-dash/_index";
 @import "pack/seed-this/_index";
 // Mixins
 @import "pack/seed-breakpoints/_index";
+@import "pack/seed-color-scheme/_index";
 @import "pack/seed-family/_index";
+@import "pack/seed-props/_index";
+@import "pack/seed-publish/_index";
+
+
+//
+// Rendering CSS
+//
+
 // Base
 @import "pack/seed-reset/_index";
 // Objects
