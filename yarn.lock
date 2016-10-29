@@ -944,10 +944,6 @@ seed-bootstrap-fade@0.0.3:
   dependencies:
     seed-publish "0.0.2"
 
-seed-border@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/seed-border/-/seed-border-0.0.3.tgz#ac9d973fcac9c183384061d586793dbc8ee3ef15"
-
 seed-border@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/seed-border/-/seed-border-0.0.7.tgz#927906c4ac5321249d01f5801cb2a7d4dff282af"
@@ -1093,22 +1089,14 @@ seed-inline@0.0.5:
     seed-publish "0.0.2"
     seed-spacing "^0.4.2"
 
-seed-input-addons@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/seed-input-addons/-/seed-input-addons-0.0.2.tgz#32e6ae0cd6af5c2ad08bb2a09eb9aab908b958d2"
+seed-input-addons@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/seed-input-addons/-/seed-input-addons-0.0.3.tgz#8b610ec324b7531fdbd36e94172d8a92b54750ad"
   dependencies:
     sass-pathfinder "0.0.5"
     seed-control "0.0.3"
-    seed-input "0.0.1"
-
-seed-input@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-input/-/seed-input-0.0.1.tgz#152ac803aa718ed3b9a2cd755fd3ea5c135719f6"
-  dependencies:
-    sass-pathfinder "0.0.3"
-    seed-border "0.0.3"
-    seed-control "0.0.3"
-    seed-states "0.0.4"
+    seed-input "0.0.3"
+    seed-publish "0.0.2"
 
 seed-input@0.0.3:
   version "0.0.3"
