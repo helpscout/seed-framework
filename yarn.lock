@@ -1055,11 +1055,12 @@ seed-flexy@^0.2.0:
     seed-breakpoints "^0.4.0"
     seed-publish "0.0.2"
 
-seed-floats@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/seed-floats/-/seed-floats-0.2.3.tgz#7e7bb5b9df154dbcf0e88a86005c85809f723ae1"
+seed-floats@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/seed-floats/-/seed-floats-0.2.4.tgz#62880b4bc448903e4978ce279ce0622d1be0445b"
   dependencies:
     seed-breakpoints "0.4.0"
+    seed-publish "0.0.2"
 
 seed-grid@^0.3.9:
   version "0.3.9"
@@ -1085,10 +1086,11 @@ seed-hr@0.0.2:
   dependencies:
     seed-publish "0.0.2"
 
-seed-inline@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/seed-inline/-/seed-inline-0.0.4.tgz#55623a6b8d641ff9c3433991cf3f7fa6d15b8677"
+seed-inline@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/seed-inline/-/seed-inline-0.0.5.tgz#6b8defe959f6ca16bbf09fb8fd33f55484a3ee0a"
   dependencies:
+    seed-publish "0.0.2"
     seed-spacing "^0.4.2"
 
 seed-input-addons@0.0.2:
@@ -1159,17 +1161,21 @@ seed-publish@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/seed-publish/-/seed-publish-0.0.2.tgz#abf047cdacd4ceddd237c357b3a1f45dafe5c308"
 
-seed-reset@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/seed-reset/-/seed-reset-0.1.0.tgz#400d3ccc50455bc55ff16aea99938bb0d4010c03"
+seed-reset@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/seed-reset/-/seed-reset-0.1.1.tgz#f53211a02e28ca7805c982ac17ca8411cafac31a"
+  dependencies:
+    seed-publish "0.0.2"
 
-seed-responsive-wrapper@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-responsive-wrapper/-/seed-responsive-wrapper-0.0.1.tgz#239ce29e125e1eeb6eec1b93ed15add0d97a61fa"
+seed-responsive-wrapper@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seed-responsive-wrapper/-/seed-responsive-wrapper-0.0.2.tgz#b8fa608affe04f83ba073c4c067054354798816c"
+  dependencies:
+    seed-publish "0.0.2"
 
-seed-shadow@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-shadow/-/seed-shadow-0.0.1.tgz#7be498ef9a4a2add6871a773c33c4e1abae5e85d"
+seed-shadow@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/seed-shadow/-/seed-shadow-0.0.3.tgz#faf3b4a5394815f90029a624e6d6d4b7e7af9134"
   dependencies:
     seed-dash "0.0.1"
     seed-props "^0.3.0"
@@ -1180,6 +1186,13 @@ seed-spacing@^0.4.2:
   dependencies:
     seed-breakpoints "^0.4.0"
 
+seed-spacing@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/seed-spacing/-/seed-spacing-0.4.3.tgz#88cdb9c0f40c032fb6d44641e63be2bb4d24c736"
+  dependencies:
+    seed-breakpoints "^0.4.0"
+    seed-publish "0.0.2"
+
 seed-states@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/seed-states/-/seed-states-0.0.4.tgz#83595515428b5f690b057624041a91dc930ac7a1"
@@ -1189,11 +1202,12 @@ seed-states@0.0.4:
     seed-color-scheme-helpscout "0.0.3"
     seed-dash "0.0.1"
 
-seed-switch@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/seed-switch/-/seed-switch-0.0.2.tgz#3d1476b252e7b46d94c64ee5c44dd0c2f2c9e34b"
+seed-switch@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/seed-switch/-/seed-switch-0.0.3.tgz#e3135716446e632211f9bf0c4c5729bf9f33598e"
   dependencies:
-    seed-shadow "0.0.1"
+    seed-publish "0.0.2"
+    seed-shadow "0.0.3"
 
 seed-table@0.0.2:
   version "0.0.2"

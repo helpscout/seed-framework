@@ -2101,7 +2101,6 @@ textarea.c-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #d7d7d7;
   border: 1px solid;
@@ -2121,7 +2120,6 @@ textarea.c-input {
   width: 56px; }
 
 .c-switch-toggle::before {
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   background-color: #fff;
   border-radius: 100px;
