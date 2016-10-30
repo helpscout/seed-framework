@@ -1240,9 +1240,11 @@ seed-visibility@^0.2.3:
   dependencies:
     seed-breakpoints "^0.4.0"
 
-seed-zi@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-zi/-/seed-zi-0.0.1.tgz#cddff40155dfb0dada239840cd6bf873083730d9"
+seed-zi@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seed-zi/-/seed-zi-0.0.2.tgz#7cac675f24d7e8ad39059a7c062faa8afe6ca48f"
+  dependencies:
+    seed-publish "0.0.4"
 
 "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5":
   version "5.3.0"
