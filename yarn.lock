@@ -1115,9 +1115,11 @@ seed-input@0.0.3:
     seed-publish "0.0.2"
     seed-states "0.0.4"
 
-seed-link@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/seed-link/-/seed-link-0.0.2.tgz#980a99df34dbfffc3132863778d51face301f275"
+seed-link@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/seed-link/-/seed-link-0.0.3.tgz#f188423b4bb5e9620317ca3ede3c9845a41a00f1"
+  dependencies:
+    seed-publish "0.0.4"
 
 seed-list@0.0.14:
   version "0.0.14"
@@ -1128,11 +1130,12 @@ seed-list@0.0.14:
     seed-publish "0.0.2"
     seed-spacing "^0.4.2"
 
-seed-opacity@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/seed-opacity/-/seed-opacity-0.0.1.tgz#0f5a90905a886eac7d17df8ef5aab6ecd14cfb0d"
+seed-opacity@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/seed-opacity/-/seed-opacity-0.0.2.tgz#9545fd00384925fb5c1fdbaf726155b9d05c0a16"
   dependencies:
     seed-props "^0.3.0"
+    seed-publish "0.0.4"
 
 seed-packfinder@0.0.2:
   version "0.0.2"
@@ -1155,10 +1158,6 @@ seed-props@^0.3.0, seed-props@0.3.0:
 seed-publish@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/seed-publish/-/seed-publish-0.0.2.tgz#abf047cdacd4ceddd237c357b3a1f45dafe5c308"
-
-seed-publish@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/seed-publish/-/seed-publish-0.0.3.tgz#3f464f5e844f7ab8f9f0bc5d430ac54e7e4033d7"
 
 seed-publish@0.0.4:
   version "0.0.4"
