@@ -1040,6 +1040,12 @@ seed-dropdown@0.0.3:
     seed-publish "0.0.2"
     seed-this "0.0.4"
 
+seed-exclude@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/seed-exclude/-/seed-exclude-0.0.1.tgz#e38f8cb1da0f8c3ae1222e8bfe89c6e10bef6ff8"
+  dependencies:
+    seed-publish "0.0.4"
+
 seed-family@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/seed-family/-/seed-family-0.0.3.tgz#b36b7673068cd6715ec3c54a4eba404246bab411"
@@ -1153,6 +1159,10 @@ seed-publish@0.0.2:
 seed-publish@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/seed-publish/-/seed-publish-0.0.3.tgz#3f464f5e844f7ab8f9f0bc5d430ac54e7e4033d7"
+
+seed-publish@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/seed-publish/-/seed-publish-0.0.4.tgz#da70b56caa36b840558e6569a18b2d5867de9d8e"
 
 seed-reset@^0.1.1:
   version "0.1.1"
