@@ -1020,11 +1020,12 @@ seed-dash@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/seed-dash/-/seed-dash-0.0.1.tgz#ff21c0ae63330ec63a8a4e3e0dbf4a6b7a2887a2"
 
-seed-display@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/seed-display/-/seed-display-0.1.3.tgz#78cafd0478cd5da84cd8f223e216c0ce5b4c714b"
+seed-display@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/seed-display/-/seed-display-0.1.4.tgz#1830d011743e584fdf3d98df4f26e2486d16d3ed"
   dependencies:
     seed-breakpoints "^0.4.0"
+    seed-publish "0.0.4"
 
 seed-dropdown@0.0.3:
   version "0.0.3"
@@ -1234,11 +1235,19 @@ seed-thumbnail@0.0.5:
     seed-props "^0.3.0"
     seed-publish "0.0.2"
 
-seed-visibility@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/seed-visibility/-/seed-visibility-0.2.3.tgz#417c747511af9a150972ec51fc26f20606a33763"
+seed-typography@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/seed-typography/-/seed-typography-0.4.7.tgz#9d761ed3fc26b50d93c1d5ae0358135f62f58f5d"
+  dependencies:
+    seed-breakpoints "0.4.0"
+    seed-publish "0.0.4"
+
+seed-visibility@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/seed-visibility/-/seed-visibility-0.2.4.tgz#57ad617949ca922f0733e25aa580fcec624a94b3"
   dependencies:
     seed-breakpoints "^0.4.0"
+    seed-publish "0.0.4"
 
 seed-zi@0.0.2:
   version "0.0.2"

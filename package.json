@@ -60,7 +60,7 @@
     "seed-control": "0.0.3",
     "seed-control-group": "0.0.4",
     "seed-dash": "0.0.1",
-    "seed-display": "^0.1.3",
+    "seed-display": "^0.1.4",
     "seed-dropdown": "0.0.3",
     "seed-exclude": "0.0.1",
     "seed-family": "0.0.3",
@@ -86,7 +86,8 @@
     "seed-table": "0.0.2",
     "seed-this": "0.0.4",
     "seed-thumbnail": "0.0.5",
-    "seed-visibility": "^0.2.3",
+    "seed-typography": "^0.4.7",
+    "seed-visibility": "^0.2.4",
     "seed-zi": "0.0.2"
   }
 }
