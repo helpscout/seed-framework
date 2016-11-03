@@ -20,7 +20,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 * [ ] Modal
 * [x] [Popover](https://github.com/helpscout/seed-popover)
 * [x] [Table](https://github.com/helpscout/seed-table)
-* [ ] Tooltips
+* [x] [Tooltip](https://github.com/helpscout/seed-tooltip)
 
 
 ## Documentation
