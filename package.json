@@ -52,7 +52,7 @@
     "seed-badge": "0.0.2",
     "seed-border": "0.0.8",
     "seed-breakpoints": "^0.4.0",
-    "seed-button": "^0.1.9",
+    "seed-button": "^0.1.10",
     "seed-card": "0.0.5",
     "seed-centralize": "0.0.3",
     "seed-color-scheme": "0.0.2",
@@ -85,7 +85,7 @@
     "seed-switch": "0.0.3",
     "seed-table": "0.0.3",
     "seed-this": "0.0.4",
-    "seed-thumbnail": "0.0.5",
+    "seed-thumbnail": "0.0.6",
     "seed-typography": "^0.4.7",
     "seed-visibility": "^0.2.4",
     "seed-zi": "0.0.2"
