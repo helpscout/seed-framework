@@ -43,14 +43,14 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.11.2"
+    "node-sass": "^3.13.0"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
     "seed-alert": "^0.2.3",
     "seed-avatar": "^0.1.1",
     "seed-badge": "0.0.2",
-    "seed-base": "0.0.1",
+    "seed-base": "0.0.2",
     "seed-border": "0.0.8",
     "seed-breakpoints": "^0.4.0",
     "seed-button": "^0.1.12",
@@ -67,7 +67,7 @@
     "seed-family": "0.0.3",
     "seed-flexy": "^0.2.0",
     "seed-floats": "^0.2.4",
-    "seed-grid": "^0.3.9",
+    "seed-grid": "^0.3.12",
     "seed-harvester": "^0.1.3",
     "seed-hr": "0.0.2",
     "seed-inline": "0.0.5",
