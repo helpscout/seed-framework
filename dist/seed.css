@@ -1,5 +1,5 @@
 /**
- * seed v2.0.0 (https://github.com/helpscout/seed)
+ * seed v2.0.1 (https://github.com/helpscout/seed)
  * Seed CSS Framework
  * Licensed under MIT
  */
@@ -387,24 +387,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 8px; }
-
-h1 {
-  font-size: 3rem; }
-
-h2 {
-  font-size: 2.25rem; }
-
-h3 {
-  font-size: 1.5rem; }
-
-h4 {
-  font-size: 1.25rem; }
-
-h5 {
-  font-size: 1rem; }
-
-h6 {
-  font-size: 0.875rem; }
 
 small {
   font-size: 80%;
@@ -1054,6 +1036,24 @@ pre {
     display: table; }
   .o-row > [class*="o-col"] {
     float: left; }
+  .o-row--md {
+    margin-left: -8px;
+    margin-right: -8px; }
+    .o-row--md > [class*="o-col"] {
+      padding-left: 8px;
+      padding-right: 8px; }
+  .o-row--sm {
+    margin-left: -4px;
+    margin-right: -4px; }
+    .o-row--sm > [class*="o-col"] {
+      padding-left: 4px;
+      padding-right: 4px; }
+  .o-row--xs {
+    margin-left: -2px;
+    margin-right: -2px; }
+    .o-row--xs > [class*="o-col"] {
+      padding-left: 2px;
+      padding-right: 2px; }
 
 .o-row-flex {
   box-sizing: border-box;
@@ -1061,6 +1061,24 @@ pre {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px; }
+  .o-row-flex--md {
+    margin-left: -8px;
+    margin-right: -8px; }
+    .o-row-flex--md > [class*="o-col"] {
+      padding-left: 8px;
+      padding-right: 8px; }
+  .o-row-flex--sm {
+    margin-left: -4px;
+    margin-right: -4px; }
+    .o-row-flex--sm > [class*="o-col"] {
+      padding-left: 4px;
+      padding-right: 4px; }
+  .o-row-flex--xs {
+    margin-left: -2px;
+    margin-right: -2px; }
+    .o-row-flex--xs > [class*="o-col"] {
+      padding-left: 2px;
+      padding-right: 2px; }
 
 .o-inline {
   list-style: none;
