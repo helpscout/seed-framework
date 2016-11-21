@@ -46,6 +46,4 @@ var files = pathfinder(
   path.join(__dirname, 'scss')
 );
 
-console.log(files);
-
 module.exports = files;
