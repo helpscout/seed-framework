@@ -7,6 +7,7 @@
     "banner": "node ./scripts/banner.js",
     "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
+    "start": "npm run build",
     "test": "npm run build",
     "prepublish": "npm run test"
   },
@@ -43,7 +44,8 @@
   },
   "devDependencies": {
     "mkdirp": "^0.5.1",
-    "node-sass": "^3.13.0"
+    "node-sass": "^3.13.0",
+    "seed-harvester": "^0.1.3"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
@@ -68,7 +70,6 @@
     "seed-flexy": "^0.2.0",
     "seed-floats": "^0.2.4",
     "seed-grid": "^0.3.12",
-    "seed-harvester": "^0.1.3",
     "seed-hr": "0.0.2",
     "seed-inline": "0.0.5",
     "seed-input": "0.0.3",
