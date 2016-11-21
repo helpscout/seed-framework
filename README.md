@@ -15,7 +15,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 
 ### Todo components
 
-* [ ] Base styles
+* [x] [Base styles](https://github.com/helpscout/seed-base)
 * [x] [Dropdowns](https://github.com/helpscout/seed-dropdown)
 * [ ] Modal
 * [x] [Popover](https://github.com/helpscout/seed-popover)
