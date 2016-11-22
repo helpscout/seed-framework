@@ -17,7 +17,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 
 * [x] [Base styles](https://github.com/helpscout/seed-base)
 * [x] [Dropdowns](https://github.com/helpscout/seed-dropdown)
-* [ ] Modal
+* [x] [Modal](https://github.com/helpscout/seed-modal)
 * [x] [Popover](https://github.com/helpscout/seed-popover)
 * [x] [Table](https://github.com/helpscout/seed-table)
 * [x] [Tooltip](https://github.com/helpscout/seed-tooltip)
