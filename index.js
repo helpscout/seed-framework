@@ -28,6 +28,7 @@ var files = pathfinder(
   require('seed-input-addons'),
   require('seed-link'),
   require('seed-list'),
+  require('seed-modal'),
   require('seed-opacity'),
   require('seed-popover'),
   require('seed-props'),

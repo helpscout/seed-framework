@@ -1592,6 +1592,39 @@ pre {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
 
+.c-card__block {
+  box-sizing: border-box;
+  padding: 20px 20px; }
+  .c-card__block + .c-card__block {
+    border-top: 1px solid #eee; }
+  .c-card__block--md {
+    padding: 20px 20px; }
+  .c-card__block--sm {
+    padding: 12px 20px; }
+  .c-card__block--xs {
+    padding: 8px 20px; }
+  @media (min-width: 544px) {
+    .c-card__block--md\@sm {
+      padding: 20px 20px; }
+    .c-card__block--sm\@sm {
+      padding: 12px 20px; }
+    .c-card__block--xs\@sm {
+      padding: 8px 20px; } }
+  @media (min-width: 768px) {
+    .c-card__block--md\@md {
+      padding: 20px 20px; }
+    .c-card__block--sm\@md {
+      padding: 12px 20px; }
+    .c-card__block--xs\@md {
+      padding: 8px 20px; } }
+  @media (min-width: 992px) {
+    .c-card__block--md\@lg {
+      padding: 20px 20px; }
+    .c-card__block--sm\@lg {
+      padding: 12px 20px; }
+    .c-card__block--xs\@lg {
+      padding: 8px 20px; } }
+
 .c-list__item,
 .c-list > li {
   box-sizing: border-box;
@@ -2042,6 +2075,97 @@ textarea.c-input {
 
 .fade.in {
   opacity: 1; }
+
+.modal {
+  -webkit-overflow-scrolling: touch;
+  bottom: 0;
+  box-sizing: border-box;
+  display: none;
+  left: 0;
+  outline: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050; }
+  .modal-open {
+    overflow: hidden; }
+    .modal-open .modal {
+      overflow-x: hidden;
+      overflow-y: auto; }
+
+.modal-backdrop {
+  background-color: #000;
+  bottom: 0;
+  box-sizing: border-box;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1040; }
+  .modal-backdrop.fade {
+    opacity: 0; }
+  .modal-backdrop.in, .modal-backdrop.fade.in {
+    opacity: 0.5; }
+
+.modal-content {
+  border: none;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  outline: 0;
+  position: relative; }
+  .modal-content.c-card {
+    border: none;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4); }
+
+.modal-dialog {
+  box-sizing: border-box;
+  margin: 10px;
+  position: relative;
+  width: auto; }
+  @media (min-width: 768px) {
+    .modal-dialog {
+      margin: 30px auto;
+      max-width: 600px; } }
+  .modal-dialog--sm {
+    max-width: 300px; }
+  .modal-dialog--md {
+    max-width: 600px; }
+  .modal-dialog--lg {
+    max-width: 900px; }
+  @media (min-width: 544px) {
+    .modal-dialog--sm\@sm {
+      max-width: 300px; }
+    .modal-dialog--md\@sm {
+      max-width: 600px; }
+    .modal-dialog--lg\@sm {
+      max-width: 900px; } }
+  @media (min-width: 768px) {
+    .modal-dialog--sm\@md {
+      max-width: 300px; }
+    .modal-dialog--md\@md {
+      max-width: 600px; }
+    .modal-dialog--lg\@md {
+      max-width: 900px; } }
+  @media (min-width: 992px) {
+    .modal-dialog--sm\@lg {
+      max-width: 300px; }
+    .modal-dialog--md\@lg {
+      max-width: 600px; }
+    .modal-dialog--lg\@lg {
+      max-width: 900px; } }
+  .modal.fade .modal-dialog {
+    transform: translate(0, -25%);
+    transition: transform 0.3s ease-out; }
+  .modal.in .modal-dialog {
+    transform: translate(0, 0); }
+
+.modal-scrollbar-measure {
+  height: 50px;
+  overflow: scroll;
+  position: absolute;
+  top: -9999px;
+  width: 50px; }
 
 .popover {
   background-color: white;
