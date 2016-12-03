@@ -21,6 +21,13 @@ This project has evolved like cray! There's lots more that needs to be added.
 * [x] [Popover](https://github.com/helpscout/seed-popover)
 * [x] [Table](https://github.com/helpscout/seed-table)
 * [x] [Tooltip](https://github.com/helpscout/seed-tooltip)
+* [ ] Progress bar
+* [ ] Spinner
+* [ ] Responsive video
+* [ ] Breadcrumb
+* [ ] Collapse
+* [ ] Nav
+* [ ] Pagination (?)
 
 
 ## Documentation
