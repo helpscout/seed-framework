@@ -23,7 +23,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 * [x] [Tooltip](https://github.com/helpscout/seed-tooltip)
 * [ ] Progress bar
 * [ ] Spinner
-* [ ] Responsive video
+* [x] [Responsive video](https://github.com/helpscout/seed-video)
 * [ ] Breadcrumb
 * [ ] Collapse
 * [ ] Nav
