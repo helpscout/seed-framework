@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
-    "seed-alert": "^0.2.3",
+    "seed-alert": "^0.2.6",
     "seed-avatar": "^0.1.1",
     "seed-badge": "0.0.2",
     "seed-base": "0.0.2",
@@ -88,8 +88,9 @@
     "seed-switch": "0.0.3",
     "seed-table": "0.0.4",
     "seed-this": "0.0.4",
-    "seed-thumbnail": "0.0.6",
+    "seed-thumbnail": "0.0.8",
     "seed-typography": "^0.4.7",
+    "seed-video": "0.0.2",
     "seed-visibility": "^0.2.4",
     "seed-zi": "0.0.2"
   }

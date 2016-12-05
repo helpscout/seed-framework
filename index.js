@@ -42,6 +42,7 @@ var files = pathfinder(
   require('seed-this'),
   require('seed-thumbnail'),
   require('seed-typography'),
+  require('seed-video'),
   require('seed-visibility'),
   require('seed-zi'),
   path.join(__dirname, 'scss')
