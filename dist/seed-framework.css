@@ -1,5 +1,5 @@
 /**
- * seed v2.0.5 (https://github.com/helpscout/seed-framework)
+ * seed v2.0.6 (https://github.com/helpscout/seed-framework)
  * Seed CSS Framework
  * Licensed under MIT
  */
@@ -2475,92 +2475,109 @@ textarea.c-input {
   position: relative;
   width: 100%; }
 
-.c-thumbnail--top .c-thumbnail__image, .c-thumbnail--top .c-thumbnail > img {
+.c-thumbnail--top .c-thumbnail__image,
+.c-thumbnail--top > img {
   bottom: inherit;
   top: 0; }
 
-.c-thumbnail--center .c-thumbnail__image, .c-thumbnail--center .c-thumbnail > img {
+.c-thumbnail--center .c-thumbnail__image,
+.c-thumbnail--center > img {
   bottom: -100%;
   top: -100%; }
 
-.c-thumbnail--bottom .c-thumbnail__image, .c-thumbnail--bottom .c-thumbnail > img {
+.c-thumbnail--bottom .c-thumbnail__image,
+.c-thumbnail--bottom > img {
   bottom: 0;
   top: inherit; }
 
 .c-thumbnail--wide {
   padding-bottom: 56.25%; }
-  .c-thumbnail--wide .c-thumbnail__image, .c-thumbnail--wide .c-thumbnail > img {
+  .c-thumbnail--wide .c-thumbnail__image,
+  .c-thumbnail--wide > img {
     height: auto;
     width: 102%; }
 
 .c-thumbnail--sd {
   padding-bottom: 75%; }
-  .c-thumbnail--sd .c-thumbnail__image, .c-thumbnail--sd .c-thumbnail > img {
+  .c-thumbnail--sd .c-thumbnail__image,
+  .c-thumbnail--sd > img {
     height: 102%;
     width: auto; }
 
 .c-thumbnail--square {
   padding-bottom: 100%; }
-  .c-thumbnail--square .c-thumbnail__image, .c-thumbnail--square .c-thumbnail > img {
+  .c-thumbnail--square .c-thumbnail__image,
+  .c-thumbnail--square > img {
     height: 102%;
     width: auto; }
 
 @media (min-width: 544px) {
   .c-thumbnail--wide\@sm {
     padding-bottom: 56.25%; }
-    .c-thumbnail--wide\@sm .c-thumbnail__image, .c-thumbnail--wide\@sm .c-thumbnail > img {
+    .c-thumbnail--wide\@sm .c-thumbnail__image,
+    .c-thumbnail--wide\@sm > img {
       height: auto;
       width: 102%; }
   .c-thumbnail--sd\@sm {
     padding-bottom: 75%; }
-    .c-thumbnail--sd\@sm .c-thumbnail__image, .c-thumbnail--sd\@sm .c-thumbnail > img {
+    .c-thumbnail--sd\@sm .c-thumbnail__image,
+    .c-thumbnail--sd\@sm > img {
       height: 102%;
       width: auto; }
   .c-thumbnail--square\@sm {
     padding-bottom: 100%; }
-    .c-thumbnail--square\@sm .c-thumbnail__image, .c-thumbnail--square\@sm .c-thumbnail > img {
+    .c-thumbnail--square\@sm .c-thumbnail__image,
+    .c-thumbnail--square\@sm > img {
       height: 102%;
       width: auto; } }
 
 @media (min-width: 768px) {
   .c-thumbnail--wide\@md {
     padding-bottom: 56.25%; }
-    .c-thumbnail--wide\@md .c-thumbnail__image, .c-thumbnail--wide\@md .c-thumbnail > img {
+    .c-thumbnail--wide\@md .c-thumbnail__image,
+    .c-thumbnail--wide\@md > img {
       height: auto;
       width: 102%; }
   .c-thumbnail--sd\@md {
     padding-bottom: 75%; }
-    .c-thumbnail--sd\@md .c-thumbnail__image, .c-thumbnail--sd\@md .c-thumbnail > img {
+    .c-thumbnail--sd\@md .c-thumbnail__image,
+    .c-thumbnail--sd\@md > img {
       height: 102%;
       width: auto; }
   .c-thumbnail--square\@md {
     padding-bottom: 100%; }
-    .c-thumbnail--square\@md .c-thumbnail__image, .c-thumbnail--square\@md .c-thumbnail > img {
+    .c-thumbnail--square\@md .c-thumbnail__image,
+    .c-thumbnail--square\@md > img {
       height: 102%;
       width: auto; } }
 
 @media (min-width: 992px) {
   .c-thumbnail--wide\@lg {
     padding-bottom: 56.25%; }
-    .c-thumbnail--wide\@lg .c-thumbnail__image, .c-thumbnail--wide\@lg .c-thumbnail > img {
+    .c-thumbnail--wide\@lg .c-thumbnail__image,
+    .c-thumbnail--wide\@lg > img {
       height: auto;
       width: 102%; }
   .c-thumbnail--sd\@lg {
     padding-bottom: 75%; }
-    .c-thumbnail--sd\@lg .c-thumbnail__image, .c-thumbnail--sd\@lg .c-thumbnail > img {
+    .c-thumbnail--sd\@lg .c-thumbnail__image,
+    .c-thumbnail--sd\@lg > img {
       height: 102%;
       width: auto; }
   .c-thumbnail--square\@lg {
     padding-bottom: 100%; }
-    .c-thumbnail--square\@lg .c-thumbnail__image, .c-thumbnail--square\@lg .c-thumbnail > img {
+    .c-thumbnail--square\@lg .c-thumbnail__image,
+    .c-thumbnail--square\@lg > img {
       height: 102%;
       width: auto; } }
 
 .c-thumbnail--rounded {
   border-radius: 4px; }
 
-.c-thumbnail__image, .c-thumbnail > img {
+.c-thumbnail__image,
+.c-thumbnail > img {
   bottom: -100%;
+  box-sizing: border-box;
   height: auto;
   left: -100%;
   margin: auto;

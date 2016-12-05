@@ -1,4 +1,4 @@
-# Seed Framework [![Build Status](https://travis-ci.org/helpscout/seed.svg?branch=v2)](https://travis-ci.org/helpscout/seed) [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
+# Seed Framework [![Build Status](https://travis-ci.org/helpscout/seed-framework.svg?branch=v2)](https://travis-ci.org/helpscout/seed-framework) [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
 
 Seed CSS Framework!
 
@@ -59,5 +59,5 @@ Once that is setup, simply `@import` *seed* as needed in your `.scss` file:
 
 ```scss
 // Packs
-@import "pack/seed/_index";
+@import "pack/seed-framework/_index";
 ```
