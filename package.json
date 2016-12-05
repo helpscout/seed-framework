@@ -11,17 +11,17 @@
     "test": "npm run build",
     "prepublish": "npm run test"
   },
-  "homepage": "https://github.com/helpscout/seed",
+  "homepage": "https://github.com/helpscout/seed-framework",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helpscout/seed.git"
+    "url": "git+https://github.com/helpscout/seed-framework.git"
   },
   "authors": [
     "ItsJonQ <itsjonq@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helpscout/seed/issues"
+    "url": "https://github.com/helpscout/seed-framework/issues"
   },
   "keywords": [
     "bem",
