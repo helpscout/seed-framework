@@ -44,7 +44,7 @@ This seed pack needs to be imported into your sass pipeline. Below is an example
 ```javascript
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var pack = require('seed');
+var pack = require('seed-framework');
 
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
