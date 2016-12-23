@@ -45,7 +45,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.13.0",
-    "seed-harvester": "^0.1.4"
+    "seed-harvester": "^0.1.5"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
@@ -89,7 +89,7 @@
     "seed-table": "0.0.4",
     "seed-this": "0.0.4",
     "seed-thumbnail": "0.0.8",
-    "seed-typography": "^0.4.7",
+    "seed-typography": "^0.4.8",
     "seed-video": "0.0.2",
     "seed-visibility": "^0.2.4",
     "seed-zi": "0.0.2"
