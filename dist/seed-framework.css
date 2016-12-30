@@ -1905,16 +1905,6 @@ pre {
     top: 0;
     z-index: -1; }
 
-.c-hr, hr {
-  border: 0;
-  border-top-color: #eee;
-  border-top-style: solid;
-  border-top-width: 1px;
-  box-sizing: content-box;
-  display: block;
-  height: 0;
-  margin: 20px 0; }
-
 .c-input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1999,6 +1989,39 @@ textarea.c-input {
     border-color: #ffc646; }
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
       border-color: #ffc646; }
+
+.c-fieldset {
+  border: none;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0; }
+  .c-fieldset:last-child {
+    margin-bottom: 0; }
+  .c-fieldset.is-error label {
+    color: #9d1f1a; }
+  .c-fieldset.is-error .c-input {
+    border-color: #e52f28; }
+  .c-fieldset.is-success label {
+    color: #228350; }
+  .c-fieldset.is-success .c-input {
+    border-color: #4bc27d; }
+  .c-fieldset.is-warning label {
+    color: #b37100; }
+  .c-fieldset.is-warning .c-input {
+    border-color: #ffc646; }
+
+.c-hr, hr {
+  border: 0;
+  border-top-color: #eee;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: content-box;
+  display: block;
+  height: 0;
+  margin: 20px 0; }
 
 .c-input-addon {
   background-color: #F1F3F5;

@@ -19,6 +19,7 @@ var files = pathfinder(
   require('seed-dropdown'),
   require('seed-exclude'),
   require('seed-family'),
+  require('seed-fieldset'),
   require('seed-flexy'),
   require('seed-floats'),
   require('seed-grid'),
