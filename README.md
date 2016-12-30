@@ -26,8 +26,9 @@ This project has evolved like cray! There's lots more that needs to be added.
 * [x] [Responsive video](https://github.com/helpscout/seed-video)
 * [ ] Breadcrumb
 * [ ] Collapse
-* [ ] Nav
+* [ ] Nav (?)
 * [ ] Pagination (?)
+* [x] [Fieldset](https://github.com/helpscout/seed-fieldset) (Seed's version of `.form-group`)
 
 
 ## Documentation
