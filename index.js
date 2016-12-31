@@ -1,5 +1,3 @@
-var path = require('path');
-var pathfinder = require('sass-pathfinder');
 
 var files = pathfinder(
   require('seed-alert'),
@@ -19,9 +17,9 @@ var files = pathfinder(
   require('seed-dropdown'),
   require('seed-exclude'),
   require('seed-family'),
-  require('seed-fieldset'),
   require('seed-flexy'),
   require('seed-floats'),
+  require('seed-form-group'),
   require('seed-grid'),
   require('seed-hr'),
   require('seed-inline'),

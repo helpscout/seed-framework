@@ -1990,7 +1990,7 @@ textarea.c-input {
     .c-input.is-warning.is-disabled:hover, .c-input.is-warning.is-disabled:active, .c-input.is-warning.is-disabled:focus, .c-input.is-warning[disabled]:hover, .c-input.is-warning[disabled]:active, .c-input.is-warning[disabled]:focus {
       border-color: #ffc646; }
 
-.c-fieldset {
+.c-form-group {
   border: none;
   box-sizing: border-box;
   display: block;
@@ -1998,19 +1998,19 @@ textarea.c-input {
   margin-left: 0;
   margin-right: 0;
   padding: 0; }
-  .c-fieldset:last-child {
+  .c-form-group:last-child {
     margin-bottom: 0; }
-  .c-fieldset.is-error label {
+  .c-form-group.is-error label {
     color: #9d1f1a; }
-  .c-fieldset.is-error .c-input {
+  .c-form-group.is-error .c-input {
     border-color: #e52f28; }
-  .c-fieldset.is-success label {
+  .c-form-group.is-success label {
     color: #228350; }
-  .c-fieldset.is-success .c-input {
+  .c-form-group.is-success .c-input {
     border-color: #4bc27d; }
-  .c-fieldset.is-warning label {
+  .c-form-group.is-warning label {
     color: #b37100; }
-  .c-fieldset.is-warning .c-input {
+  .c-form-group.is-warning .c-input {
     border-color: #ffc646; }
 
 .c-hr, hr {
