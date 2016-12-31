@@ -1,6 +1,6 @@
 {
   "name": "seed-framework",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "Seed CSS Framework",
   "main": "index.js",
   "scripts": {
