@@ -80,6 +80,7 @@
     "seed-modal": "0.0.2",
     "seed-opacity": "0.0.2",
     "seed-popover": "0.0.3",
+    "seed-progress-bar": "0.0.2",
     "seed-props": "^0.3.0",
     "seed-publish": "0.0.4",
     "seed-reset": "^0.1.2",

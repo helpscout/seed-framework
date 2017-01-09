@@ -2291,6 +2291,61 @@ textarea.c-input {
   margin: 0;
   padding: 8px 12px; }
 
+.c-progress-bar {
+  background-color: #E3E8EB;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 16px; }
+  .c-progress-bar--lg {
+    height: 24px; }
+  .c-progress-bar--md {
+    height: 16px; }
+  .c-progress-bar--sm {
+    height: 8px; }
+  .c-progress-bar--xs {
+    height: 4px; }
+  @media (min-width: 544px) {
+    .c-progress-bar--lg\@sm {
+      height: 24px; }
+    .c-progress-bar--md\@sm {
+      height: 16px; }
+    .c-progress-bar--sm\@sm {
+      height: 8px; }
+    .c-progress-bar--xs\@sm {
+      height: 4px; } }
+  @media (min-width: 768px) {
+    .c-progress-bar--lg\@md {
+      height: 24px; }
+    .c-progress-bar--md\@md {
+      height: 16px; }
+    .c-progress-bar--sm\@md {
+      height: 8px; }
+    .c-progress-bar--xs\@md {
+      height: 4px; } }
+  @media (min-width: 992px) {
+    .c-progress-bar--lg\@lg {
+      height: 24px; }
+    .c-progress-bar--md\@lg {
+      height: 16px; }
+    .c-progress-bar--sm\@lg {
+      height: 8px; }
+    .c-progress-bar--xs\@lg {
+      height: 4px; } }
+
+.c-progress-bar__bar {
+  background-color: #3197D6;
+  bottom: 0;
+  box-sizing: border-box;
+  display: block;
+  left: 0;
+  position: absolute;
+  transition: width 0.5s ease;
+  top: 0;
+  width: 0; }
+
 .c-switch {
   box-sizing: border-box;
   display: inline-block;
