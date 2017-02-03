@@ -31,6 +31,7 @@ var files = pathfinder(
   require('seed-list'),
   require('seed-modal'),
   require('seed-opacity'),
+  require('seed-pagination'),
   require('seed-popover'),
   require('seed-progress-bar'),
   require('seed-props'),

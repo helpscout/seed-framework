@@ -79,6 +79,7 @@
     "seed-list": "0.0.15",
     "seed-modal": "0.0.2",
     "seed-opacity": "0.0.2",
+    "seed-pagination": "0.0.1",
     "seed-popover": "0.0.3",
     "seed-progress-bar": "0.0.2",
     "seed-props": "^0.3.0",
