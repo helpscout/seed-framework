@@ -1,4 +1,4 @@
-# Seed Framework [![Build Status](https://travis-ci.org/helpscout/seed-framework.svg?branch=v2)](https://travis-ci.org/helpscout/seed-framework) [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework)
+# Seed Framework [![Build Status](https://travis-ci.org/helpscout/seed-framework.svg)](https://travis-ci.org/helpscout/seed-framework) [![npm version](https://badge.fury.io/js/seed-framework.svg)](https://badge.fury.io/js/seed-framework) [![dependencies Status](https://david-dm.org/helpscout/seed-framework/status.svg)](https://david-dm.org/helpscout/seed-framework)
 
 Seed CSS Framework!
 
