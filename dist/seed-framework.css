@@ -1,5 +1,5 @@
 /**
- * seed v2.0.15 (https://github.com/helpscout/seed-framework)
+ * seed v2.0.16 (https://github.com/helpscout/seed-framework)
  * Seed CSS Framework
  * Licensed under MIT
  */
@@ -1933,24 +1933,32 @@ pre {
     margin-top: -2px;
     vertical-align: middle;
     width: 0; }
-    .c-dropdown--up .c-dropdown__toggle > c-caret, .c-dropdown--up .c-dropdown__toggle::after {
+    .c-dropdown--up .c-dropdown__toggle > c-caret,
+    .c-dropdown--up .c-dropdown__toggle::after {
       transform: rotate(180deg); }
-    .c-dropdown--down .c-dropdown__toggle > c-caret, .c-dropdown--down .c-dropdown__toggle::after {
+    .c-dropdown--down .c-dropdown__toggle > c-caret,
+    .c-dropdown--down .c-dropdown__toggle::after {
       transform: rotate(0deg); }
     @media (min-width: 544px) {
-      .c-dropdown--up\@sm .c-dropdown__toggle > c-caret, .c-dropdown--up\@sm .c-dropdown__toggle::after {
+      .c-dropdown--up\@sm .c-dropdown__toggle > c-caret,
+      .c-dropdown--up\@sm .c-dropdown__toggle::after {
         transform: rotate(180deg); }
-      .c-dropdown--down\@sm .c-dropdown__toggle > c-caret, .c-dropdown--down\@sm .c-dropdown__toggle::after {
+      .c-dropdown--down\@sm .c-dropdown__toggle > c-caret,
+      .c-dropdown--down\@sm .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
     @media (min-width: 768px) {
-      .c-dropdown--up\@md .c-dropdown__toggle > c-caret, .c-dropdown--up\@md .c-dropdown__toggle::after {
+      .c-dropdown--up\@md .c-dropdown__toggle > c-caret,
+      .c-dropdown--up\@md .c-dropdown__toggle::after {
         transform: rotate(180deg); }
-      .c-dropdown--down\@md .c-dropdown__toggle > c-caret, .c-dropdown--down\@md .c-dropdown__toggle::after {
+      .c-dropdown--down\@md .c-dropdown__toggle > c-caret,
+      .c-dropdown--down\@md .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
     @media (min-width: 992px) {
-      .c-dropdown--up\@lg .c-dropdown__toggle > c-caret, .c-dropdown--up\@lg .c-dropdown__toggle::after {
+      .c-dropdown--up\@lg .c-dropdown__toggle > c-caret,
+      .c-dropdown--up\@lg .c-dropdown__toggle::after {
         transform: rotate(180deg); }
-      .c-dropdown--down\@lg .c-dropdown__toggle > c-caret, .c-dropdown--down\@lg .c-dropdown__toggle::after {
+      .c-dropdown--down\@lg .c-dropdown__toggle > c-caret,
+      .c-dropdown--down\@lg .c-dropdown__toggle::after {
         transform: rotate(0deg); } }
   .o-control-group > .c-dropdown:first-child .c-dropdown__toggle {
     border-bottom-left-radius: 3px;
@@ -2302,12 +2310,12 @@ textarea.c-input {
     font-size: 1rem;
     height: 36px;
     line-height: 34px;
-    padding: 0 0.75em; }
+    padding: 0 1em; }
   .c-pagination--lg .c-pagination__link {
     font-size: 1.25rem;
     height: 52px;
     line-height: 50px;
-    padding: 0 1em; }
+    padding: 0 1.5em; }
 
 .c-pagination__item {
   box-sizing: border-box; }
@@ -2680,7 +2688,9 @@ textarea.c-input {
 .c-table td.is-error {
   background-color: #ffe3e2; }
 
-.c-table--hover th.is-error:hover, .c-table--hover tr.is-error:hover, .c-table--hover td.is-error:hover {
+.c-table--hover th.is-error:hover,
+.c-table--hover tr.is-error:hover,
+.c-table--hover td.is-error:hover {
   background-color: #ffd9d8; }
 
 .c-table th.is-info,
@@ -2688,7 +2698,9 @@ textarea.c-input {
 .c-table td.is-info {
   background-color: #daf1ff; }
 
-.c-table--hover th.is-info:hover, .c-table--hover tr.is-info:hover, .c-table--hover td.is-info:hover {
+.c-table--hover th.is-info:hover,
+.c-table--hover tr.is-info:hover,
+.c-table--hover td.is-info:hover {
   background-color: #d0edff; }
 
 .c-table th.is-success,
@@ -2696,7 +2708,9 @@ textarea.c-input {
 .c-table td.is-success {
   background-color: #e4fbe6; }
 
-.c-table--hover th.is-success:hover, .c-table--hover tr.is-success:hover, .c-table--hover td.is-success:hover {
+.c-table--hover th.is-success:hover,
+.c-table--hover tr.is-success:hover,
+.c-table--hover td.is-success:hover {
   background-color: #dbfade; }
 
 .c-table th.is-warning,
@@ -2704,7 +2718,9 @@ textarea.c-input {
 .c-table td.is-warning {
   background-color: #fff6e2; }
 
-.c-table--hover th.is-warning:hover, .c-table--hover tr.is-warning:hover, .c-table--hover td.is-warning:hover {
+.c-table--hover th.is-warning:hover,
+.c-table--hover tr.is-warning:hover,
+.c-table--hover td.is-warning:hover {
   background-color: #fff3d8; }
 
 .c-thumbnail {
