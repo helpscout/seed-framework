@@ -25,7 +25,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 * [ ] Spinner
 * [x] [Responsive video](https://github.com/helpscout/seed-video)
 * [ ] Breadcrumb
-* [ ] [Nav (WIP!)](https://github.com/helpscout/seed-nav)
+* [x] [Nav](https://github.com/helpscout/seed-nav)
 * [x] [Pagination](https://github.com/helpscout/seed-pagination)
 * [x] [Form group](https://github.com/helpscout/seed-form-group)
 
