@@ -1,7 +1,7 @@
 var path = require('path');
 var pathfinder = require('sass-pathfinder');
 
-var files = pathfinder(
+var files = pathfinder([
   require('seed-alert'),
   require('seed-avatar'),
   require('seed-badge'),
@@ -30,6 +30,7 @@ var files = pathfinder(
   require('seed-link'),
   require('seed-list'),
   require('seed-modal'),
+  require('seed-nav'),
   require('seed-opacity'),
   require('seed-pagination'),
   require('seed-popover'),
@@ -48,7 +49,7 @@ var files = pathfinder(
   require('seed-video'),
   require('seed-visibility'),
   require('seed-zi'),
-  path.join(__dirname, 'scss')
-);
+  path.join(__dirname, 'scss'),
+]);
 
 module.exports = files;
