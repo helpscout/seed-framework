@@ -1,5 +1,5 @@
 /**
- * seed v2.0.18 (https://github.com/helpscout/seed-framework)
+ * seed v2.0.19 (https://github.com/helpscout/seed-framework)
  * Seed CSS Framework
  * Licensed under MIT
  */
@@ -563,6 +563,97 @@ pre {
     align-items: flex-end; }
   .o-flexy--stretch\@lg {
     align-items: stretch; } }
+
+.o-flexy--gap-xs > * {
+  margin-left: 4px; }
+  .o-flexy--gap-xs > *:first-child {
+    margin-left: 0; }
+
+.o-flexy--gap-sm > * {
+  margin-left: 8px; }
+  .o-flexy--gap-sm > *:first-child {
+    margin-left: 0; }
+
+.o-flexy--gap-md > * {
+  margin-left: 12px; }
+  .o-flexy--gap-md > *:first-child {
+    margin-left: 0; }
+
+.o-flexy--gap-lg > * {
+  margin-left: 16px; }
+  .o-flexy--gap-lg > *:first-child {
+    margin-left: 0; }
+
+.o-flexy--gap-xl > * {
+  margin-left: 20px; }
+  .o-flexy--gap-xl > *:first-child {
+    margin-left: 0; }
+
+@media (min-width: 544px) {
+  .o-flexy--gap-xs\@sm > * {
+    margin-left: 4px; }
+    .o-flexy--gap-xs\@sm > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-sm\@sm > * {
+    margin-left: 8px; }
+    .o-flexy--gap-sm\@sm > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-md\@sm > * {
+    margin-left: 12px; }
+    .o-flexy--gap-md\@sm > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-lg\@sm > * {
+    margin-left: 16px; }
+    .o-flexy--gap-lg\@sm > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-xl\@sm > * {
+    margin-left: 20px; }
+    .o-flexy--gap-xl\@sm > *:first-child {
+      margin-left: 0; } }
+
+@media (min-width: 768px) {
+  .o-flexy--gap-xs\@md > * {
+    margin-left: 4px; }
+    .o-flexy--gap-xs\@md > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-sm\@md > * {
+    margin-left: 8px; }
+    .o-flexy--gap-sm\@md > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-md\@md > * {
+    margin-left: 12px; }
+    .o-flexy--gap-md\@md > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-lg\@md > * {
+    margin-left: 16px; }
+    .o-flexy--gap-lg\@md > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-xl\@md > * {
+    margin-left: 20px; }
+    .o-flexy--gap-xl\@md > *:first-child {
+      margin-left: 0; } }
+
+@media (min-width: 992px) {
+  .o-flexy--gap-xs\@lg > * {
+    margin-left: 4px; }
+    .o-flexy--gap-xs\@lg > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-sm\@lg > * {
+    margin-left: 8px; }
+    .o-flexy--gap-sm\@lg > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-md\@lg > * {
+    margin-left: 12px; }
+    .o-flexy--gap-md\@lg > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-lg\@lg > * {
+    margin-left: 16px; }
+    .o-flexy--gap-lg\@lg > *:first-child {
+      margin-left: 0; }
+  .o-flexy--gap-xl\@lg > * {
+    margin-left: 20px; }
+    .o-flexy--gap-xl\@lg > *:first-child {
+      margin-left: 0; } }
 
 .o-flexy__block {
   box-sizing: border-box;
@@ -5626,6 +5717,75 @@ textarea.c-input {
   .u-pad-v-10\@lg {
     padding-bottom: 40px !important;
     padding-top: 40px !important; } }
+
+.u-va-bottom {
+  vertical-align: bottom !important; }
+
+.u-va-inherit {
+  vertical-align: inherit !important; }
+
+.u-va-initial {
+  vertical-align: initial !important; }
+
+.u-va-middle {
+  vertical-align: middle !important; }
+
+.u-va-text-bottom {
+  vertical-align: text-bottom !important; }
+
+.u-va-text-top {
+  vertical-align: text-top !important; }
+
+.u-va-top {
+  vertical-align: top !important; }
+
+@media (min-width: 544px) {
+  .u-va-bottom\@sm {
+    vertical-align: bottom !important; }
+  .u-va-inherit\@sm {
+    vertical-align: inherit !important; }
+  .u-va-initial\@sm {
+    vertical-align: initial !important; }
+  .u-va-middle\@sm {
+    vertical-align: middle !important; }
+  .u-va-text-bottom\@sm {
+    vertical-align: text-bottom !important; }
+  .u-va-text-top\@sm {
+    vertical-align: text-top !important; }
+  .u-va-top\@sm {
+    vertical-align: top !important; } }
+
+@media (min-width: 768px) {
+  .u-va-bottom\@md {
+    vertical-align: bottom !important; }
+  .u-va-inherit\@md {
+    vertical-align: inherit !important; }
+  .u-va-initial\@md {
+    vertical-align: initial !important; }
+  .u-va-middle\@md {
+    vertical-align: middle !important; }
+  .u-va-text-bottom\@md {
+    vertical-align: text-bottom !important; }
+  .u-va-text-top\@md {
+    vertical-align: text-top !important; }
+  .u-va-top\@md {
+    vertical-align: top !important; } }
+
+@media (min-width: 992px) {
+  .u-va-bottom\@lg {
+    vertical-align: bottom !important; }
+  .u-va-inherit\@lg {
+    vertical-align: inherit !important; }
+  .u-va-initial\@lg {
+    vertical-align: initial !important; }
+  .u-va-middle\@lg {
+    vertical-align: middle !important; }
+  .u-va-text-bottom\@lg {
+    vertical-align: text-bottom !important; }
+  .u-va-text-top\@lg {
+    vertical-align: text-top !important; }
+  .u-va-top\@lg {
+    vertical-align: top !important; } }
 
 .u-invisible {
   visibility: hidden !important; }
