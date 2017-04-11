@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "banner": "node ./scripts/banner.js",
-    "build": "npm run build:main && npm run banner",
     "build:main": "node ./scripts/build.js",
+    "build": "npm run build:main && npm run banner",
+    "prepublish": "npm run test",
     "start": "npm run build",
-    "test": "npm run build",
-    "prepublish": "npm run test"
+    "test:mocha": "mocha",
+    "test": "mocha",
+    "version": "npm run build && git add dist"
   },
   "homepage": "https://github.com/helpscout/seed-framework",
   "repository": {
@@ -45,6 +47,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
+    "seed-bistro": "0.0.3",
     "seed-harvester": "^0.1.5"
   },
   "dependencies": {
@@ -67,9 +70,9 @@
     "seed-dropdown": "0.0.8",
     "seed-exclude": "0.0.1",
     "seed-family": "0.0.4",
-    "seed-flexy": "0.3.0",
+    "seed-flexy": "0.3.2",
     "seed-floats": "0.2.5",
-    "seed-form-group": "0.0.2",
+    "seed-form-group": "0.0.3",
     "seed-grid": "0.4.0",
     "seed-hr": "0.0.3",
     "seed-inline": "0.0.5",
@@ -94,6 +97,7 @@
     "seed-this": "0.0.5",
     "seed-thumbnail": "0.0.8",
     "seed-typography": "0.4.8",
+    "seed-vertical-align": "0.0.1",
     "seed-video": "0.0.2",
     "seed-visibility": "0.2.4",
     "seed-zi": "0.0.2"
