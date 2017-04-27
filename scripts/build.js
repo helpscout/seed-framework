@@ -3,11 +3,10 @@
 var pkg = require('../package.json');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
-var harvester = require('seed-harvester');
 var sass = require('node-sass');
+var includePaths = require('../index');
 
 var file = 'seed-framework';
-var includePaths = harvester();
 
 // Default .css compile
 sass.render({

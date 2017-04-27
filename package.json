@@ -47,7 +47,7 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
-    "seed-bistro": "0.0.3",
+    "seed-bistro": "0.1.1",
     "seed-harvester": "^0.1.5"
   },
   "dependencies": {
@@ -75,7 +75,7 @@
     "seed-form-group": "0.0.3",
     "seed-grid": "0.4.0",
     "seed-hr": "0.0.3",
-    "seed-inline": "0.0.5",
+    "seed-inline": "0.1.0",
     "seed-input": "0.0.7",
     "seed-input-addons": "0.0.5",
     "seed-link": "0.0.3",
@@ -95,7 +95,7 @@
     "seed-switch": "0.0.4",
     "seed-table": "0.0.4",
     "seed-this": "0.0.5",
-    "seed-thumbnail": "0.0.8",
+    "seed-thumbnail": "0.0.9",
     "seed-typography": "0.4.8",
     "seed-vertical-align": "0.0.1",
     "seed-video": "0.0.2",
