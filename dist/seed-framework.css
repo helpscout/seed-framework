@@ -1,5 +1,5 @@
 /**
- * seed v2.0.19 (https://github.com/helpscout/seed-framework)
+ * seed v2.0.20 (https://github.com/helpscout/seed-framework)
  * Seed CSS Framework
  * Licensed under MIT
  */
@@ -1267,65 +1267,58 @@ pre {
       padding-right: 2px; }
 
 .o-inline {
+  box-sizing: border-box;
+  display: block;
   list-style: none;
   margin-bottom: -4px;
-  margin-left: 0; }
+  margin-left: 0;
+  padding-left: 0; }
   .o-inline::after {
+    box-sizing: border-box;
     content: " ";
     clear: both;
     display: table; }
   .o-inline:last-child {
     margin-bottom: -4px; }
-  .o-inline__item {
-    display: inline-block;
-    margin: 0 0 4px;
-    padding: 0;
-    vertical-align: middle; }
+  .o-inline--xs {
+    margin-bottom: -4px;
+    margin-right: -4px; }
+    .o-inline--xs:last-child {
+      margin-bottom: -4px; }
+    .o-inline--xs .o-inline__item {
+      margin-bottom: 4px;
+      margin-right: 4px; }
+  .o-inline--sm {
+    margin-bottom: -8px;
+    margin-right: -8px; }
+    .o-inline--sm:last-child {
+      margin-bottom: -8px; }
+    .o-inline--sm .o-inline__item {
+      margin-bottom: 8px;
+      margin-right: 8px; }
+  .o-inline--md {
+    margin-bottom: -16px;
+    margin-right: -16px; }
+    .o-inline--md:last-child {
+      margin-bottom: -16px; }
+    .o-inline--md .o-inline__item {
+      margin-bottom: 16px;
+      margin-right: 16px; }
+  .o-inline--lg {
+    margin-bottom: -24px;
+    margin-right: -24px; }
+    .o-inline--lg:last-child {
+      margin-bottom: -24px; }
+    .o-inline--lg .o-inline__item {
+      margin-bottom: 24px;
+      margin-right: 24px; }
 
-.o-inline--xs {
-  margin-bottom: -4px;
-  margin-right: -4px; }
-  .o-inline--xs:last-child {
-    margin-bottom: -4px; }
-  .o-inline--xs .o-inline__item {
-    margin-bottom: 4px;
-    margin-right: 4px; }
-
-.o-inline--sm {
-  margin-bottom: -8px;
-  margin-right: -8px; }
-  .o-inline--sm:last-child {
-    margin-bottom: -8px; }
-  .o-inline--sm .o-inline__item {
-    margin-bottom: 8px;
-    margin-right: 8px; }
-
-.o-inline--md {
-  margin-bottom: -16px;
-  margin-right: -16px; }
-  .o-inline--md:last-child {
-    margin-bottom: -16px; }
-  .o-inline--md .o-inline__item {
-    margin-bottom: 16px;
-    margin-right: 16px; }
-
-.o-inline--lg {
-  margin-bottom: -24px;
-  margin-right: -24px; }
-  .o-inline--lg:last-child {
-    margin-bottom: -24px; }
-  .o-inline--lg .o-inline__item {
-    margin-bottom: 24px;
-    margin-right: 24px; }
-
-.o-inline--xl {
-  margin-bottom: -32px;
-  margin-right: -32px; }
-  .o-inline--xl:last-child {
-    margin-bottom: -32px; }
-  .o-inline--xl .o-inline__item {
-    margin-bottom: 32px;
-    margin-right: 32px; }
+.o-inline__item {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 4px;
+  padding: 0;
+  vertical-align: middle; }
 
 .o-responsive-wrapper {
   box-sizing: border-box;
@@ -1919,20 +1912,6 @@ button.c-button {
     .c-list--inline\@lg .c-list__item:first-child,
     .c-list--inline\@lg > li:first-child {
       padding-left: 0; } }
-
-.c-list--bullet {
-  list-style-type: disc;
-  padding-left: 16px; }
-  .c-list--bullet .c-list__item,
-  .c-list--bullet > li {
-    display: list-item; }
-
-.c-list--number {
-  list-style-type: decimal;
-  padding-left: 16px; }
-  .c-list--number .c-list__item,
-  .c-list--number > li {
-    display: list-item; }
 
 .c-dropdown {
   box-sizing: border-box;
@@ -3151,6 +3130,7 @@ textarea.c-input {
 .c-thumbnail > img {
   bottom: -100%;
   box-sizing: border-box;
+  display: block;
   height: auto;
   left: -100%;
   margin: auto;
@@ -3786,27 +3766,6 @@ textarea.c-input {
     .t-bdr-none\@lg {
       border-style: solid !important;
       border-width: 0 !important; } }
-
-.t-bdr-r-0 {
-  border-radius: 0px; }
-
-.t-bdr-r-1 {
-  border-radius: 1px; }
-
-.t-bdr-r-2 {
-  border-radius: 2px; }
-
-.t-bdr-r-3 {
-  border-radius: 3px; }
-
-.t-bdr-r-4 {
-  border-radius: 4px; }
-
-.t-bdr-r-circle {
-  border-radius: 50%; }
-
-.t-bdr-r-pill {
-  border-radius: 9999px; }
 
 .u-centralize {
   align-items: center !important;
