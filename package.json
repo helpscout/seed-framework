@@ -47,8 +47,8 @@
   "devDependencies": {
     "mkdirp": "^0.5.1",
     "node-sass": "^3.10.0",
-    "seed-bistro": "0.1.1",
-    "seed-harvester": "^0.1.5"
+    "seed-bistro": "0.1.2",
+    "seed-harvester": "0.1.5"
   },
   "dependencies": {
     "sass-pathfinder": "0.0.5",
@@ -61,7 +61,7 @@
     "seed-button": "0.1.16",
     "seed-card": "0.1.0",
     "seed-centralize": "0.0.4",
-    "seed-color-scheme": "0.0.2",
+    "seed-color-scheme": "0.0.3",
     "seed-color-scheme-helpscout": "0.0.3",
     "seed-control": "0.1.0",
     "seed-control-group": "0.0.6",
