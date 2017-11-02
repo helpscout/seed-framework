@@ -32,7 +32,7 @@ This project has evolved like cray! There's lots more that needs to be added.
 
 ## Documentation
 
-You can find most of our documentation [here](http://style.helpscout.com/seed/packs/)!
+You can find most of our documentation [here](https://developer.helpscout.com/seed/)!
 
 
 ## Basic Usage
